@@ -9,13 +9,13 @@ const Percorsi = () => {
         <>
             <SEO
                 title="Campus Calcio Estate 2026: Programmi e Corsi | Academy.19"
-                description="Scopri i programmi del Campus Calcio Estate 2026. Allenamenti personalizzati, Specializzazione Tecnica e formazione d'élite a Roma."
+                description="Scopri i programmi del Campus Calcio Estate 2026. Allenamenti personalizzati, Specializzazione Tecnica e formazione d'élite."
                 url="https://www.academy19.it/percorsi"
                 structuredData={{
                     "@context": "https://schema.org",
                     "@type": "Course",
                     "name": "Campus Calcio Estivo 2026",
-                    "description": "Corso intensivo di perfezionamento calcistico a Roma. Allenamenti d'élite, tecnica individuale e programmi personalizzati per ragazzi.",
+                    "description": "Corso intensivo di perfezionamento calcistico. Allenamenti d'élite, tecnica individuale e programmi personalizzati per ragazzi.",
                     "provider": {
                         "@type": "Organization",
                         "name": "Academy.19",

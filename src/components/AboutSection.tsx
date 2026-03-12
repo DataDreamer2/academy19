@@ -36,8 +36,8 @@ const AboutSection = () => {
               La Nostra <br /> Filosofia
             </h2>
           </div>
-          <p className="text-xl text-zinc-400 max-w-md leading-relaxed pb-2 font-mono">
-            Dal 2015, ridefiniamo gli standard della formazione calcistica giovanile a Roma.
+          <p className="text-2xl text-zinc-400 max-w-md leading-relaxed pb-2 font-mono">
+            Dal 2015, ridefiniamo gli standard della formazione calcistica giovanile.
           </p>
         </div>
 
@@ -49,7 +49,7 @@ const AboutSection = () => {
                 <h2 className="text-3xl font-bold uppercase mb-8 leading-tight">
                 Il Metodo <span className="text-accent">Academy 19</span>
               </h2>
-              <p className="text-lg text-zinc-300 mb-8 leading-relaxed max-w-4xl font-mono">
+              <p className="text-xl text-zinc-300 mb-8 leading-relaxed max-w-4xl font-mono">
                 Il nostro metodo unisce <strong>preparazione tecnica d'élite</strong>, sviluppo <strong>atletico e coordinativo</strong> e crescita <strong>mentale</strong>.
                 Per noi la formazione non è solo allenamento: è costruzione della persona, dentro e fuori dal campo.
                 Crediamo che il talento, senza disciplina, sia un'opportunità sprecata. Per questo lavoriamo ogni giorno su tecnica, mentalità e cultura del lavoro.

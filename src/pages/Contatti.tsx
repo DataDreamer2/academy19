@@ -8,7 +8,7 @@ const Contatti = () => {
     return (
         <>
             <SEO
-                title="Contatti e Iscrizioni Campus Calcio 2026 | Academy.19 Roma"
+                title="Contatti e Iscrizioni Campus Calcio 2026 | Academy.19"
                 description="Richiedi informazioni per il Campus Calcio 2026. Contattaci per prove gratuite, iscrizioni e dettagli sui nostri percorsi formativi d'élite."
                 url="https://www.academy19.it/contatti"
                 structuredData={{
@@ -16,13 +16,13 @@ const Contatti = () => {
                     "@type": "LocalBusiness",
                     "name": "Academy.19",
                     "url": "https://www.academy19.it/contatti",
-                    "telephone": "+39 347 123 4567", // Placeholder or real if found
+                    "telephone": "+39 347 889 4076",
                     "address": {
                         "@type": "PostalAddress",
-                        "addressLocality": "Roma",
+                        "addressLocality": "Forlì",
                         "addressCountry": "IT"
                     },
-                    "description": "Campus di formazione calcistica d'eccellenza a Roma."
+                    "description": "Campus di formazione calcistica d'eccellenza."
                 }}
             />
 

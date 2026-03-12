@@ -37,31 +37,42 @@ const ContactSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    const subject = `Richiesta Info: ${formData.name}`;
-    const body = `Nome: ${formData.name}
-Email: ${formData.email}
-Telefono: ${formData.phone}
-Programma: ${formData.program}
-Messaggio: ${formData.message}`;
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
-    const mailtoLink = `mailto:accademy.19@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      if (!response.ok) {
+        throw new Error('Errore durante l\'invio');
+      }
 
-    window.location.href = mailtoLink;
+      toast({
+        className: "bg-black border border-accent text-accent",
+        title: "✅ Messaggio Inviato",
+        description: "Abbiamo ricevuto la tua richiesta. Ti risponderemo a breve!",
+      });
 
-    toast({
-      className: "bg-black border border-accent text-accent",
-      title: "✅ Apertura client email...",
-      description: "Si prega di inviare l'email dal proprio client.",
-    });
-
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      program: '',
-      message: ''
-    });
-    setIsSubmitting(false);
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        program: '',
+        message: ''
+      });
+    } catch (error) {
+      console.error('Email error:', error);
+      toast({
+        variant: "destructive",
+        title: "❌ Errore",
+        description: "Non è stato possibile inviare il messaggio. Riprova più tardi o contattaci telefonicamente.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -89,18 +100,18 @@ Messaggio: ${formData.message}`;
                 <div className="space-y-4">
                   <div className="group">
                     <p className="text-xl font-bold uppercase text-white group- transition-all">Forlì</p>
-                    <p className="text-zinc-400 font-mono text-sm">Sede Principale Emilia-Romagna</p>
+                    <p className="text-zinc-400 font-mono text-sm">Via Tripoli 27</p>
                   </div>
                   <div className="group">
                     <p className="text-xl font-bold uppercase text-white group- transition-all">Città di Castello</p>
-                    <p className="text-zinc-400 font-mono text-sm">Località Lerchi (PG)</p>
+                    <p className="text-zinc-400 font-mono text-sm">Via Toscana - Centro Sportivo Lerchi, 06012 (PG)</p>
                   </div>
                 </div>
               </div>
 
               <div>
                 <h4 className="font-bold uppercase tracking-widest mb-2 text-sm text-accent/50 filter">Contatti</h4>
-                <p className="text-xl font-medium text-white cursor-pointer transition-all font-mono">+39 06 1234567</p>
+                <a href="tel:3478894076" className="text-xl font-medium text-white hover:text-accent cursor-pointer transition-all font-mono">347 8894076</a>
                 <p className="text-xl font-medium text-white cursor-pointer transition-all font-mono">info@academy19.it</p>
               </div>
 
@@ -220,7 +231,7 @@ Messaggio: ${formData.message}`;
         <div className="mt-20 grid grid-cols-1 md:grid-cols-2 h-[500px] md:h-80 w-full bg-black border border-accent/20 relative">
           <div className="absolute inset-0 bg-accent/20 mix-blend-color pointer-events-none z-10"></div>
           <iframe
-            src="https://maps.google.com/maps?q=Forl%C3%AC&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            src="https://maps.google.com/maps?q=Via+Tripoli+27,+Forl%C3%AC&t=&z=15&ie=UTF8&iwloc=&output=embed"
             width="100%"
             height="100%"
             style={{ border: 0 }}
@@ -231,7 +242,7 @@ Messaggio: ${formData.message}`;
             className="grayscale contrast-125 hover:grayscale-0 transition-all duration-700 border-b md:border-b-0 md:border-r border-accent/50"
           />
           <iframe
-            src="https://maps.google.com/maps?q=Lerchi,+Citt%C3%A0+di+Castello,+PG&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            src="https://maps.google.com/maps?q=Centro+sportivo+Lerchi+via+toscana,+06012+Citt%C3%A0+di+castello&t=&z=15&ie=UTF8&iwloc=&output=embed"
             width="100%"
             height="100%"
             style={{ border: 0 }}

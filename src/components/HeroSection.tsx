@@ -50,9 +50,9 @@ const HeroSection = () => {
             </span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-zinc-300 max-w-xl mb-12 leading-relaxed font-mono animate-dribble" style={{ animationDelay: '0.4s' }}>
+          <p className="text-2xl md:text-3xl text-zinc-300 max-w-xl mb-12 leading-relaxed font-mono animate-dribble" style={{ animationDelay: '0.4s' }}>
             Non è solo calcio. È disciplina, tecnica e crescita personale.
-            Il percorso d'élite per giovani talenti a Roma.
+            Il percorso d'élite per giovani talenti.
           </p>
 
           {/* CTA Group */}

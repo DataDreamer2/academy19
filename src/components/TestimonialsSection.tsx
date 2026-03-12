@@ -37,8 +37,8 @@ const TestimonialsSection = () => {
                     <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-tighter mb-4">
                         Fiducia <br /> Cieca.
                     </h2>
-                    <p className="text-zinc-400 text-lg font-mono">
-                        Scelto da oltre 200 famiglie a Roma.
+                    <p className="text-zinc-400 text-xl font-mono">
+                        Scelto da oltre 200 famiglie.
                     </p>
                 </div>
 
@@ -46,7 +46,7 @@ const TestimonialsSection = () => {
                     {testimonials.map((t, i) => (
                         <div key={t.id} className="border-l border-accent/30 pl-8 relative group hover:border-accent transition-colors duration-300">
                             <div className="absolute -left-[5px] top-0 w-[9px] h-[9px] bg-accent rounded-none group-hover:scale-150 transition-transform duration-300"></div>
-                            <p className="text-xl md:text-2xl font-medium leading-relaxed mb-6 text-zinc-300 italic font-mono transition-colors">
+                            <p className="text-2xl md:text-3xl font-medium leading-relaxed mb-6 text-zinc-300 italic font-mono transition-colors">
                                 {t.text}
                             </p>
                             <div>

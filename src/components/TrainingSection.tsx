@@ -12,7 +12,7 @@ const TrainingSection = () => {
               I Nostri <br /> Pacchetti
             </h2>
           </div>
-          <p className="text-xl text-zinc-400 max-w-md leading-relaxed pb-2 text-right md:text-left font-mono">
+          <p className="text-2xl text-zinc-400 max-w-md leading-relaxed pb-2 text-right md:text-left font-mono">
             La formazione continua è la chiave per il successo. Scegli il pacchetto che più si adatta alle tue esigenze.
           </p>
         </div>

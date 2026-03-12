@@ -109,7 +109,7 @@ const Footer = () => {
           <div className="text-zinc-500 text-xs font-mono uppercase tracking-widest flex flex-col md:flex-row gap-4 md:gap-8 items-center">
             <span>© {new Date().getFullYear()} Academy.19</span>
             <span className="hidden md:inline">•</span>
-            <span>Via dello Sport, 19 - Roma</span>
+            <span>Via Tripoli 27 - Forlì</span>
             <span className="hidden md:inline">•</span>
             <span>P.IVA 12345678901</span>
           </div>
