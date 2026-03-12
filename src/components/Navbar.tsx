@@ -55,7 +55,7 @@ const Navbar = () => {
                 19
               </div>
               <span className="font-bold text-xl tracking-tight uppercase text-accent">
-                Academy.19
+                Academy19
               </span>
             </Link>
 

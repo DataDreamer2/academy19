@@ -85,7 +85,7 @@ const AboutSection = () => {
                 <div className="aspect-[4/3] bg-black overflow-hidden relative border border-accent/30">
                   <img
                     src={trainingGroup}
-                    alt="Sessione di allenamento Academy.19 - Focus tecnica e coordinazione"
+                    alt="Sessione di allenamento Academy19 - Focus tecnica e coordinazione"
                     className="w-full h-full object-cover grayscale mix-blend-luminosity hover:mix-blend-normal transition-all duration-700 opacity-60 hover:opacity-100"
                   />
                   <div className="absolute inset-0 bg-accent/20 mix-blend-color pointer-events-none"></div>
@@ -102,7 +102,7 @@ const AboutSection = () => {
               <div className="aspect-[3/4] bg-black overflow-hidden relative filter grayscale contrast-125 border border-accent/20">
                 <img
                   src={trainingField}
-                  alt="Liborio Zuppardo - Fondatore e Head Coach di Academy.19"
+                  alt="Liborio Zuppardo - Fondatore e Head Coach di Academy19"
                   className="w-full h-full object-cover opacity-60"
                 />
                 {/* Green tint overlay */}

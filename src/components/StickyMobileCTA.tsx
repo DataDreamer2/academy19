@@ -26,7 +26,7 @@ const StickyMobileCTA = () => {
     };
 
     const handleWhatsApp = () => {
-        window.open('https://wa.me/39061234567?text=Ciao! Vorrei informazioni su Academy.19', '_blank');
+        window.open('https://wa.me/39061234567?text=Ciao! Vorrei informazioni su Academy19', '_blank');
     };
 
     return (

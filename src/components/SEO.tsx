@@ -13,7 +13,7 @@ interface SEOProps {
 export default function SEO({
     title,
     description,
-    name = "Academy.19",
+    name = "Academy19",
     type = "website",
     image = "https://www.academy19.it/img/og-campus.jpg",
     url = "https://www.academy19.it",

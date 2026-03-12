@@ -8,13 +8,13 @@ const Contatti = () => {
     return (
         <>
             <SEO
-                title="Contatti e Iscrizioni Campus Calcio 2026 | Academy.19"
+                title="Contatti e Iscrizioni Campus Calcio 2026 | Academy19"
                 description="Richiedi informazioni per il Campus Calcio 2026. Contattaci per prove gratuite, iscrizioni e dettagli sui nostri percorsi formativi d'élite."
                 url="https://www.academy19.it/contatti"
                 structuredData={{
                     "@context": "https://schema.org",
                     "@type": "LocalBusiness",
-                    "name": "Academy.19",
+                    "name": "Academy19",
                     "url": "https://www.academy19.it/contatti",
                     "telephone": "+39 347 889 4076",
                     "address": {

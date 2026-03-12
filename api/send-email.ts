@@ -13,7 +13,7 @@ export default async function handler(req: any, res: any) {
     // 1. Send notification to Academy19
     const notification = await resend.emails.send({
       from: 'Academy19 <noreply@academy19.it>',
-      to: ['info@academy19.it'],
+      to: ['academy19@libero.it'],
       subject: `Nuova Iscrizione/Richiesta: ${name} - ${program}`,
       replyTo: email,
       html: `
@@ -33,7 +33,7 @@ export default async function handler(req: any, res: any) {
 
     // 2. Send confirmation to the user
     const confirmation = await resend.emails.send({
-      from: 'Academy19 <info@academy19.it>',
+      from: 'Academy19 <academy19@libero.it>',
       to: [email],
       subject: `Conferma Ricezione Richiesta Academy19 - ${name}`,
       html: `

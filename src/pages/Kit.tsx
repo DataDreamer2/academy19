@@ -26,8 +26,8 @@ const Kit = () => {
     return (
         <div className="min-h-screen bg-black text-white selection:bg-accent selection:text-white">
             <SEO
-                title="Kit Ufficiale Academy.19 | Equipaggiamento Tecnico"
-                description="Indossa i colori dell'Academy.19. Scopri il kit ufficiale: abbigliamento tecnico premium progettato per le massime prestazioni sul campo."
+                title="Kit Ufficiale Academy19 | Equipaggiamento Tecnico"
+                description="Indossa i colori dell'Academy19. Scopri il kit ufficiale: abbigliamento tecnico premium progettato per le massime prestazioni sul campo."
                 url="https://academy19.it/kit"
             />
             <Navbar />
@@ -39,7 +39,7 @@ const Kit = () => {
                         Il Tuo <span className="text-accent">Equipaggiamento</span>
                     </h1>
                     <p className="text-gray-400 max-w-2xl mx-auto text-lg md:text-xl">
-                        Indossa i colori dell'Academy.19. Materiali tecnici di altissima qualità progettati per le massime prestazioni sul campo.
+                        Indossa i colori dell'Academy19. Materiali tecnici di altissima qualità progettati per le massime prestazioni sul campo.
                     </p>
                 </div>
 
@@ -49,7 +49,7 @@ const Kit = () => {
                         <div className="aspect-[4/5] overflow-hidden rounded-2xl bg-zinc-900 border border-white/5 relative group">
                             <img
                                 src={activeImage}
-                                alt="Kit Ufficiale Academy.19 - Maglia tecnica e zaino"
+                                alt="Kit Ufficiale Academy19 - Maglia tecnica e zaino"
                                 className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
                                 onError={(e) => {
                                     const target = e.target as HTMLImageElement;
@@ -135,7 +135,7 @@ const Kit = () => {
                                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 text-white text-sm font-semibold uppercase tracking-wider mb-4 border border-white/10">
                                         Miglior Offerta
                                     </div>
-                                    <h3 className="text-3xl font-bold uppercase mb-2">Set Completo Academy.19</h3>
+                                    <h3 className="text-3xl font-bold uppercase mb-2">Set Completo Academy19</h3>
                                     <p className="text-gray-400">Tutto l'abbigliamento ufficiale della stagione.</p>
                                 </div>
 

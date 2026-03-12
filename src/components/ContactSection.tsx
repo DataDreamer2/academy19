@@ -112,7 +112,7 @@ const ContactSection = () => {
               <div>
                 <h4 className="font-bold uppercase tracking-widest mb-2 text-sm text-accent/50 filter">Contatti</h4>
                 <a href="tel:3478894076" className="text-xl font-medium text-white hover:text-accent cursor-pointer transition-all font-mono">347 8894076</a>
-                <p className="text-xl font-medium text-white cursor-pointer transition-all font-mono">info@academy19.it</p>
+                <p className="text-xl font-medium text-white cursor-pointer transition-all font-mono uppercase">ACADEMY19@LIBERO.IT</p>
               </div>
 
               <div>

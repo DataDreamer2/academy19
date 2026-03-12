@@ -6,8 +6,8 @@ const Privacy = () => {
     return (
         <>
             <SEO
-                title="Privacy Policy | Academy.19 - Protezione Dati"
-                description="Leggi l'informativa sulla privacy di Academy.19. Scopri come proteggiamo e gestiamo i tuoi dati personali in conformità con il GDPR."
+                title="Privacy Policy | Academy19 - Protezione Dati"
+                description="Leggi l'informativa sulla privacy di Academy19. Scopri come proteggiamo e gestiamo i tuoi dati personali in conformità con il GDPR."
                 url="https://www.academy19.it/privacy-policy"
             />
             <main className="min-h-screen flex flex-col">

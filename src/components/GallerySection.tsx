@@ -19,7 +19,7 @@ const imageFiles = [
 const galleryItems = imageFiles.map((filename, index) => ({
   id: index + 1,
   src: `/gallery/${filename}`,
-  alt: `Allenamento Academy.19 - Scatto di campo ${index + 1}`,
+  alt: `Allenamento Academy19 - Scatto di campo ${index + 1}`,
   category: 'Academy'
 }));
 

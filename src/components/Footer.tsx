@@ -38,7 +38,7 @@ const Footer = () => {
               <div className="flex items-center justify-center w-12 h-12 bg-accent text-black font-bold text-xl tracking-tighter">
                 19
               </div>
-              <span className="font-bold text-4xl tracking-tight uppercase">Academy.19</span>
+              <span className="font-bold text-4xl tracking-tight uppercase">Academy19</span>
             </div>
             <p className="text-zinc-400 max-w-md text-lg leading-relaxed font-mono">
               Il punto di riferimento per la formazione calcistica d'eccellenza.
@@ -107,7 +107,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-accent/20 pt-10 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-zinc-500 text-xs font-mono uppercase tracking-widest flex flex-col md:flex-row gap-4 md:gap-8 items-center">
-            <span>© {new Date().getFullYear()} Academy.19</span>
+            <span>© {new Date().getFullYear()} Academy19</span>
             <span className="hidden md:inline">•</span>
             <span>Via Tripoli 27 - Forlì</span>
             <span className="hidden md:inline">•</span>

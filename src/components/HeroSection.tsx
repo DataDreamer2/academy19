@@ -19,7 +19,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 overflow-hidden">
         <img
           src={heroImage}
-          alt="Academy.19 Team Celebration - Giovani Campioni"
+          alt="Academy19 Team Celebration - Giovani Campioni"
           className="w-full h-full object-cover opacity-40 mix-blend-luminosity grayscale"
           fetchPriority="high"
         />
