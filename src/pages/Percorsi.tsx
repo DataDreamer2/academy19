@@ -8,19 +8,24 @@ const Percorsi = () => {
     return (
         <>
             <SEO
-                title="Percorsi Formativi d'Élite | Academy.19 Roma"
-                description="Esplora i nostri programmi di allenamento personalizzati. Perfezionamento tecnico e tattico per giovani talenti di ogni livello."
-                url="https://academy19.it/percorsi"
+                title="Campus Calcio Estate 2026: Programmi e Corsi | Academy.19"
+                description="Scopri i programmi del Campus Calcio Estate 2026. Allenamenti personalizzati, Specializzazione Tecnica e formazione d'élite a Roma."
+                url="https://www.academy19.it/percorsi"
                 structuredData={{
                     "@context": "https://schema.org",
                     "@type": "Course",
-                    "name": "Percorsi Formativi Academy.19",
-                    "description": "Programmi di formazione calcistica d'eccellenza a Roma.",
+                    "name": "Campus Calcio Estivo 2026",
+                    "description": "Corso intensivo di perfezionamento calcistico a Roma. Allenamenti d'élite, tecnica individuale e programmi personalizzati per ragazzi.",
                     "provider": {
                         "@type": "Organization",
                         "name": "Academy.19",
-                        "url": "https://academy19.it"
-                    }
+                        "url": "https://www.academy19.it"
+                    },
+                    "offers": {
+                        "@type": "Offer",
+                        "category": "Education"
+                    },
+                    "educationalLevel": "Intermediate"
                 }}
             />
 

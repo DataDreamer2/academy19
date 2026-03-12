@@ -8,7 +8,7 @@ const Cookie = () => {
             <SEO
                 title="Cookie Policy | Academy.19 - Informativa Cookie"
                 description="Informativa estesa sull'uso dei cookie di Academy.19. Scopri quali cookie utilizziamo e come gestire le tue preferenze."
-                url="https://academy19.it/cookie-policy"
+                url="https://www.academy19.it/cookie-policy"
             />
             <main className="min-h-screen flex flex-col">
                 <Navbar />

@@ -13,14 +13,14 @@ const Index = () => {
   return (
     <>
       <SEO
-        title="Academy.19 | Campus di Formazione Calcistica d'Eccellenza Roma"
-        description="Academy.19 è il campus di formazione calcistica d'eccellenza a Roma. Percorsi d'élite, tecnica individuale e crescita per giovani calciatori."
-        url="https://academy19.it"
+        title="Campus Calcio Estivo 2026 per Ragazzi – Academy.19 Roma"
+        description="Iscrizioni aperte per il Campus Calcio Estivo 2026 a Roma. Formazione calcistica d'eccellenza, tecnica individuale e divertimento per giovani calciatori."
+        url="https://www.academy19.it"
         structuredData={{
           "@context": "https://schema.org",
-          "@type": "SportsClub",
+          "@type": "SportsOrganization",
           "name": "Academy.19",
-          "url": "https://academy19.it",
+          "url": "https://www.academy19.it",
           "logo": "https://academy19.it/favicon.ico",
           "description": "Campus di formazione calcistica d'eccellenza a Roma.",
           "address": {

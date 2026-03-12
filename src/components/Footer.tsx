@@ -17,7 +17,7 @@ const Footer = () => {
     programs: [
       { label: 'Pacchetti Lezioni', href: '/percorsi' },
       { label: 'Kit Ufficiale', href: '/kit' },
-      { label: 'Iscriviti Ora', href: '/contatti' }
+      { label: 'Iscriviti al Campus', href: '/contatti' }
     ],
     legal: [
       { label: 'Privacy Policy', href: '/privacy-policy' },

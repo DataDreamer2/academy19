@@ -8,7 +8,7 @@ const Termini = () => {
             <SEO
                 title="Termini e Condizioni | Academy.19 - Regolamento"
                 description="Consulta i termini e le condizioni d'uso di Academy.19. Regolamento interno, iscrizioni e condizioni generali del servizio."
-                url="https://academy19.it/termini-e-condizioni"
+                url="https://www.academy19.it/termini-e-condizioni"
             />
             <main className="min-h-screen flex flex-col">
                 <Navbar />

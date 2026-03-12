@@ -1,6 +1,6 @@
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import heroImage from '@/assets/hero-football.jpg';
+import heroImage from '@/assets/team-celebration.jpg';
 
 const HeroSection = () => {
   const scrollToSection = (href: string) => {
@@ -19,7 +19,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 overflow-hidden">
         <img
           src={heroImage}
-          alt="Academy.19 Football Training"
+          alt="Academy.19 Team Celebration - Giovani Campioni"
           className="w-full h-full object-cover opacity-40 mix-blend-luminosity grayscale"
           fetchPriority="high"
         />
@@ -44,7 +44,7 @@ const HeroSection = () => {
 
           {/* Main Headline - BIG TYPE */}
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-accent tracking-tighter leading-[0.9] mb-8 animate-kick-in" style={{ animationDelay: '0.2s' }}>
-            FUTURI <br />
+            GIOVANI <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-accent/50">
               CAMPIONI.
             </span>

@@ -77,7 +77,7 @@ const Navbar = () => {
                 <Button
                   className="rounded-none bg-accent hover:bg-accent/80 text-black font-bold tracking-widest uppercase text-xs px-8 py-6 transition-all duration-300"
                 >
-                  Join the Club
+                  Iscriviti al Campus
                 </Button>
               </Link>
             </div>
@@ -113,7 +113,7 @@ const Navbar = () => {
               <Button
                 className="rounded-none bg-accent hover:bg-accent/80 text-black font-bold tracking-widest uppercase text-lg px-8 py-8 w-full"
               >
-                Iscriviti Ora
+                Iscriviti al Campus
               </Button>
             </Link>
           </div>

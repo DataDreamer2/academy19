@@ -15,8 +15,8 @@ export default function SEO({
     description,
     name = "Academy.19",
     type = "website",
-    image = "https://lovable.dev/opengraph-image-p98pqg.png",
-    url = "https://academy19.it",
+    image = "https://www.academy19.it/img/og-campus.jpg",
+    url = "https://www.academy19.it",
     structuredData,
 }: SEOProps) {
     return (

@@ -9,8 +9,8 @@ const Galleria = () => {
         <>
             <SEO
                 title="Galleria Foto ed Eventi | Academy.19"
-                description="Sfoglia la galleria di Academy.19: momenti di campo, tornei ed eventi della nostra accademia calcistica a Roma."
-                url="https://academy19.it/galleria"
+                description="Sfoglia la galleria di Academy.19: momenti dal campus calcio estivo, tornei ed eventi della nostra accademia calcistica a Roma."
+                url="https://www.academy19.it/galleria"
             />
 
             <main className="min-h-screen">
