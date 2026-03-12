@@ -13,8 +13,8 @@ const Index = () => {
   return (
     <>
       <SEO
-        title="Academy.19 | Campus di Formazione Calcistica d'Eccellenza"
-        description="Academy.19 è un campus di formazione calcistica d'eccellenza a Roma. Scopri i nostri percorsi formativi per giovani calciatori di ogni livello."
+        title="Academy.19 | Campus di Formazione Calcistica d'Eccellenza Roma"
+        description="Academy.19 è il campus di formazione calcistica d'eccellenza a Roma. Percorsi d'élite, tecnica individuale e crescita per giovani calciatori."
         url="https://academy19.it"
         structuredData={{
           "@context": "https://schema.org",

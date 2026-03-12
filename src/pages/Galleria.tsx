@@ -8,8 +8,8 @@ const Galleria = () => {
     return (
         <>
             <SEO
-                title="Galleria | Academy.19"
-                description="Guarda le foto e i momenti più belli della nostra academy. Scopri le nostre strutture e i nostri eventi."
+                title="Galleria Foto ed Eventi | Academy.19"
+                description="Sfoglia la galleria di Academy.19: momenti di campo, tornei ed eventi della nostra accademia calcistica a Roma."
                 url="https://academy19.it/galleria"
             />
 

@@ -26,8 +26,9 @@ const Kit = () => {
     return (
         <div className="min-h-screen bg-black text-white selection:bg-accent selection:text-white">
             <SEO
-                title="Kit Ufficiale | Academy.19"
-                description="Scopri il Kit Ufficiale di Academy.19. Il set completo per i nostri atleti: magliette personalizzate, pantaloncino, calzettoni e accessori premium."
+                title="Kit Ufficiale Academy.19 | Equipaggiamento Tecnico"
+                description="Indossa i colori dell'Academy.19. Scopri il kit ufficiale: abbigliamento tecnico premium progettato per le massime prestazioni sul campo."
+                url="https://academy19.it/kit"
             />
             <Navbar />
 
@@ -48,7 +49,7 @@ const Kit = () => {
                         <div className="aspect-[4/5] overflow-hidden rounded-2xl bg-zinc-900 border border-white/5 relative group">
                             <img
                                 src={activeImage}
-                                alt="Kit Ufficiale Academy.19"
+                                alt="Kit Ufficiale Academy.19 - Maglia tecnica e zaino"
                                 className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
                                 onError={(e) => {
                                     const target = e.target as HTMLImageElement;

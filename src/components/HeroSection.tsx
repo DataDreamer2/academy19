@@ -16,10 +16,14 @@ const HeroSection = () => {
       className="relative min-h-screen flex items-center overflow-hidden bg-black"
     >
       {/* Background Image - Desaturated/Tinted green for drama */}
-      <div
-        className="absolute inset-0 bg-cover bg-center opacity-40 mix-blend-luminosity grayscale"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      />
+      <div className="absolute inset-0 overflow-hidden">
+        <img
+          src={heroImage}
+          alt="Academy.19 Football Training"
+          className="w-full h-full object-cover opacity-40 mix-blend-luminosity grayscale"
+          fetchPriority="high"
+        />
+      </div>
 
       {/* Green Tint Overlay */}
       <div className="absolute inset-0 bg-accent/20 mix-blend-color" />

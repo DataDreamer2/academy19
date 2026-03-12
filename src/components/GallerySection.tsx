@@ -19,7 +19,7 @@ const imageFiles = [
 const galleryItems = imageFiles.map((filename, index) => ({
   id: index + 1,
   src: `/gallery/${filename}`,
-  alt: 'Momento Academy',
+  alt: `Allenamento Academy.19 - Scatto di campo ${index + 1}`,
   category: 'Academy'
 }));
 
@@ -50,7 +50,10 @@ const GallerySection = () => {
               <img
                 src={item.src}
                 alt={item.alt}
-                className="w-full h-full object-cover opacity-50 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700 filter grayscale contrast-125 mix-blend-luminosity group-hover:mix-blend-normal"
+                width={600}
+                height={600}
+                loading="lazy"
+                className="w-full h-full object-cover opacity-50 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700 filter grayscale contrast-125 mix-blend-luminosity group-hover:mix-blend-normal will-animate"
               />
 
               {/* Green tint overlay */}

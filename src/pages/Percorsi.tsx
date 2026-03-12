@@ -8,9 +8,20 @@ const Percorsi = () => {
     return (
         <>
             <SEO
-                title="Percorsi Formativi | Academy.19"
-                description="Esplora i nostri percorsi formativi per giovani calciatori. Programmi personalizzati per ogni livello."
+                title="Percorsi Formativi d'Élite | Academy.19 Roma"
+                description="Esplora i nostri programmi di allenamento personalizzati. Perfezionamento tecnico e tattico per giovani talenti di ogni livello."
                 url="https://academy19.it/percorsi"
+                structuredData={{
+                    "@context": "https://schema.org",
+                    "@type": "Course",
+                    "name": "Percorsi Formativi Academy.19",
+                    "description": "Programmi di formazione calcistica d'eccellenza a Roma.",
+                    "provider": {
+                        "@type": "Organization",
+                        "name": "Academy.19",
+                        "url": "https://academy19.it"
+                    }
+                }}
             />
 
             <main className="min-h-screen">

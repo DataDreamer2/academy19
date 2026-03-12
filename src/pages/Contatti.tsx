@@ -8,8 +8,8 @@ const Contatti = () => {
     return (
         <>
             <SEO
-                title="Contatti | Academy.19"
-                description="Contattaci per maggiori informazioni sui nostri percorsi formativi. Iscriviti ora all'Academy.19."
+                title="Contatti e Iscrizioni | Academy.19 Roma"
+                description="Hai domande? Contattaci per informazioni sui corsi, prove gratuite e iscrizioni all'Academy.19. Inizia il tuo percorso d'élite."
                 url="https://academy19.it/contatti"
             />
 

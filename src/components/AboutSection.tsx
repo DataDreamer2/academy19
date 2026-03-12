@@ -46,9 +46,9 @@ const AboutSection = () => {
           {/* Text Content */}
           <div className="lg:col-span-12 flex flex-col justify-between">
             <div>
-              <h3 className="text-3xl font-bold uppercase mb-8 leading-tight">
+                <h2 className="text-3xl font-bold uppercase mb-8 leading-tight">
                 Il Metodo <span className="text-accent">Academy 19</span>
-              </h3>
+              </h2>
               <p className="text-lg text-zinc-300 mb-8 leading-relaxed max-w-4xl font-mono">
                 Il nostro metodo unisce <strong>preparazione tecnica d'élite</strong>, sviluppo <strong>atletico e coordinativo</strong> e crescita <strong>mentale</strong>.
                 Per noi la formazione non è solo allenamento: è costruzione della persona, dentro e fuori dal campo.
@@ -85,7 +85,7 @@ const AboutSection = () => {
                 <div className="aspect-[4/3] bg-black overflow-hidden relative border border-accent/30">
                   <img
                     src={trainingGroup}
-                    alt="Academy training"
+                    alt="Sessione di allenamento Academy.19 - Focus tecnica e coordinazione"
                     className="w-full h-full object-cover grayscale mix-blend-luminosity hover:mix-blend-normal transition-all duration-700 opacity-60 hover:opacity-100"
                   />
                   <div className="absolute inset-0 bg-accent/20 mix-blend-color pointer-events-none"></div>
@@ -102,7 +102,7 @@ const AboutSection = () => {
               <div className="aspect-[3/4] bg-black overflow-hidden relative filter grayscale contrast-125 border border-accent/20">
                 <img
                   src={trainingField}
-                  alt="Liborio Zuppardo"
+                  alt="Liborio Zuppardo - Fondatore e Head Coach di Academy.19"
                   className="w-full h-full object-cover opacity-60"
                 />
                 {/* Green tint overlay */}

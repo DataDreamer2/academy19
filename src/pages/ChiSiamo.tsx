@@ -9,8 +9,8 @@ const ChiSiamo = () => {
     return (
         <>
             <SEO
-                title="Chi Siamo | Academy.19"
-                description="Scopri la storia e la missione di Academy.19, il campus di formazione calcistica d'eccellenza a Roma."
+                title="Chi Siamo | Academy.19 - La Nostra Storia e Filosofia"
+                description="Scopri la missione di Academy.19: formazione calcistica d'eccellenza a Roma guidata da Liborio Zuppardo. Educare prima di allenare."
                 url="https://academy19.it/chi-siamo"
             />
 
