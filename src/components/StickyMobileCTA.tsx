@@ -22,11 +22,11 @@ const StickyMobileCTA = () => {
     };
 
     const handleCall = () => {
-        window.location.href = 'tel:+39061234567';
+        window.location.href = 'tel:3478894076';
     };
 
     const handleWhatsApp = () => {
-        window.open('https://wa.me/39061234567?text=Ciao! Vorrei informazioni su Academy19', '_blank');
+        window.open('https://wa.me/393478894076?text=Ciao! Vorrei informazioni su Academy19', '_blank');
     };
 
     return (
