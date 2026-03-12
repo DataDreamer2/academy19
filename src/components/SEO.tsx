@@ -7,7 +7,7 @@ interface SEOProps {
     type?: string;
     image?: string;
     url?: string;
-    structuredData?: Record<string, any>;
+    structuredData?: Record<string, unknown>;
 }
 
 export default function SEO({
