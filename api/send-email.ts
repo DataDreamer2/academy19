@@ -33,7 +33,7 @@ export default async function handler(req: any, res: any) {
 
     // 2. Send confirmation to the user
     const confirmation = await resend.emails.send({
-      from: 'Academy19 <academy19@libero.it>',
+      from: 'Academy19 <noreply@academy19.it>',
       to: [email],
       subject: `Conferma Ricezione Richiesta Academy19 - ${name}`,
       html: `
@@ -56,8 +56,8 @@ export default async function handler(req: any, res: any) {
     });
 
     return res.status(200).json({ success: true, notificationId: notification.data?.id, confirmationId: confirmation.data?.id });
-  } catch (error) {
-    console.error('Error sending email:', error);
-    return res.status(500).json({ error: 'Failed to send email' });
+  } catch (error: any) {
+    console.error('Resend Error:', error);
+    return res.status(500).json({ error: error.message || 'Failed to send email' });
   }
 }

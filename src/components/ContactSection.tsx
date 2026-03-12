@@ -47,7 +47,8 @@ const ContactSection = () => {
       });
 
       if (!response.ok) {
-        throw new Error('Errore durante l\'invio');
+        const errorData = await response.json().catch(() => ({}));
+        throw new Error(errorData.error || 'Errore durante l\'invio');
       }
 
       toast({
