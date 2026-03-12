@@ -1,12 +1,19 @@
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useNavigate } from 'react-router-dom';
 import heroImage from '@/assets/team-celebration.jpg';
 
 const HeroSection = () => {
+  const navigate = useNavigate();
+  
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      // If the anchor is a route, navigate to it
+      const target = href.replace('#', '/');
+      navigate(target);
     }
   };
 

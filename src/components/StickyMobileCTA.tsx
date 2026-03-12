@@ -1,9 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Phone, MessageCircle, Calendar } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const StickyMobileCTA = () => {
     const [isVisible, setIsVisible] = useState(false);
+    const navigate = useNavigate();
+    const location = useLocation();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -18,6 +21,8 @@ const StickyMobileCTA = () => {
         const element = document.querySelector('#contatti');
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
+        } else {
+            navigate('/contatti');
         }
     };
 

@@ -88,7 +88,7 @@ const ContactSection = () => {
           {/* Info Side */}
           <div>
             <h2 className="text-5xl md:text-7xl font-bold uppercase tracking-tighter mb-8 text-accent">
-              Entra nel <br /> Club.
+              Entra in <br /> Academy19.
             </h2>
             <p className="text-xl text-zinc-400 mb-12 max-w-md leading-relaxed font-mono">
               Vieni a provare il nostro metodo. La prima sessione è gratuita e senza impegno.
@@ -101,7 +101,7 @@ const ContactSection = () => {
                 <div className="space-y-4">
                   <div className="group">
                     <p className="text-xl font-bold uppercase text-white group- transition-all">Forlì</p>
-                    <p className="text-zinc-400 font-mono text-sm">Via Tripoli 27</p>
+                    <p className="text-zinc-400 font-mono text-sm">Via Tripoli 137</p>
                   </div>
                   <div className="group">
                     <p className="text-xl font-bold uppercase text-white group- transition-all">Città di Castello</p>
@@ -232,7 +232,7 @@ const ContactSection = () => {
         <div className="mt-20 grid grid-cols-1 md:grid-cols-2 h-[500px] md:h-80 w-full bg-black border border-accent/20 relative">
           <div className="absolute inset-0 bg-accent/20 mix-blend-color pointer-events-none z-10"></div>
           <iframe
-            src="https://maps.google.com/maps?q=Via+Tripoli+27,+Forl%C3%AC&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            src="https://maps.google.com/maps?q=Via+Tripoli+137,+Forl%C3%AC&t=&z=15&ie=UTF8&iwloc=&output=embed"
             width="100%"
             height="100%"
             style={{ border: 0 }}

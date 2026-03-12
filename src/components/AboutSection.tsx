@@ -36,9 +36,6 @@ const AboutSection = () => {
               La Nostra <br /> Filosofia
             </h2>
           </div>
-          <p className="text-2xl text-zinc-400 max-w-md leading-relaxed pb-2 font-mono">
-            Dal 2015, ridefiniamo gli standard della formazione calcistica giovanile.
-          </p>
         </div>
 
         {/* Content Grid */}
