@@ -1,8 +1,8 @@
 import { Target, Users, Trophy, Heart } from 'lucide-react';
 import trainingGroup from '@/assets/training-group.jpg';
 import trainingField from '@/assets/training-field.jpg';
-import aboutUser1 from '@/assets/about-user-1.jpg';
-import aboutUser2 from '@/assets/about-user-2.jpg';
+import aboutUser1 from '@/assets/about-highlight-1.jpg';
+import aboutUser2 from '@/assets/about-highlight-2.jpg';
 import liborioUser from '@/assets/liborio-user.jpg';
 
 const values = [

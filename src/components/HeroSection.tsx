@@ -1,42 +1,40 @@
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
-import heroTraining from '@/assets/hero-bg-training.jpg';
+import heroColorful from '@/assets/hero-bg-colorful.jpg';
 
 const HeroSection = () => {
-  const navigate = useNavigate();
-  
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      // If the anchor is a route, navigate to it
-      const target = href.replace('#', '/');
-      navigate(target);
-    }
-  };
+    const navigate = useNavigate();
 
-  return (
-    <section
-      id="home"
-      className="relative min-h-screen mobile-xs:min-h-[100dvh] flex items-center overflow-hidden bg-black"
-    >
-      {/* Background Image - Desaturated/Tinted green for drama */}
-      <div className="absolute inset-0 overflow-hidden">
-        <img
-          src={heroTraining}
-          alt="Academy19 - Allenamento Giovani Campioni"
-          className="w-full h-full object-cover opacity-60 mix-blend-luminosity"
-          fetchPriority="high"
-        />
-      </div>
+    const scrollToSection = (href: string) => {
+        const element = document.querySelector(href);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        } else {
+            // If the anchor is a route, navigate to it
+            const target = href.replace('#', '/');
+            navigate(target);
+        }
+    };
 
-      {/* Green Tint Overlay */}
-      <div className="absolute inset-0 bg-accent/20 mix-blend-color" />
+    return (
+        <section
+            id="home"
+            className="relative min-h-screen mobile-xs:min-h-[100dvh] flex items-center overflow-hidden bg-black"
+        >
+            {/* Background Image - COLORFUL */}
+            <div className="absolute inset-0 overflow-hidden">
+                <img
+                    src={heroColorful}
+                    alt="Academy19 - Giovani Campioni"
+                    className="w-full h-full object-cover opacity-80"
+                    fetchPriority="high"
+                />
+            </div>
 
-      {/* Overlay Gradient for text readability */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent" />
+            {/* Subtle Gradient for text readability - keeping it but lighter */}
+            <div className="absolute inset-0 bg-black/40" />
+            <div className="absolute inset-0 bg-gradient-to-r from-black via-black/60 to-transparent" />
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 md:px-12 pt-28 md:pt-20">
