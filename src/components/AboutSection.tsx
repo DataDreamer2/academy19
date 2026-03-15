@@ -33,12 +33,10 @@ const AboutSection = () => {
     <section id="chi-siamo" className="py-24 bg-black text-accent border-t border-accent/20">
       <div className="container mx-auto px-6 md:px-12">
         {/* Header - Minimal */}
-        <div className="mb-20 border-b border-accent/20 pb-8 flex flex-col md:flex-row items-end justify-between gap-8">
-          <div>
-            <h2 className="text-[clamp(2.5rem,10vw,4.5rem)] font-bold tracking-tighter uppercase mb-4 leading-[1] md:leading-tight">
-              La Nostra <br /> Filosofia
-            </h2>
-          </div>
+        <div className="mb-20 border-b border-accent/20 pb-8 max-w-4xl">
+          <h2 className="text-[clamp(2.5rem,10vw,4.5rem)] font-bold tracking-tighter uppercase mb-4 leading-[1] md:leading-tight">
+            La Nostra <br /> Filosofia
+          </h2>
         </div>
 
         {/* Content Grid */}

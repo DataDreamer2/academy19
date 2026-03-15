@@ -29,13 +29,11 @@ const GallerySection = () => {
   return (
     <section id="galleria" className="py-24 bg-black border-b border-accent/20">
       <div className="container mx-auto px-6 md:px-12">
-        <div className="flex flex-col md:flex-row items-end justify-between gap-8 mb-20 border-b border-accent/20 pb-8">
-          <div>
-            <h2 className="text-[clamp(2.5rem,10vw,4.5rem)] font-bold uppercase tracking-tighter mb-4 text-accent leading-[1] md:leading-tight">
-              Momenti <br /> Unici.
-            </h2>
-          </div>
-          <p className="text-xl text-zinc-400 text-right md:text-left font-mono">
+        <div className="mb-20 border-b border-accent/20 pb-8 max-w-4xl">
+          <h2 className="text-[clamp(2.5rem,10vw,4.5rem)] font-bold uppercase tracking-tighter mb-6 text-accent leading-[1] md:leading-tight">
+            Momenti <br /> Unici.
+          </h2>
+          <p className="text-xl text-zinc-400 font-mono">
             L'intensità e la passione di ogni allenamento.
           </p>
         </div>

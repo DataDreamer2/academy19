@@ -6,13 +6,11 @@ const TrainingSection = () => {
   return (
     <section id="percorsi" className="py-24 bg-black text-accent border-t border-accent/20">
       <div className="container mx-auto px-6 md:px-12">
-        <div className="flex flex-col md:flex-row items-end justify-between gap-8 mb-20 border-b border-accent/20 pb-8">
-          <div>
-            <h2 className="text-[clamp(2.5rem,10vw,4.5rem)] font-bold tracking-tighter uppercase mb-4 leading-[1] md:leading-tight">
-              I Nostri <br /> Pacchetti
-            </h2>
-          </div>
-          <p className="text-2xl text-zinc-400 max-w-md leading-relaxed pb-2 text-right md:text-left font-mono">
+        <div className="mb-20 border-b border-accent/20 pb-8 max-w-4xl">
+          <h2 className="text-[clamp(2.5rem,10vw,4.5rem)] font-bold tracking-tighter uppercase mb-6 leading-[1] md:leading-tight">
+            I Nostri <br /> Pacchetti
+          </h2>
+          <p className="text-xl md:text-2xl text-zinc-400 leading-relaxed font-mono">
             La formazione continua è la chiave per il successo. Scegli il pacchetto che più si adatta alle tue esigenze.
           </p>
         </div>
