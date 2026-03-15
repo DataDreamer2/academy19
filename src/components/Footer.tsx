@@ -35,10 +35,14 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="md:col-span-5">
             <div className="flex items-center gap-3 mb-8">
-              <div className="flex items-center justify-center w-12 h-12 bg-accent text-black font-bold text-xl tracking-tighter">
-                19
+              <div className="relative flex items-center justify-center w-12 h-12 overflow-hidden border border-accent/20">
+                <img 
+                  src="/images/logo-academy.jpg" 
+                  alt="Academy19 Logo" 
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <span className="font-bold text-4xl tracking-tight uppercase">Academy19</span>
+              <span className="font-bold text-4xl tracking-tight uppercase text-accent">Academy19</span>
             </div>
             <p className="text-zinc-400 max-w-md text-lg leading-relaxed font-mono">
               Il punto di riferimento per la formazione calcistica d'eccellenza.

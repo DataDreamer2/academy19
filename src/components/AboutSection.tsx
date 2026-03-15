@@ -1,9 +1,9 @@
 import { Target, Users, Trophy, Heart } from 'lucide-react';
 import trainingGroup from '@/assets/training-group.jpg';
 import trainingField from '@/assets/training-field.jpg';
-import facilities from '@/assets/facilities.jpg';
-import coach1 from '@/assets/coach-1.jpg';
-import coach2 from '@/assets/coach-2.jpg';
+import aboutUser1 from '@/assets/about-user-1.jpg';
+import aboutUser2 from '@/assets/about-user-2.jpg';
+import liborioUser from '@/assets/liborio-user.jpg';
 
 const values = [
   {
@@ -95,25 +95,25 @@ const AboutSection = () => {
               <div className="grid lg:grid-cols-2 gap-12 items-center mb-24">
                 <div className="aspect-[4/3] bg-black overflow-hidden relative border border-accent/30 order-2 lg:order-1 group">
                   <img
-                    src={facilities}
-                    alt="Le nostre strutture d'élite"
+                    src={aboutUser1}
+                    alt="Le nostre attività"
                     className="w-full h-full object-cover transition-all duration-700 opacity-80 group-hover:opacity-100 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-accent/10 mix-blend-color pointer-events-none"></div>
                 </div>
                 <div className="space-y-6 order-1 lg:order-2">
-                    <h3 className="text-4xl font-bold uppercase text-white">Ambiente d'Élite</h3>
+                    <h3 className="text-4xl font-bold uppercase text-white">Atmosfera di Eccellenza</h3>
                     <p className="text-lg text-zinc-300 font-mono leading-relaxed">
-                        Le nostre strutture sono selezionate per offrire il massimo comfort e le migliori condizioni di allenamento. Campi di ultima generazione e attrezzature tecniche professionali per permettere ad ogni atleta di esprimersi al meglio.
+                        In Academy 19 l’atmosfera che si respira è quella del grande calcio. Ogni allenamento è un’immersione in un contesto professionale dove la concentrazione, il rispetto reciproco e la voglia di superarsi creano l’ambiente ideale per la crescita.
                     </p>
                     <div className="grid grid-cols-2 gap-4 pt-4">
                         <div className="p-4 border border-accent/20 bg-accent/5">
-                            <span className="text-accent font-bold block text-2xl">TOP</span>
-                            <span className="text-xs uppercase tracking-widest text-zinc-400 font-mono">Strutture</span>
+                            <span className="text-accent font-bold block text-2xl">FOCUS</span>
+                            <span className="text-xs uppercase tracking-widest text-zinc-400 font-mono">Attitudine</span>
                         </div>
                         <div className="p-4 border border-accent/20 bg-accent/5">
                             <span className="text-accent font-bold block text-2xl">PRO</span>
-                            <span className="text-xs uppercase tracking-widest text-zinc-400 font-mono">Equipment</span>
+                            <span className="text-xs uppercase tracking-widest text-zinc-400 font-mono">Mindset</span>
                         </div>
                     </div>
                 </div>
@@ -128,7 +128,7 @@ const AboutSection = () => {
             <div className="lg:col-span-5 relative">
               <div className="aspect-[3/4] bg-black overflow-hidden relative border border-accent/20 group">
                 <img
-                  src="/images/liborio-zuppardo.jpg"
+                  src={liborioUser}
                   alt="Liborio Zuppardo - Fondatore e Head Coach di Academy19"
                   className="w-full h-full object-cover opacity-100 group-hover:scale-105 transition-transform duration-700"
                 />
@@ -156,10 +156,7 @@ const AboutSection = () => {
               </p>
               <div className="grid grid-cols-2 gap-4 my-8">
                   <div className="aspect-video relative overflow-hidden border border-accent/20">
-                      <img src={coach1} alt="Liborio Zuppardo Coaching" className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity" />
-                  </div>
-                  <div className="aspect-video relative overflow-hidden border border-accent/20">
-                      <img src={coach2} alt="Technical Staff Academy 19" className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity" />
+                      <img src={aboutUser2} alt="Dettagli Tecnici Academy 19" className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity" />
                   </div>
               </div>
               <p className="text-lg text-zinc-300 font-mono leading-relaxed">
