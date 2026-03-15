@@ -1,7 +1,7 @@
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
-import heroColorful from '@/assets/hero-bg-colorful.jpg';
+import heroNew from '@/assets/hero-bg-new.jpg';
 
 const HeroSection = () => {
     const navigate = useNavigate();
@@ -22,12 +22,12 @@ const HeroSection = () => {
             id="home"
             className="relative min-h-screen mobile-xs:min-h-[100dvh] flex items-center overflow-hidden bg-black"
         >
-            {/* Background Image - COLORFUL */}
+            {/* Background Image - NEW COLORFUL */}
             <div className="absolute inset-0 overflow-hidden">
                 <img
-                    src={heroColorful}
+                    src={heroNew}
                     alt="Academy19 - Giovani Campioni"
-                    className="w-full h-full object-cover opacity-80"
+                    className="w-full h-full object-cover opacity-90"
                     fetchPriority="high"
                 />
             </div>
