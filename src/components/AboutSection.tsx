@@ -35,7 +35,7 @@ const AboutSection = () => {
         {/* Header - Minimal */}
         <div className="mb-20 border-b border-accent/20 pb-8 flex flex-col md:flex-row items-end justify-between gap-8">
           <div>
-            <h2 className="text-5xl md:text-7xl font-bold tracking-tighter uppercase mb-4">
+            <h2 className="text-[clamp(2.5rem,10vw,4.5rem)] font-bold tracking-tighter uppercase mb-4 leading-[1] md:leading-tight">
               La Nostra <br /> Filosofia
             </h2>
           </div>
@@ -102,7 +102,7 @@ const AboutSection = () => {
                   <div className="absolute inset-0 bg-accent/10 mix-blend-color pointer-events-none"></div>
                 </div>
                 <div className="space-y-6 order-1 lg:order-2">
-                    <h3 className="text-4xl font-bold uppercase text-white">Atmosfera di Eccellenza</h3>
+                    <h3 className="text-[clamp(2rem,6vw,3rem)] font-bold uppercase text-white leading-tight">Atmosfera di Eccellenza</h3>
                     <p className="text-lg text-zinc-300 font-mono leading-relaxed">
                         In Academy 19 l’atmosfera che si respira è quella del grande calcio. Ogni allenamento è un’immersione in un contesto professionale dove la concentrazione, il rispetto reciproco e la voglia di superarsi creano l’ambiente ideale per la crescita.
                     </p>
@@ -149,7 +149,7 @@ const AboutSection = () => {
             </div>
 
             <div className="lg:col-span-7 space-y-6">
-              <h3 className="text-4xl font-bold uppercase mb-4 text-white">La Mia Storia</h3>
+              <h3 className="text-[clamp(2rem,6vw,3rem)] font-bold uppercase mb-4 text-white leading-tight">La Mia Storia</h3>
               <p className="text-lg text-zinc-300 font-mono leading-relaxed">
                 Il calcio per me non è mai stato solo uno sport. È stata una scelta di vita.
                 A 15 anni ho lasciato la mia terra, la Sicilia. Non è stata una decisione semplice: significava allontanarmi dalla famiglia, dagli amici, dalle certezze di ogni giorno. C'erano emozione, paura, sacrificio. Ma c'era soprattutto un sogno troppo grande per restare fermo.

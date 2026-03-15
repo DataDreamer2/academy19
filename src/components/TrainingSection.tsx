@@ -8,7 +8,7 @@ const TrainingSection = () => {
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row items-end justify-between gap-8 mb-20 border-b border-accent/20 pb-8">
           <div>
-            <h2 className="text-5xl md:text-7xl font-bold tracking-tighter uppercase mb-4">
+            <h2 className="text-[clamp(2.5rem,10vw,4.5rem)] font-bold tracking-tighter uppercase mb-4 leading-[1] md:leading-tight">
               I Nostri <br /> Pacchetti
             </h2>
           </div>
@@ -20,7 +20,7 @@ const TrainingSection = () => {
         {/* Packages and Kit */}
         <div className="grid md:grid-cols-2 gap-12">
           {/* Pacchetti Lezioni */}
-          <div className="p-12 bg-black border border-accent/20 flex flex-col justify-between relative overflow-hidden">
+          <div className="p-6 md:p-12 bg-black border border-accent/20 flex flex-col justify-between relative overflow-hidden">
             {/* Neon glow effect in corner */}
             <div className="absolute top-0 right-0 w-32 h-32 bg-accent/10 blur-[50px] pointer-events-none rounded-full"></div>
 
@@ -34,7 +34,7 @@ const TrainingSection = () => {
                   <Link
                     key={num}
                     to={`/contatti?program=pacchetto-${num}`}
-                    className="group relative p-8 border border-accent/20 hover:border-accent bg-black hover:bg-accent/5 transition-all duration-300 flex flex-col items-center justify-center text-center overflow-hidden shadow-none"
+                    className="group relative p-4 mobile:p-8 border border-accent/20 hover:border-accent bg-black hover:bg-accent/5 transition-all duration-300 flex flex-col items-center justify-center text-center overflow-hidden shadow-none"
                   >
                     <span className="text-5xl font-bold mb-2 transition-transform group-hover:-translate-y-2">{num}</span>
                     <span className="text-sm uppercase tracking-widest text-zinc-400 group-hover:text-white transition-colors font-mono">Lezioni</span>
@@ -52,7 +52,7 @@ const TrainingSection = () => {
           </div>
 
           {/* Kit Ufficiale */}
-          <div className="p-12 bg-accent text-black flex flex-col justify-between">
+          <div className="p-8 md:p-12 bg-accent text-black flex flex-col justify-between">
             <div>
               <h3 className="text-3xl font-bold uppercase mb-8 flex items-center gap-4 border-b border-black/20 pb-4">
                 Kit Ufficiale
@@ -82,10 +82,10 @@ const TrainingSection = () => {
         </div>
 
         {/* Call to Action Banner */}
-        <div className="mt-20 border border-accent p-12 md:p-20 text-center relative overflow-hidden bg-black group">
+        <div className="mt-20 border border-accent p-8 md:p-20 text-center relative overflow-hidden bg-black group">
           <div className="absolute inset-0 bg-accent/5 group-hover:bg-accent/10 transition-colors duration-500"></div>
           <div className="relative z-10">
-            <h3 className="text-4xl md:text-6xl font-bold text-accent uppercase mb-8 tracking-tight">
+            <h3 className="text-[clamp(2rem,8vw,3.5rem)] font-bold text-accent uppercase mb-8 tracking-tighter leading-[1]">
               La Prossima Stagione <br /> Inizia Adesso.
             </h3>
             <Link to="/contatti">

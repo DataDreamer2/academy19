@@ -58,7 +58,7 @@ const Navbar = () => {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
-              <span className="font-bold text-xl tracking-tight uppercase text-accent">
+              <span className="font-bold text-lg mobile:text-xl tracking-tight uppercase text-accent">
                 Academy19
               </span>
             </Link>
@@ -115,7 +115,7 @@ const Navbar = () => {
             ))}
             <Link to="/contatti" className="mt-8 w-full">
               <Button
-                className="rounded-none bg-accent hover:bg-accent/80 text-black font-bold tracking-widest uppercase text-lg px-8 py-8 w-full"
+                className="rounded-none bg-accent hover:bg-accent/80 text-black font-bold tracking-widest uppercase text-base mobile:text-lg px-6 mobile:px-8 py-6 mobile:py-8 w-full"
               >
                 Iscriviti al Campus
               </Button>

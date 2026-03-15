@@ -13,6 +13,13 @@ export default {
 				'2xl': '1400px'
 			}
 		},
+		screens: {
+			'mobile-xs': '320px',
+			'mobile': '375px',
+			'tablet': '768px',
+			'desktop': '1024px',
+			'widescreen': '1440px',
+		},
 		extend: {
 			colors: {
 				border: 'hsl(var(--border))',

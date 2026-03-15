@@ -13,9 +13,7 @@ const imageFiles = [
   "img_3702.jpg",
   "img_3712.jpg",
   "img_3893.jpg",
-  "img_4551.jpg",
-  "team-celebration.jpg",
-  "training-session.jpg"
+  "img_4551.jpg"
 ];
 
 const galleryItems = imageFiles.map((filename, index) => ({
@@ -33,7 +31,7 @@ const GallerySection = () => {
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row items-end justify-between gap-8 mb-20 border-b border-accent/20 pb-8">
           <div>
-            <h2 className="text-5xl md:text-7xl font-bold uppercase tracking-tighter mb-4 text-accent">
+            <h2 className="text-[clamp(2.5rem,10vw,4.5rem)] font-bold uppercase tracking-tighter mb-4 text-accent leading-[1] md:leading-tight">
               Momenti <br /> Unici.
             </h2>
           </div>
@@ -42,7 +40,7 @@ const GallerySection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
+        <div className="grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3 gap-2">
           {galleryItems.map((item, index) => (
               <div
                 key={item.id + index} // Key fix for demo duplicate

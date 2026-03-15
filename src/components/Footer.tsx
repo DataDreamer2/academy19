@@ -29,9 +29,9 @@ const Footer = () => {
 
 
   return (
-    <footer className="bg-black text-accent py-20 border-t border-accent/20">
+    <footer className="bg-black text-accent py-16 md:py-20 border-t border-accent/20">
       <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-12 gap-12 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-20">
           {/* Brand Column */}
           <div className="md:col-span-5">
             <div className="flex items-center gap-3 mb-8">
@@ -54,8 +54,8 @@ const Footer = () => {
           <div className="hidden md:block md:col-span-1"></div>
 
           {/* Quick Links */}
-          <div className="md:col-span-2">
-            <h4 className="font-bold text-sm tracking-widest uppercase mb-8 border-b border-accent/30 pb-2 inline-block">Menu</h4>
+          <div className="col-span-1 md:col-span-2">
+            <h4 className="font-bold text-sm tracking-widest uppercase mb-6 md:mb-8 border-b border-accent/30 pb-2 inline-block">Menu</h4>
             <ul className="space-y-4">
               {footerLinks.quickLinks.map((link) => (
                 <li key={link.label}>
@@ -72,8 +72,8 @@ const Footer = () => {
           </div>
 
           {/* Programs */}
-          <div className="md:col-span-2">
-            <h4 className="font-bold text-sm tracking-widest uppercase mb-8 border-b border-accent/30 pb-2 inline-block">Percorsi</h4>
+          <div className="col-span-1 md:col-span-2">
+            <h4 className="font-bold text-sm tracking-widest uppercase mb-6 md:mb-8 border-b border-accent/30 pb-2 inline-block">Percorsi</h4>
             <ul className="space-y-4">
               {footerLinks.programs.map((link) => (
                 <li key={link.label}>
@@ -90,8 +90,8 @@ const Footer = () => {
           </div>
 
           {/* Legal */}
-          <div className="md:col-span-2">
-            <h4 className="font-bold text-sm tracking-widest uppercase mb-8 border-b border-accent/30 pb-2 inline-block">Note Legali</h4>
+          <div className="col-span-1 md:col-span-2">
+            <h4 className="font-bold text-sm tracking-widest uppercase mb-6 md:mb-8 border-b border-accent/30 pb-2 inline-block">Note Legali</h4>
             <ul className="space-y-4">
               {footerLinks.legal.map((link) => (
                 <li key={link.label}>
