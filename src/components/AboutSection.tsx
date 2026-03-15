@@ -1,5 +1,5 @@
 import { Target, Users, Trophy, Heart } from 'lucide-react';
-import trainingGroup from '@/assets/training-group.jpg';
+import trainingFundamental from '@/assets/training-fundamental.jpg';
 import trainingField from '@/assets/training-field.jpg';
 import aboutUser1 from '@/assets/about-highlight-1.jpg';
 import aboutUser2 from '@/assets/about-highlight-2.jpg';
@@ -81,7 +81,7 @@ const AboutSection = () => {
                 </div>
                 <div className="aspect-[4/3] bg-black overflow-hidden relative border border-accent/30 group">
                   <img
-                    src={trainingGroup}
+                    src={trainingFundamental}
                     alt="Sessione di allenamento Academy19"
                     className="w-full h-full object-cover transition-all duration-700 opacity-80 group-hover:opacity-100 group-hover:scale-110"
                   />
