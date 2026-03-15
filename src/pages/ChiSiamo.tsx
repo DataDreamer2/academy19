@@ -9,7 +9,7 @@ const ChiSiamo = () => {
     return (
         <>
             <SEO
-                title="Chi Siamo | Academy19 - La Nostra Storia e Filosofia"
+                title="Chi Siamo | academy 19 formazione calcio giovani"
                 description="Scopri la missione di Academy19: campus calcio ragazzi d'eccellenza guidato da Liborio Zuppardo. Dal 2015, educare prima di allenare."
                 url="https://www.academy19.it/chi-siamo"
             />
