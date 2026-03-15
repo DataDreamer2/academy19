@@ -2,6 +2,7 @@ import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
 import heroImage from '@/assets/team-celebration.jpg';
+import heroFootball from '@/assets/hero-football.jpg';
 
 const HeroSection = () => {
   const navigate = useNavigate();
@@ -25,7 +26,7 @@ const HeroSection = () => {
       {/* Background Image - Desaturated/Tinted green for drama */}
       <div className="absolute inset-0 overflow-hidden">
         <img
-          src="/images/hero-bg.jpg"
+          src={heroFootball}
           alt="Academy19 - Giovani Campioni"
           className="w-full h-full object-cover opacity-60 mix-blend-luminosity"
           fetchPriority="high"

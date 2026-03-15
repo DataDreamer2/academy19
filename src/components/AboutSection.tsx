@@ -1,6 +1,9 @@
 import { Target, Users, Trophy, Heart } from 'lucide-react';
 import trainingGroup from '@/assets/training-group.jpg';
 import trainingField from '@/assets/training-field.jpg';
+import facilities from '@/assets/facilities.jpg';
+import coach1 from '@/assets/coach-1.jpg';
+import coach2 from '@/assets/coach-2.jpg';
 
 const values = [
   {
@@ -75,17 +78,44 @@ const AboutSection = () => {
                     <p className="text-accent italic text-xl mb-4 font-mono">"Più ti diverti, più impari."</p>
                     <p className="text-zinc-300 font-mono">
                       Crediamo inoltre che non possa esserci vera crescita senza <strong>educazione</strong>. Rispetto, disciplina, responsabilità e spirito di squadra sono valori che alleniamo ogni giorno, insieme alla tecnica.
-                      Creiamo un ambiente stimolante, positivo e formativo, dove il ragazzo impara a migliorare come atleta e come persona. Il successo sportivo nasce prima dalla crescita umana.
                     </p>
                   </div>
                 </div>
-                <div className="aspect-[4/3] bg-black overflow-hidden relative border border-accent/30">
+                <div className="aspect-[4/3] bg-black overflow-hidden relative border border-accent/30 group">
                   <img
                     src={trainingGroup}
-                    alt="Sessione di allenamento Academy19 - Focus tecnica e coordinazione"
-                    className="w-full h-full object-cover grayscale mix-blend-luminosity hover:mix-blend-normal transition-all duration-700 opacity-60 hover:opacity-100"
+                    alt="Sessione di allenamento Academy19"
+                    className="w-full h-full object-cover transition-all duration-700 opacity-80 group-hover:opacity-100 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-accent/20 mix-blend-color pointer-events-none"></div>
+                  <div className="absolute inset-0 bg-accent/10 mix-blend-color pointer-events-none"></div>
+                </div>
+              </div>
+
+              {/* New Facilities Section */}
+              <div className="grid lg:grid-cols-2 gap-12 items-center mb-24">
+                <div className="aspect-[4/3] bg-black overflow-hidden relative border border-accent/30 order-2 lg:order-1 group">
+                  <img
+                    src={facilities}
+                    alt="Le nostre strutture d'élite"
+                    className="w-full h-full object-cover transition-all duration-700 opacity-80 group-hover:opacity-100 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-accent/10 mix-blend-color pointer-events-none"></div>
+                </div>
+                <div className="space-y-6 order-1 lg:order-2">
+                    <h3 className="text-4xl font-bold uppercase text-white">Ambiente d'Élite</h3>
+                    <p className="text-lg text-zinc-300 font-mono leading-relaxed">
+                        Le nostre strutture sono selezionate per offrire il massimo comfort e le migliori condizioni di allenamento. Campi di ultima generazione e attrezzature tecniche professionali per permettere ad ogni atleta di esprimersi al meglio.
+                    </p>
+                    <div className="grid grid-cols-2 gap-4 pt-4">
+                        <div className="p-4 border border-accent/20 bg-accent/5">
+                            <span className="text-accent font-bold block text-2xl">TOP</span>
+                            <span className="text-xs uppercase tracking-widest text-zinc-400 font-mono">Strutture</span>
+                        </div>
+                        <div className="p-4 border border-accent/20 bg-accent/5">
+                            <span className="text-accent font-bold block text-2xl">PRO</span>
+                            <span className="text-xs uppercase tracking-widest text-zinc-400 font-mono">Equipment</span>
+                        </div>
+                    </div>
                 </div>
               </div>
             </div>
@@ -96,14 +126,14 @@ const AboutSection = () => {
         <div className="border-t border-accent/20 pt-24 mb-24">
           <div className="grid lg:grid-cols-12 gap-16 items-start">
             <div className="lg:col-span-5 relative">
-              <div className="aspect-[3/4] bg-black overflow-hidden relative filter grayscale contrast-125 border border-accent/20">
+              <div className="aspect-[3/4] bg-black overflow-hidden relative border border-accent/20 group">
                 <img
                   src="/images/liborio-zuppardo.jpg"
                   alt="Liborio Zuppardo - Fondatore e Head Coach di Academy19"
-                  className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-cover opacity-100 group-hover:scale-105 transition-transform duration-700"
                 />
-                {/* Green tint overlay */}
-                <div className="absolute inset-0 bg-accent/30 mix-blend-multiply pointer-events-none"></div>
+                {/* Subtle green tint overlay */}
+                <div className="absolute inset-0 bg-accent/5 mix-blend-multiply pointer-events-none group-hover:opacity-0 transition-opacity"></div>
 
                 <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black via-black/80 to-transparent">
                   <h3 className="text-3xl font-bold uppercase text-white">Liborio Zuppardo</h3>
@@ -124,6 +154,14 @@ const AboutSection = () => {
                 Il calcio per me non è mai stato solo uno sport. È stata una scelta di vita.
                 A 15 anni ho lasciato la mia terra, la Sicilia. Non è stata una decisione semplice: significava allontanarmi dalla famiglia, dagli amici, dalle certezze di ogni giorno. C'erano emozione, paura, sacrificio. Ma c'era soprattutto un sogno troppo grande per restare fermo.
               </p>
+              <div className="grid grid-cols-2 gap-4 my-8">
+                  <div className="aspect-video relative overflow-hidden border border-accent/20">
+                      <img src={coach1} alt="Liborio Zuppardo Coaching" className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity" />
+                  </div>
+                  <div className="aspect-video relative overflow-hidden border border-accent/20">
+                      <img src={coach2} alt="Technical Staff Academy 19" className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity" />
+                  </div>
+              </div>
               <p className="text-lg text-zinc-300 font-mono leading-relaxed">
                 Dopo numerosi provini, il mio percorso mi ha portato prima all’<strong className="text-white">Ancona Calcio</strong> e successivamente alla <strong className="text-white">Fiorentina</strong>: tappe decisive che hanno formato non solo il calciatore, ma soprattutto l'uomo.
                 Da oltre vent’anni vivo il calcio con passione e professionalità. Ho avuto la fortuna di vestire le maglie di tante squadre: con alcune ho vinto, con altre ho affrontato momenti difficili. Ogni vittoria mi ha dato consapevolezza, ogni sconfitta mi ha insegnato a non mollare mai.
