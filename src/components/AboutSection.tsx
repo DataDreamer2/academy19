@@ -98,9 +98,9 @@ const AboutSection = () => {
             <div className="lg:col-span-5 relative">
               <div className="aspect-[3/4] bg-black overflow-hidden relative filter grayscale contrast-125 border border-accent/20">
                 <img
-                  src={trainingField}
+                  src="/images/liborio-zuppardo.jpg"
                   alt="Liborio Zuppardo - Fondatore e Head Coach di Academy19"
-                  className="w-full h-full object-cover opacity-60"
+                  className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700"
                 />
                 {/* Green tint overlay */}
                 <div className="absolute inset-0 bg-accent/30 mix-blend-multiply pointer-events-none"></div>

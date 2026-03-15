@@ -49,10 +49,14 @@ const Navbar = () => {
             {/* Logo */}
             <Link
               to="/"
-              className="flex items-center gap-2 group"
+              className="flex items-center gap-3 group"
             >
-              <div className="relative flex items-center justify-center w-10 h-10 bg-accent text-black font-bold text-lg tracking-tighter">
-                19
+              <div className="relative flex items-center justify-center w-12 h-12 overflow-hidden border border-accent/20">
+                <img 
+                  src="/images/logo-academy.jpg" 
+                  alt="Academy19 Logo" 
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
               </div>
               <span className="font-bold text-xl tracking-tight uppercase text-accent">
                 Academy19

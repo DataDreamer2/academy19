@@ -25,9 +25,9 @@ const HeroSection = () => {
       {/* Background Image - Desaturated/Tinted green for drama */}
       <div className="absolute inset-0 overflow-hidden">
         <img
-          src={heroImage}
-          alt="Academy19 Team Celebration - Giovani Campioni"
-          className="w-full h-full object-cover opacity-40 mix-blend-luminosity grayscale"
+          src="/images/hero-bg.jpg"
+          alt="Academy19 - Giovani Campioni"
+          className="w-full h-full object-cover opacity-60 mix-blend-luminosity"
           fetchPriority="high"
         />
       </div>
