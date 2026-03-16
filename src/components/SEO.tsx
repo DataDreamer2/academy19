@@ -15,7 +15,7 @@ export default function SEO({
     description,
     name = "Academy19",
     type = "website",
-    image = "https://www.academy19.it/img/og-campus.jpg",
+    image = "https://www.academy19.it/images/og-new.jpg",
     url = "https://www.academy19.it",
     structuredData,
 }: SEOProps) {
