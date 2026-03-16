@@ -15,12 +15,12 @@ const Index = () => {
       <SEO
         title="academy 19 formazione calcio giovani"
         description="Iscrizioni aperte per il Campus Calcio Estivo 2026. Formazione calcistica d'eccellenza, tecnica individuale e divertimento per giovani calciatori."
-        url="https://www.academy19.it"
+        url="https://academy19.it"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "SportsOrganization",
           "name": "Academy19",
-          "url": "https://www.academy19.it",
+          "url": "https://academy19.it",
           "logo": "https://academy19.it/favicon.ico",
           "description": "Campus di formazione calcistica d'eccellenza.",
           "address": {
