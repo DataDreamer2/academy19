@@ -11,9 +11,6 @@ import Galleria from "./pages/Galleria";
 import Contatti from "./pages/Contatti";
 import Kit from "./pages/Kit";
 import NotFound from "./pages/NotFound";
-import Privacy from "./pages/Privacy";
-import Termini from "./pages/Termini";
-import Cookie from "./pages/Cookie";
 import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
@@ -33,9 +30,6 @@ const App = () => (
             <Route path="/galleria" element={<Galleria />} />
             <Route path="/contatti" element={<Contatti />} />
             <Route path="/kit" element={<Kit />} />
-            <Route path="/privacy-policy" element={<Privacy />} />
-            <Route path="/termini-e-condizioni" element={<Termini />} />
-            <Route path="/cookie-policy" element={<Cookie />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

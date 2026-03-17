@@ -18,11 +18,6 @@ const Footer = () => {
       { label: 'Pacchetti Lezioni', href: '/percorsi' },
       { label: 'Kit Ufficiale', href: '/kit' },
       { label: 'Iscriviti al Campus', href: '/contatti' }
-    ],
-    legal: [
-      { label: 'Privacy Policy', href: '/privacy-policy' },
-      { label: 'Termini e Condizioni', href: '/termini-e-condizioni' },
-      { label: 'Cookie Policy', href: '/cookie-policy' }
     ]
   };
 
@@ -72,28 +67,10 @@ const Footer = () => {
           </div>
 
           {/* Programs */}
-          <div className="col-span-1 md:col-span-2">
+          <div className="col-span-1 md:col-span-3">
             <h4 className="font-bold text-sm tracking-widest uppercase mb-6 md:mb-8 border-b border-accent/30 pb-2 inline-block">Percorsi</h4>
             <ul className="space-y-4">
               {footerLinks.programs.map((link) => (
-                <li key={link.label}>
-                  <Link
-                    to={link.href}
-                    onClick={scrollToTop}
-                    className="text-accent/60 hover:text-accent transition-all font-mono text-sm uppercase"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Legal */}
-          <div className="col-span-1 md:col-span-2">
-            <h4 className="font-bold text-sm tracking-widest uppercase mb-6 md:mb-8 border-b border-accent/30 pb-2 inline-block">Note Legali</h4>
-            <ul className="space-y-4">
-              {footerLinks.legal.map((link) => (
                 <li key={link.label}>
                   <Link
                     to={link.href}
