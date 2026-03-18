@@ -22,14 +22,23 @@ const HeroSection = () => {
             id="home"
             className="relative min-h-screen mobile-xs:min-h-[100dvh] flex items-center overflow-hidden bg-black"
         >
-            {/* Background Image - FULL COLOR */}
+            {/* Background Video - DYNAMIC */}
             <div className="absolute inset-0 overflow-hidden">
-                <img
-                    src={heroNew}
-                    alt="Academy19 - Giovani Campioni"
+                <video
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
                     className="w-full h-full object-cover"
-                    fetchPriority="high"
-                />
+                >
+                    <source src="/video-bg.mp4" type="video/mp4" />
+                    {/* Fallback to image if video fails to load or for very old browsers */}
+                    <img
+                        src={heroNew}
+                        alt="Academy19 - Giovani Campioni"
+                        className="w-full h-full object-cover"
+                    />
+                </video>
             </div>
 
             {/* Subtle uniform overlay for text readability */}
