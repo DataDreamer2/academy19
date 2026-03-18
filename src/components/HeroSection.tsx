@@ -22,17 +22,18 @@ const HeroSection = () => {
             id="home"
             className="relative min-h-screen mobile-xs:min-h-[100dvh] flex items-center overflow-hidden bg-black"
         >
-            {/* Background Image - FULL COLOR & NO OVERLAYS */}
+            {/* Background Image - FULL COLOR */}
             <div className="absolute inset-0 overflow-hidden">
                 <img
                     src={heroNew}
                     alt="Academy19 - Giovani Campioni"
-                    className="w-full h-full object-cover opacity-100"
+                    className="w-full h-full object-cover"
                     fetchPriority="high"
                 />
             </div>
 
-            {/* Very subtle overall dim only if absolutely necessary, but removing as requested */}
+            {/* Subtle uniform overlay for text readability */}
+            <div className="absolute inset-0 bg-black/40" />
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 md:px-12 pt-28 md:pt-20">
@@ -47,7 +48,7 @@ const HeroSection = () => {
 
           {/* Main Headline - BIG TYPE - Added Responsive clamp() */}
           <h1 
-            className="text-[clamp(3.5rem,15vw,9rem)] font-bold text-accent tracking-tighter leading-[0.85] mb-8 animate-kick-in drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)]" 
+            className="text-[clamp(3.5rem,15vw,9rem)] font-bold text-accent tracking-tighter leading-[0.85] mb-8 animate-kick-in drop-shadow-[0_8px_24px_rgba(0,0,0,0.6)]" 
             style={{ animationDelay: '0.2s' }}
           >
             GIOVANI <br />
@@ -56,7 +57,7 @@ const HeroSection = () => {
             </span>
           </h1>
 
-          <p className="text-xl mobile:text-2xl md:text-3xl text-zinc-300 max-w-xl mb-12 leading-relaxed font-mono animate-dribble" style={{ animationDelay: '0.4s' }}>
+          <p className="text-xl mobile:text-2xl md:text-3xl text-zinc-100 max-w-xl mb-12 leading-relaxed font-mono animate-dribble drop-shadow-md" style={{ animationDelay: '0.4s' }}>
             Non è solo calcio. È disciplina, tecnica e crescita personale.
             Il percorso d'élite per giovani talenti.
           </p>
