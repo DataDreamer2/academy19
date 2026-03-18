@@ -29,20 +29,20 @@ const HeroSection = () => {
                     muted
                     loop
                     playsInline
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover brightness-[0.7] contrast-[1.1]"
                 >
                     <source src="/video-bg.mp4" type="video/mp4" />
                     {/* Fallback to image if video fails to load or for very old browsers */}
                     <img
                         src={heroNew}
                         alt="Academy19 - Giovani Campioni"
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover opacity-60"
                     />
                 </video>
             </div>
 
-            {/* Subtle uniform overlay for text readability */}
-            <div className="absolute inset-0 bg-black/40" />
+            {/* Substantial uniform overlay for text readability */}
+            <div className="absolute inset-0 bg-black/60" />
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 md:px-12 pt-28 md:pt-20">
