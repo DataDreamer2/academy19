@@ -22,19 +22,17 @@ const HeroSection = () => {
             id="home"
             className="relative min-h-screen mobile-xs:min-h-[100dvh] flex items-center overflow-hidden bg-black"
         >
-            {/* Background Image - NEW COLORFUL */}
+            {/* Background Image - FULL COLOR & NO OVERLAYS */}
             <div className="absolute inset-0 overflow-hidden">
                 <img
                     src={heroNew}
                     alt="Academy19 - Giovani Campioni"
-                    className="w-full h-full object-cover opacity-90"
+                    className="w-full h-full object-cover opacity-100"
                     fetchPriority="high"
                 />
             </div>
 
-            {/* Subtle Gradient for text readability - keeping it but lighter */}
-            <div className="absolute inset-0 bg-black/40" />
-            <div className="absolute inset-0 bg-gradient-to-r from-black via-black/60 to-transparent" />
+            {/* Very subtle overall dim only if absolutely necessary, but removing as requested */}
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 md:px-12 pt-28 md:pt-20">
@@ -49,7 +47,7 @@ const HeroSection = () => {
 
           {/* Main Headline - BIG TYPE - Added Responsive clamp() */}
           <h1 
-            className="text-[clamp(3.5rem,15vw,9rem)] font-bold text-accent tracking-tighter leading-[0.85] mb-8 animate-kick-in" 
+            className="text-[clamp(3.5rem,15vw,9rem)] font-bold text-accent tracking-tighter leading-[0.85] mb-8 animate-kick-in drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)]" 
             style={{ animationDelay: '0.2s' }}
           >
             GIOVANI <br />

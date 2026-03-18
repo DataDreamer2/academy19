@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Gift, Music, Utensils, Trophy, Star } from "lucide-react";
+import { ArrowRight, Gift, Music, Utensils, Trophy, Star, Dribbble } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const BirthdaySection = () => {
@@ -41,7 +41,8 @@ const BirthdaySection = () => {
             </div>
             <h2 className="text-5xl md:text-7xl font-bold uppercase tracking-tighter leading-none text-white">
               Festeggia in <br /> 
-              <span className="text-accent underline decoration-accent/30 decoration-8 underline-offset-8">Grande</span>
+              <span className="text-accent underline decoration-accent/30 decoration-8 underline-offset-8">Grande!</span>
+              <Dribbble className="inline-block ml-4 w-12 h-12 text-accent animate-bounce-slow" />
             </h2>
             <p className="text-xl text-zinc-400 max-w-xl leading-relaxed font-mono">
               Regala a tuo figlio un compleanno da vero campione. Campo di calcio, 
@@ -77,7 +78,7 @@ const BirthdaySection = () => {
               <img 
                 src="/gallery/foto-compleanni.jpg" 
                 alt="Compleanno Academy19" 
-                className="w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                className="w-full h-auto object-cover"
               />
             </div>
             {/* Decorative boxes */}
