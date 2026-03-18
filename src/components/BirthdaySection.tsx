@@ -1,6 +1,16 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Gift, Music, Utensils, Trophy, Star, Dribbble } from "lucide-react";
+import { ArrowRight, Gift, Music, Utensils, Trophy, Star } from "lucide-react";
 import { Link } from "react-router-dom";
+
+const SoccerBall = ({ className }: { className?: string }) => (
+  <svg 
+    viewBox="0 0 512 512" 
+    className={className} 
+    fill="currentColor"
+  >
+    <path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 448c-110.28 0-200-89.72-200-200S145.72 56 256 56s200 89.72 200 200-89.72 200-200 200zm-51.14-114.71l-50.8-31.52c-4.14-2.57-6.66-7.14-6.66-12.06V208.29c0-4.92 2.52-9.49 6.66-12.06l50.8-31.52c4.14-2.57 9.22-2.57 13.36 0l50.8 31.52c4.14 2.57 6.66 7.14 6.66 12.06v51.42c0 4.92-2.52 9.49-6.66 12.06l-50.8 31.52c-4.14 2.57-9.22 2.57-13.36 0z" />
+  </svg>
+);
 
 const BirthdaySection = () => {
   const features = [
@@ -42,7 +52,7 @@ const BirthdaySection = () => {
             <h2 className="text-5xl md:text-7xl font-bold uppercase tracking-tighter leading-none text-white">
               Festeggia in <br /> 
               <span className="text-accent underline decoration-accent/30 decoration-8 underline-offset-8">Grande!</span>
-              <Dribbble className="inline-block ml-4 w-12 h-12 text-accent animate-bounce-slow" />
+              <SoccerBall className="inline-block ml-4 w-12 h-12 text-accent animate-bounce-slow" />
             </h2>
             <p className="text-xl text-zinc-400 max-w-xl leading-relaxed font-mono">
               Regala a tuo figlio un compleanno da vero campione. Campo di calcio, 
