@@ -30,7 +30,6 @@ const imageFiles = [
   "f5dd4d1f-6432-4543-99de-1ff0f011e88e.JPG",
   "fd5775ad-0cfc-4d20-8e6b-2f45cac285f9.JPG",
   "ff43a292-33b8-4a58-8a12-28ad34bb3a58.JPG",
-  "foto-compleanni.jpg",
   "img_2936.jpg",
   "img_2941.jpg",
   "img_3036.jpg",
