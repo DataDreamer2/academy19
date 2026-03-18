@@ -4,6 +4,7 @@ import trainingField from '@/assets/training-field.jpg';
 import aboutUser1 from '@/assets/about-highlight-1.jpg';
 import aboutUser2 from '@/assets/about-highlight-2.jpg';
 import liborioUser from '@/assets/liborio-storia.jpg';
+import liborioLaurea from '@/assets/liborio-laurea.jpg';
 
 const values = [
   {
@@ -155,6 +156,9 @@ const AboutSection = () => {
               <div className="grid grid-cols-2 gap-4 my-8">
                   <div className="aspect-video relative overflow-hidden border border-accent/20">
                       <img src={aboutUser2} alt="Dettagli Tecnici Academy 19" className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity" />
+                  </div>
+                  <div className="aspect-video relative overflow-hidden border border-accent/20">
+                      <img src={liborioLaurea} alt="Liborio Zuppardo Laurea" className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity" />
                   </div>
               </div>
               <p className="text-lg text-zinc-300 font-mono leading-relaxed">
