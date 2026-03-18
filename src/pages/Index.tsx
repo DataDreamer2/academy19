@@ -5,6 +5,7 @@ import AboutSection from '@/components/AboutSection';
 import NextEventsSection from '@/components/NextEventsSection';
 import TrainingSection from '@/components/TrainingSection';
 import GallerySection from '@/components/GallerySection';
+import BirthdaySection from '@/components/BirthdaySection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import Footer from '@/components/Footer';
 import StickyMobileCTA from '@/components/StickyMobileCTA';
@@ -38,6 +39,7 @@ const Index = () => {
         <AboutSection />
         <TrainingSection />
         <GallerySection />
+        <BirthdaySection />
         <TestimonialsSection />
         <Footer />
         <StickyMobileCTA />

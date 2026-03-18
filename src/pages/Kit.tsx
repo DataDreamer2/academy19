@@ -35,7 +35,7 @@ const Kit = () => {
             <main className="pt-32 pb-20 px-6 md:px-12 max-w-7xl mx-auto">
                 {/* Header Section */}
                 <div className="text-center mb-16 animate-fade-in">
-                    <h1 className="text-5xl md:text-7xl font-bold tracking-tighter uppercase mb-6">
+                    <h1 className="text-4xl md:text-7xl font-bold tracking-tighter uppercase mb-6">
                         Il Tuo <span className="text-accent">Equipaggiamento</span>
                     </h1>
                     <p className="text-gray-400 max-w-2xl mx-auto text-lg md:text-xl">
@@ -91,7 +91,7 @@ const Kit = () => {
                                 <Star size={14} className="fill-accent" />
                                 Premium Quality
                             </div>
-                            <h2 className="text-4xl font-bold tracking-tight uppercase mb-4">Set Completo <br />Academy.19</h2>
+                            <h2 className="text-3xl md:text-4xl font-bold tracking-tight uppercase mb-4">Set Completo <br />Academy19</h2>
                             <p className="text-gray-400 text-lg leading-relaxed">
                                 Il kit ufficiale contiene tutto il necessario per i tuoi allenamenti e le partite. Progettato con tessuti traspiranti di ultima generazione per garantire comfort assoluto e libertà di movimento.
                             </p>
@@ -151,7 +151,7 @@ const Kit = () => {
                                 </ul>
                             </div>
 
-                            <div className="w-full md:w-auto bg-black/50 p-8 rounded-2xl border border-white/5 backdrop-blur-md flex flex-col items-center flex-shrink-0 min-w-[320px]">
+                            <div className="w-full md:w-auto bg-black/50 p-6 md:p-8 rounded-2xl border border-white/5 backdrop-blur-md flex flex-col items-center flex-shrink-0">
                                 <div className="text-center mb-8">
                                     <p className="text-sm text-gray-400 uppercase tracking-widest mb-2 font-semibold font-mono">Prezzo su Richiesta</p>
                                     <div className="text-5xl font-bold tracking-tighter text-white">Full Kit</div>

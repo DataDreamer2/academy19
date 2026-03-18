@@ -27,6 +27,7 @@ const Navbar = () => {
     { to: '/percorsi', label: 'Percorsi' },
     { to: '/galleria', label: 'Galleria' },
     { to: '/kit', label: 'Kit' },
+    { to: '/compleanno-con-academy', label: 'Compleanno' },
     { to: '/contatti', label: 'Contatti' },
   ];
 

@@ -197,6 +197,7 @@ const ContactSection = () => {
                       <SelectItem className="focus:bg-zinc-900 focus:text-white" value="pacchetto-10">Pacchetto 10 Lezioni</SelectItem>
                       <SelectItem className="focus:bg-zinc-900 focus:text-white" value="pacchetto-15">Pacchetto 15 Lezioni</SelectItem>
                       <SelectItem className="focus:bg-zinc-900 focus:text-white" value="pacchetto-20">Pacchetto 20 Lezioni</SelectItem>
+                      <SelectItem className="focus:bg-zinc-900 focus:text-white" value="compleanno-academy">Compleanno con AcademY</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>

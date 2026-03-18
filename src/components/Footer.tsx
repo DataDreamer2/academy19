@@ -12,11 +12,13 @@ const Footer = () => {
       { label: 'Chi Siamo', href: '/chi-siamo' },
       { label: 'Percorsi', href: '/percorsi' },
       { label: 'Galleria', href: '/galleria' },
+      { label: 'Compleanno', href: '/compleanno-con-academy' },
       { label: 'Contatti', href: '/contatti' }
     ],
     programs: [
       { label: 'Pacchetti Lezioni', href: '/percorsi' },
       { label: 'Kit Ufficiale', href: '/kit' },
+      { label: 'Compleanni', href: '/compleanno-con-academy' },
       { label: 'Iscriviti al Campus', href: '/contatti' }
     ]
   };
