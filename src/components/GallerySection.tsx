@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { X, ZoomIn } from 'lucide-react';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
+import sfondoChiSiamo from '/images/sfondo-chi-siamo.jpeg';
+
 const imageFiles = [
   "02de3a3c-71cd-422f-b2ac-b61c3d39a760.JPG",
   "2ae1cccf-3a07-4025-9d64-983cc5dfd975.JPG",
@@ -56,8 +58,9 @@ const GallerySection = () => {
   const [selectedImage, setSelectedImage] = useState<typeof galleryItems[0] | null>(null);
 
   return (
-    <section id="galleria" className="py-24 bg-black border-b border-accent/20">
-      <div className="container mx-auto px-6 md:px-12">
+    <section id="galleria" className="py-24 text-accent border-b border-accent/20 relative" style={{ backgroundImage: `url(${sfondoChiSiamo})`, backgroundSize: 'cover', backgroundAttachment: 'fixed', backgroundPosition: 'center' }}>
+      <div className="absolute inset-0 bg-black/85"></div>
+      <div className="container mx-auto px-6 md:px-12 relative z-10">
         <div className="mb-20 border-b border-accent/20 pb-8 max-w-4xl">
           <h2 className="text-[clamp(2.5rem,10vw,4.5rem)] font-bold uppercase tracking-tighter mb-6 text-accent leading-[1] md:leading-tight">
             Momenti <br /> Unici.
