@@ -5,7 +5,7 @@ import aboutUser1 from '@/assets/about-highlight-1.jpg';
 import aboutUser2 from '@/assets/about-highlight-2.jpg';
 import liborioUser from '@/assets/liborio-storia.jpg';
 import liborioLaurea from '@/assets/liborio-laurea.jpg';
-import nuovaFotoStoria from '/images/nuova-foto-storia.jpeg';
+import fotoStoriaLiborio from '/images/foto-storia-liborio.jpg';
 import sfondoChiSiamo from '/images/sfondo-chi-siamo.jpeg';
 
 const values = [
@@ -158,7 +158,7 @@ const AboutSection = () => {
               </p>
               <div className="grid grid-cols-3 gap-4 my-8">
                   <div className="aspect-video relative overflow-hidden border border-accent/20 bg-black/50">
-                      <img src={nuovaFotoStoria} alt="Nuova Foto Storia Liborio" className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity" />
+                      <img src={fotoStoriaLiborio} alt="Foto Storia Liborio" className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity" />
                   </div>
                   <div className="aspect-video relative overflow-hidden border border-accent/20 bg-black/50">
                       <img src={aboutUser2} alt="Dettagli Tecnici Academy 19" className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity" />
