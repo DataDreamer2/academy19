@@ -5,6 +5,8 @@ import aboutUser1 from '@/assets/about-highlight-1.jpg';
 import aboutUser2 from '@/assets/about-highlight-2.jpg';
 import liborioUser from '@/assets/liborio-storia.jpg';
 import liborioLaurea from '@/assets/liborio-laurea.jpg';
+import nuovaFotoStoria from '/images/nuova-foto-storia.jpeg';
+import sfondoChiSiamo from '/images/sfondo-chi-siamo.jpeg';
 
 const values = [
   {
@@ -31,8 +33,9 @@ const values = [
 
 const AboutSection = () => {
   return (
-    <section id="chi-siamo" className="py-24 bg-black text-accent border-t border-accent/20">
-      <div className="container mx-auto px-6 md:px-12">
+    <section id="chi-siamo" className="py-24 text-accent border-t border-accent/20 relative" style={{ backgroundImage: `url(${sfondoChiSiamo})`, backgroundSize: 'cover', backgroundAttachment: 'fixed', backgroundPosition: 'center' }}>
+      <div className="absolute inset-0 bg-black/85"></div>
+      <div className="container mx-auto px-6 md:px-12 relative z-10">
         {/* Header - Minimal */}
         <div className="mb-20 border-b border-accent/20 pb-8 max-w-4xl">
           <h2 className="text-[clamp(2.5rem,10vw,4.5rem)] font-bold tracking-tighter uppercase mb-4 leading-[1] md:leading-tight">
@@ -153,11 +156,14 @@ const AboutSection = () => {
                 Il calcio per me non è mai stato solo uno sport. È stata una scelta di vita.
                 A 15 anni ho lasciato la mia terra, la Sicilia. Non è stata una decisione semplice: significava allontanarmi dalla famiglia, dagli amici, dalle certezze di ogni giorno. C'erano emozione, paura, sacrificio. Ma c'era soprattutto un sogno troppo grande per restare fermo.
               </p>
-              <div className="grid grid-cols-2 gap-4 my-8">
-                  <div className="aspect-video relative overflow-hidden border border-accent/20">
+              <div className="grid grid-cols-3 gap-4 my-8">
+                  <div className="aspect-video relative overflow-hidden border border-accent/20 bg-black/50">
+                      <img src={nuovaFotoStoria} alt="Nuova Foto Storia Liborio" className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity" />
+                  </div>
+                  <div className="aspect-video relative overflow-hidden border border-accent/20 bg-black/50">
                       <img src={aboutUser2} alt="Dettagli Tecnici Academy 19" className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity" />
                   </div>
-                  <div className="aspect-video relative overflow-hidden border border-accent/20">
+                  <div className="aspect-video relative overflow-hidden border border-accent/20 bg-black/50">
                       <img src={liborioLaurea} alt="Liborio Zuppardo Laurea" className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity" />
                   </div>
               </div>

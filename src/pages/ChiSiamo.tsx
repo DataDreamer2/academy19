@@ -1,6 +1,7 @@
 import SEO from '@/components/SEO';
 import Navbar from '@/components/Navbar';
 import AboutSection from '@/components/AboutSection';
+import NutritionistSection from '@/components/NutritionistSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import Footer from '@/components/Footer';
 import StickyMobileCTA from '@/components/StickyMobileCTA';
@@ -18,6 +19,7 @@ const ChiSiamo = () => {
                 <Navbar />
                 <div className="pt-20">
                     <AboutSection />
+                    <NutritionistSection />
                     <TestimonialsSection />
                 </div>
                 <Footer />
