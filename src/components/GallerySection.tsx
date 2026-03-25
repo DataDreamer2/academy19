@@ -24,7 +24,7 @@ const imageFiles = [
   "cb3ce967-32cb-41a9-840c-0320745c5382.JPG",
   "cca9a61b-f253-43aa-8a05-4375484d3695.JPG",
   "d3a0e07a-982f-460e-9d4f-4e7c22fe39d1.JPG",
-  "e2f00752-47c4-44b8-aa6f-b14386e91298.JPG",
+  "immagine back kit e contatti.JPG",
   "e7057143-3d46-4733-8d47-f8efa4b7a268.JPG",
   "e7ed20e2-3daf-44e3-8144-340bafaca5d8.JPG",
   "f2126a70-83a1-47af-bbdc-3dbff07099d3.JPG",
@@ -59,7 +59,7 @@ const GallerySection = () => {
 
   return (
     <section id="galleria" className="py-24 text-accent border-b border-accent/20 relative" style={{ backgroundImage: `url(${sfondoChiSiamo})`, backgroundSize: 'cover', backgroundAttachment: 'fixed', backgroundPosition: 'center' }}>
-      <div className="absolute inset-0 bg-black/85"></div>
+      <div className="absolute inset-0 bg-black/92"></div>
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         <div className="mb-20 border-b border-accent/20 pb-8 max-w-4xl">
           <h2 className="text-[clamp(2.5rem,10vw,4.5rem)] font-bold uppercase tracking-tighter mb-6 text-accent leading-[1] md:leading-tight">

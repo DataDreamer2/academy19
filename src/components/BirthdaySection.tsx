@@ -27,16 +27,9 @@ const BirthdaySection = () => {
   ];
 
   return (
-    <section className="py-24 bg-black relative overflow-hidden">
+    <section className="py-24 text-accent relative overflow-hidden" style={{ backgroundImage: `url('/images/sfondo-kit-contatti.jpg')`, backgroundSize: 'cover', backgroundAttachment: 'fixed', backgroundPosition: 'center' }}>
       {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0 opacity-40">
-        <img 
-          src="/images/compleanno-back.jpg" 
-          alt="" 
-          className="w-full h-full object-cover grayscale brightness-50 contrast-125"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-black/40 to-black"></div>
-      </div>
+      <div className="absolute inset-0 bg-black/92 z-0"></div>
 
       {/* Decorative background accent */}
       <div className="absolute top-0 right-0 w-1/3 h-full bg-accent/5 -skew-x-12 transform translate-x-1/2 z-0"></div>
