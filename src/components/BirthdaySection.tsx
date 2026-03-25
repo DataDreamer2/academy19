@@ -27,7 +27,17 @@ const BirthdaySection = () => {
   ];
 
   return (
-    <section className="py-24 text-accent relative overflow-hidden" style={{ backgroundImage: `url('/gallery/immagine back kit e contatti.JPG')`, backgroundSize: 'cover', backgroundAttachment: 'fixed', backgroundPosition: 'center', filter: 'brightness(0.7) contrast(1.1)' }}>
+    <section className="py-24 text-accent relative overflow-hidden">
+      <div 
+        className="absolute inset-0 z-0" 
+        style={{ 
+          backgroundImage: `url('/gallery/immagine back kit e contatti.JPG')`, 
+          backgroundSize: 'cover', 
+          backgroundAttachment: 'fixed', 
+          backgroundPosition: 'center',
+          filter: 'brightness(0.7) contrast(1.1)' 
+        }} 
+      />
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 bg-black/60 z-0"></div>
 

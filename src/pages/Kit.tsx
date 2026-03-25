@@ -32,7 +32,7 @@ const Kit = () => {
             />
             <Navbar />
             
-            <div className="relative min-h-screen">
+            <div className="relative min-h-screen overflow-hidden">
                 {/* Background with fixed attachment */}
                 <div 
                     className="absolute inset-0 z-0"
