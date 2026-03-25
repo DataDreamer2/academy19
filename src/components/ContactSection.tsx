@@ -88,7 +88,7 @@ const ContactSection = () => {
 
           {/* Info Side */}
           <div>
-            <h2 className="text-5xl md:text-7xl font-bold uppercase tracking-tighter mb-6 text-accent leading-none">
+            <h2 className="text-5xl md:text-7xl font-bold uppercase tracking-tighter mb-6 text-accent leading-none shadow-text">
               Camp Estivo <br /> <span className="text-white">Academy19</span>
             </h2>
 
