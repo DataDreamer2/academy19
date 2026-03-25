@@ -93,7 +93,7 @@ const ContactSection = () => {
 
             {/* --- MONTE S.M. TIBERINA --- */}
             <div className="mb-24">
-              <div className="flex flex-col sm:flex-row gap-6 md:gap-8 items-start relative">
+              <div className="flex flex-col lg:flex-row gap-8 items-start relative">
                 <div className="flex-1">
                     <div className="inline-block px-4 py-2 bg-accent/20 border border-accent/40 text-accent text-sm font-bold uppercase tracking-widest mb-8 font-mono">
                         Monte S.M. Tiberina (PG) ⚽
@@ -147,7 +147,7 @@ const ContactSection = () => {
                         <p className="text-sm text-zinc-400 font-mono uppercase mb-4">
                             Aperte fino al <span className="text-white">10 Giugno</span>. Posti limitati.
                         </p>
-                        <div className="p-4 border border-orange-500/20 bg-orange-500/5 text-xs font-mono text-orange-200/80 uppercase">
+                        <div className="p-4 border border-accent/20 bg-accent/5 text-xs font-mono text-accent/80 uppercase">
                             Pagamento in un’unica soluzione o in due rate (acconto e saldo).
                         </div>
                       </div>
@@ -155,7 +155,7 @@ const ContactSection = () => {
                 </div>
 
                 {/* Vertical aligned media on the right, sticky on scroll */}
-                <div className="w-full sm:w-40 lg:w-48 sm:sticky top-32 shrink-0 border border-accent/20 bg-accent/5 p-2 animate-in fade-in slide-in-from-right-8 duration-700">
+                <div className="w-full max-w-[320px] mx-auto lg:mx-0 lg:w-64 xl:w-72 lg:sticky top-32 shrink-0 border border-accent/20 bg-accent/5 p-2 animate-in fade-in slide-in-from-right-8 duration-700">
                     <div className="overflow-hidden relative group">
                         <video 
                             src="/videos/monte-video.mov" 
@@ -173,7 +173,7 @@ const ContactSection = () => {
 
             {/* --- FORLÌ --- */}
             <div className="mb-24 pt-12 border-t border-accent/10">
-              <div className="flex flex-col sm:flex-row gap-6 md:gap-8 items-start relative">
+              <div className="flex flex-col lg:flex-row gap-8 items-start relative">
                 <div className="flex-1">
                     <div className="inline-block px-4 py-2 bg-accent/20 border border-accent/40 text-accent text-sm font-bold uppercase tracking-widest mb-8 font-mono">
                         Forlì ☀️
@@ -223,7 +223,7 @@ const ContactSection = () => {
                         <p className="text-sm text-zinc-400 font-mono uppercase mb-4">
                             Aperte fino al <span className="text-white">10 Maggio</span>. Posti limitati.
                         </p>
-                        <div className="p-4 border border-orange-500/20 bg-orange-500/5 text-xs font-mono text-orange-200/80 uppercase">
+                        <div className="p-4 border border-accent/20 bg-accent/5 text-xs font-mono text-accent/80 uppercase">
                             Pagamento in un’unica soluzione o in due rate (acconto e saldo).
                         </div>
                       </div>
@@ -231,7 +231,7 @@ const ContactSection = () => {
                 </div>
 
                 {/* Vertical aligned media on the right, sticky on scroll */}
-                <div className="w-full sm:w-40 lg:w-48 sm:sticky top-32 shrink-0 border border-accent/20 bg-accent/5 p-2 animate-in fade-in slide-in-from-right-8 duration-1000 delay-150">
+                <div className="w-full max-w-[320px] mx-auto lg:mx-0 lg:w-64 xl:w-72 lg:sticky top-32 shrink-0 border border-accent/20 bg-accent/5 p-2 animate-in fade-in slide-in-from-right-8 duration-1000 delay-150">
                     <div className="overflow-hidden relative group aspect-[4/5]">
                         <img 
                             src="/images/forli-casacche.jpeg" 
