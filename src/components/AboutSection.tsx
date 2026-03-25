@@ -34,8 +34,18 @@ const values = [
 
 const AboutSection = () => {
   return (
-    <section id="chi-siamo" className="py-24 text-accent border-t border-accent/20 relative" style={{ backgroundImage: `url(${sfondoChiSiamo})`, backgroundSize: 'cover', backgroundAttachment: 'fixed', backgroundPosition: 'center', filter: 'brightness(0.7) contrast(1.1)' }}>
-      <div className="absolute inset-0 bg-black/60"></div>
+    <section id="chi-siamo" className="py-24 text-accent border-t border-accent/20 relative overflow-hidden">
+      <div 
+        className="absolute inset-0 z-0" 
+        style={{ 
+          backgroundImage: `url(${sfondoChiSiamo})`, 
+          backgroundSize: 'cover', 
+          backgroundAttachment: 'fixed', 
+          backgroundPosition: 'center',
+          filter: 'brightness(0.7) contrast(1.1)' 
+        }} 
+      />
+      <div className="absolute inset-0 bg-black/60 z-0"></div>
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         {/* Header - Minimal */}
         <div className="mb-20 border-b border-accent/20 pb-8 max-w-4xl">

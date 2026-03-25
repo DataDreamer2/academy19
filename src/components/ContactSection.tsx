@@ -77,11 +77,21 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contatti" className="py-24 text-accent border-t border-accent/20 relative overflow-hidden" style={{ backgroundImage: `url('/gallery/immagine back kit e contatti.JPG')`, backgroundSize: 'cover', backgroundAttachment: 'fixed', backgroundPosition: 'center', filter: 'brightness(0.7) contrast(1.1)' }}>
+    <section id="contatti" className="py-24 text-accent border-t border-accent/20 relative overflow-hidden">
+      <div 
+        className="absolute inset-0 z-0" 
+        style={{ 
+          backgroundImage: `url('/gallery/immagine back kit e contatti.JPG')`, 
+          backgroundSize: 'cover', 
+          backgroundAttachment: 'fixed', 
+          backgroundPosition: 'center',
+          filter: 'brightness(0.7) contrast(1.1)' 
+        }} 
+      />
       {/* Decorative background lines */}
-      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-accent/50 to-transparent"></div>
-      <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-accent/50 to-transparent"></div>
-      <div className="absolute inset-0 bg-black/60"></div>
+      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-accent/50 to-transparent z-0"></div>
+      <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-accent/50 to-transparent z-0"></div>
+      <div className="absolute inset-0 bg-black/60 z-0"></div>
 
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 md:gap-24">
