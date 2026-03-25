@@ -34,7 +34,7 @@ const values = [
 
 const AboutSection = () => {
   return (
-    <section id="chi-siamo" className="py-24 text-accent border-t border-accent/20 relative" style={{ backgroundImage: `url(${sfondoChiSiamo})`, backgroundSize: 'cover', backgroundAttachment: 'fixed', backgroundPosition: 'center' }}>
+    <section id="chi-siamo" className="py-24 text-accent border-t border-accent/20 relative bg-cover bg-center bg-local md:bg-fixed" style={{ backgroundImage: `url(${sfondoChiSiamo})` }}>
       <div className="absolute inset-0 bg-black/85"></div>
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         {/* Header - Minimal */}
@@ -143,12 +143,9 @@ const AboutSection = () => {
                   <p className="text-accent font-bold uppercase tracking-widest text-xs mt-2 font-mono">Founder & Head Coach</p>
                 </div>
               </div>
-              <div className="mt-8 grid grid-cols-3 gap-4">
+              <div className="mt-8 grid grid-cols-2 gap-4">
                   <div className="aspect-video relative overflow-hidden border border-accent/20 bg-black/50">
                       <img src={fiorentinaLibo} alt="Liborio Zuppardo Fiorentina" className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity" />
-                  </div>
-                  <div className="aspect-video relative overflow-hidden border border-accent/20 bg-black/50">
-                      <img src={aboutUser2} alt="Dettagli Tecnici Academy 19" className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity" />
                   </div>
                   <div className="aspect-video relative overflow-hidden border border-accent/20 bg-black/50">
                       <img src={liborioLaurea} alt="Liborio Zuppardo Laurea" className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity" />
