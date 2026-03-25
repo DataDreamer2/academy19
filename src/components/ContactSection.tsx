@@ -93,193 +93,182 @@ const ContactSection = () => {
 
             {/* --- MONTE S.M. TIBERINA --- */}
             <div className="mb-24">
-              <div className="flex flex-col lg:flex-row gap-8 items-start relative">
-                <div className="flex-1">
-                    <div className="inline-block px-4 py-2 bg-accent/20 border border-accent/40 text-accent text-sm font-bold uppercase tracking-widest mb-8 font-mono">
-                        Monte S.M. Tiberina (PG) ⚽
-                    </div>
-                    
-                    <div className="space-y-6 text-zinc-400 max-w-xl leading-relaxed font-mono text-base">
-                        <p className="text-xl text-white font-bold italic mb-4">
-                            "Un’esperienza esclusiva dedicata a ragazzi e ragazze dai 6 anni in su."
-                        </p>
-                        <p>
-                            Passione per il calcio, crescita personale e divertimento si incontrano in un ambiente professionale e stimolante. 
-                            Un percorso studiato per far vivere un’estate indimenticabile, migliorando le proprie capacità tecniche e sviluppando valori fondamentali come impegno, collaborazione e spirito di squadra.
-                        </p>
-                    </div>
-
-                    <div className="mt-12 space-y-12">
-                      <div className="border-l border-accent/30 pl-6">
-                        <h4 className="font-bold uppercase tracking-widest mb-4 text-base text-accent">🎯 Un Percorso Completo</h4>
-                        <ul className="space-y-3 text-sm font-mono text-zinc-400 uppercase tracking-wide">
-                          <li className="flex items-start gap-2"><span className="text-accent">•</span> Perfezionamento tecnico e coordinativo</li>
-                          <li className="flex items-start gap-2"><span className="text-accent">•</span> Sviluppo di agilità, velocità e rapidità</li>
-                          <li className="flex items-start gap-2"><span className="text-accent">•</span> Allenamenti con strumenti innovativi</li>
-                          <li className="flex items-start gap-2"><span className="text-accent">•</span> Metodologia 1vs1 con Gingawall</li>
-                          <li className="flex items-start gap-2"><span className="text-accent">•</span> Esercitazioni specifiche per ruolo</li>
-                          <li className="flex items-start gap-2"><span className="text-accent">•</span> Attività suddivise per età e livello</li>
-                        </ul>
-                      </div>
-
-                      <div className="border-l border-accent/30 pl-6">
-                        <h4 className="font-bold uppercase tracking-widest mb-4 text-base text-accent">📦 Le Formule</h4>
-                        <div className="space-y-6">
-                          <div>
-                            <p className="text-white font-bold text-base uppercase mb-1">🔹 FORMULA GIORNALIERA (9:00 – 17:30)</p>
-                            <p className="text-xs text-zinc-500 font-mono leading-relaxed italic">
-                                Spuntino, Pranzo, Merenda, Lavanderia, Assicurazione. 
-                                Incluso: Kit Academy19, Premi, Attestato.
-                            </p>
-                          </div>
-                          <div>
-                            <p className="text-white font-bold text-base uppercase mb-1">🔹 FORMULA CON PERNOTTAMENTO</p>
-                            <p className="text-xs text-zinc-500 font-mono leading-relaxed italic">
-                                Esperienza immersiva: Pensione completa, Lavanderia, Pulizie. 
-                                Incluso: Kit Academy19, Premi, Attestato.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="border-l border-accent/30 pl-6">
-                        <h4 className="font-bold uppercase tracking-widest mb-4 text-base text-accent">📝 Iscrizioni & Scadenza</h4>
-                        <p className="text-sm text-zinc-400 font-mono uppercase mb-4">
-                            Aperte fino al <span className="text-white">10 Giugno</span>. Posti limitati.
-                        </p>
-                        <div className="p-4 border border-accent/20 bg-accent/5 text-xs font-mono text-accent/80 uppercase">
-                            Pagamento in un’unica soluzione o in due rate (acconto e saldo).
-                        </div>
-                      </div>
-                    </div>
+                <div className="inline-block px-4 py-2 bg-accent/20 border border-accent/40 text-accent text-sm font-bold uppercase tracking-widest mb-8 font-mono">
+                    Monte S.M. Tiberina (PG) ⚽
+                </div>
+                
+                <div className="space-y-6 text-zinc-400 max-w-xl leading-relaxed font-mono text-base">
+                    <p className="text-xl text-white font-bold italic mb-4">
+                        "Un’esperienza esclusiva dedicata a ragazzi e ragazze dai 6 anni in su."
+                    </p>
+                    <p>
+                        Passione per il calcio, crescita personale e divertimento si incontrano in un ambiente professionale e stimolante. 
+                        Un percorso studiato per far vivere un’estate indimenticabile, migliorando le proprie capacità tecniche e sviluppando valori fondamentali come impegno, collaborazione e spirito di squadra.
+                    </p>
                 </div>
 
-                {/* Vertical aligned media on the right, sticky on scroll */}
-                <div className="w-full max-w-[320px] mx-auto lg:mx-0 lg:w-64 xl:w-72 lg:sticky top-32 shrink-0 border border-accent/20 bg-accent/5 p-2 animate-in fade-in slide-in-from-right-8 duration-700">
-                    <div className="overflow-hidden relative group">
-                        <video 
-                            src="/videos/monte-video.mov" 
-                            className="w-full aspect-[4/5] object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-500" 
-                            autoPlay 
-                            muted 
-                            loop 
-                            playsInline 
-                        />
-                        <div className="absolute inset-0 bg-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none mix-blend-color"></div>
+                <div className="mt-12 space-y-12">
+                  <div className="border-l border-accent/30 pl-6">
+                    <h4 className="font-bold uppercase tracking-widest mb-4 text-base text-accent">🎯 Un Percorso Completo</h4>
+                    <ul className="space-y-3 text-sm font-mono text-zinc-400 uppercase tracking-wide">
+                      <li className="flex items-start gap-2"><span className="text-accent">•</span> Perfezionamento tecnico e coordinativo</li>
+                      <li className="flex items-start gap-2"><span className="text-accent">•</span> Sviluppo di agilità, velocità e rapidità</li>
+                      <li className="flex items-start gap-2"><span className="text-accent">•</span> Allenamenti con strumenti innovativi</li>
+                      <li className="flex items-start gap-2"><span className="text-accent">•</span> Metodologia 1vs1 con Gingawall</li>
+                      <li className="flex items-start gap-2"><span className="text-accent">•</span> Esercitazioni specifiche per ruolo</li>
+                      <li className="flex items-start gap-2"><span className="text-accent">•</span> Attività suddivise per età e livello</li>
+                    </ul>
+                  </div>
+
+                  <div className="border-l border-accent/30 pl-6">
+                    <h4 className="font-bold uppercase tracking-widest mb-4 text-base text-accent">📦 Le Formule</h4>
+                    <div className="space-y-6">
+                      <div>
+                        <p className="text-white font-bold text-base uppercase mb-1">🔹 FORMULA GIORNALIERA (9:00 – 17:30)</p>
+                        <p className="text-xs text-zinc-500 font-mono leading-relaxed italic">
+                            Spuntino, Pranzo, Merenda, Lavanderia, Assicurazione. 
+                            Incluso: Kit Academy19, Premi, Attestato.
+                        </p>
+                      </div>
+                      <div>
+                        <p className="text-white font-bold text-base uppercase mb-1">🔹 FORMULA CON PERNOTTAMENTO</p>
+                        <p className="text-xs text-zinc-500 font-mono leading-relaxed italic">
+                            Esperienza immersiva: Pensione completa, Lavanderia, Pulizie. 
+                            Incluso: Kit Academy19, Premi, Attestato.
+                        </p>
+                      </div>
                     </div>
+                  </div>
+
+                  <div className="flex flex-col sm:flex-row gap-6 items-end sm:items-center">
+                    <div className="flex-1 border-l border-accent/30 pl-6">
+                      <h4 className="font-bold uppercase tracking-widest mb-4 text-base text-accent">📝 Iscrizioni & Scadenza</h4>
+                      <p className="text-sm text-zinc-400 font-mono uppercase mb-4">
+                          Aperte fino al <span className="text-white">10 Giugno</span>. Posti limitati.
+                      </p>
+                      <div className="p-4 border border-orange-500/20 bg-orange-500/5 text-xs font-mono text-orange-200/80 uppercase">
+                          Pagamento in un’unica soluzione o in due rate (acconto e saldo).
+                      </div>
+                    </div>
+                    <div className="w-full max-w-[200px] shrink-0 border border-accent/20 bg-accent/5 p-2 animate-in fade-in zoom-in-95 duration-700 mx-auto sm:mx-0">
+                      <video 
+                          src="/videos/monte-video.mov" 
+                          className="w-full aspect-[4/5] object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-500" 
+                          autoPlay 
+                          muted 
+                          loop 
+                          playsInline 
+                      />
+                    </div>
+                  </div>
                 </div>
-              </div>
             </div>
 
             {/* --- FORLÌ --- */}
-            <div className="mb-24 pt-12 border-t border-accent/10">
-              <div className="flex flex-col lg:flex-row gap-8 items-start relative">
-                <div className="flex-1">
-                    <div className="inline-block px-4 py-2 bg-accent/20 border border-accent/40 text-accent text-sm font-bold uppercase tracking-widest mb-8 font-mono">
-                        Forlì ☀️
-                    </div>
-                    
-                    <div className="space-y-6 text-zinc-400 max-w-xl leading-relaxed font-mono text-base">
-                        <p className="text-xl text-white font-bold italic mb-4">
-                            "Le iscrizioni al Camp Estivo Academy19 di Forlì sono ufficialmente aperte!"
-                        </p>
-                        <p>
-                            Un’esperienza esclusiva dedicata a ragazzi e ragazze dai 6 anni in su, dove la passione per il calcio incontra il divertimento in un ambiente professionale e stimolante.
-                        </p>
-                        <p>
-                            Impara divertendoti: il nostro obiettivo è far vivere un’estate indimenticabile, migliorando le capacità tecniche e condividendo momenti di pura allegria.
-                        </p>
-                    </div>
-
-                    <div className="mt-12 space-y-12">
-                      <div className="border-l border-accent/30 pl-6">
-                        <h4 className="font-bold uppercase tracking-widest mb-4 text-base text-accent">🎯 Il Percorso Tecnico</h4>
-                        <p className="text-sm font-bold text-white mb-4">Ogni partecipante sarà inserito in un programma strutturato che prevede:</p>
-                        <ul className="space-y-3 text-sm font-mono text-zinc-400 uppercase tracking-wide">
-                          <li className="flex items-start gap-2"><span className="text-accent">•</span> Perfezionamento tecnico e coordinativo</li>
-                          <li className="flex items-start gap-2"><span className="text-accent">•</span> Sviluppo di agilità e rapidità</li>
-                          <li className="flex items-start gap-2"><span className="text-accent">•</span> Allenamenti con strumenti innovativi</li>
-                          <li className="flex items-start gap-2"><span className="text-accent">•</span> Metodologia 1vs1 con Gingawall</li>
-                          <li className="flex items-start gap-2"><span className="text-accent">•</span> Esercitazioni specifiche per ruolo</li>
-                          <li className="flex items-start gap-2"><span className="text-accent">•</span> Attività suddivise per fascia d’età</li>
-                        </ul>
-                        <p className="mt-6 text-sm italic text-accent font-mono">
-                            Oltre al campo, spazio al divertimento: musica, giochi e gli immancabili gavettoni assicurati! 💦
-                        </p>
-                      </div>
-
-                      <div className="border-l border-accent/30 pl-6">
-                        <h4 className="font-bold uppercase tracking-widest mb-4 text-base text-accent">📦 La Formula: Allenamento & Pranzo</h4>
-                        <p className="text-sm font-bold text-white mb-4">Una soluzione completa per vivere il camp con la massima energia (Orario: 8:30 – 15:00):</p>
-                        <ul className="space-y-3 text-sm font-mono text-zinc-400 uppercase tracking-wide">
-                          <li className="flex items-start gap-2"><span className="text-accent">•</span> Spuntino di metà mattina</li>
-                          <li className="flex items-start gap-2"><span className="text-accent">•</span> Pranzo incluso</li>
-                          <li className="flex items-start gap-2"><span className="text-accent">•</span> Assicurazione inclusa</li>
-                        </ul>
-                      </div>
-
-                      <div className="border-l border-accent/30 pl-6">
-                        <h4 className="font-bold uppercase tracking-widest mb-4 text-base text-accent">📝 Iscrizioni & Scadenza</h4>
-                        <p className="text-sm text-zinc-400 font-mono uppercase mb-4">
-                            Aperte fino al <span className="text-white">10 Maggio</span>. Posti limitati.
-                        </p>
-                        <div className="p-4 border border-accent/20 bg-accent/5 text-xs font-mono text-accent/80 uppercase">
-                            Pagamento in un’unica soluzione o in due rate (acconto e saldo).
-                        </div>
-                      </div>
-                    </div>
+            <div className="mb-24 pt-12 border-t border-amber-500/10">
+                <div className="inline-block px-4 py-2 bg-amber-500/20 border border-amber-500/40 text-amber-500 text-sm font-bold uppercase tracking-widest mb-8 font-mono">
+                    Forlì ☀️
+                </div>
+                
+                <div className="space-y-6 text-zinc-400 max-w-xl leading-relaxed font-mono text-base">
+                    <p className="text-xl text-white font-bold italic mb-4">
+                        "Le iscrizioni al Camp Estivo Academy19 di Forlì sono ufficialmente aperte!"
+                    </p>
+                    <p>
+                        Un’esperienza esclusiva dedicata a ragazzi e ragazze dai 6 anni in su, dove la passione per il calcio incontra il divertimento in un ambiente professionale e stimolante.
+                    </p>
+                    <p>
+                        Impara divertendoti: il nostro obiettivo è far vivere un’estate indimenticabile, migliorando le capacità tecniche e condividendo momenti di pura allegria.
+                    </p>
                 </div>
 
-                {/* Vertical aligned media on the right, sticky on scroll */}
-                <div className="w-full max-w-[320px] mx-auto lg:mx-0 lg:w-64 xl:w-72 lg:sticky top-32 shrink-0 border border-accent/20 bg-accent/5 p-2 animate-in fade-in slide-in-from-right-8 duration-1000 delay-150">
-                    <div className="overflow-hidden relative group aspect-[4/5]">
-                        <img 
-                            src="/images/forli-casacche.jpeg" 
-                            alt="Forlì Casacche"
-                            className="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" 
-                        />
-                        <div className="absolute inset-0 bg-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none mix-blend-color"></div>
+                <div className="mt-12 space-y-12">
+                  <div className="border-l border-amber-500/30 pl-6">
+                    <h4 className="font-bold uppercase tracking-widest mb-4 text-base text-amber-500">🎯 Il Percorso Tecnico</h4>
+                    <p className="text-sm font-bold text-white mb-4">Ogni partecipante sarà inserito in un programma strutturato che prevede:</p>
+                    <ul className="space-y-3 text-sm font-mono text-zinc-400 uppercase tracking-wide">
+                      <li className="flex items-start gap-2"><span className="text-amber-500">•</span> Perfezionamento tecnico e coordinativo</li>
+                      <li className="flex items-start gap-2"><span className="text-amber-500">•</span> Sviluppo di agilità e rapidità</li>
+                      <li className="flex items-start gap-2"><span className="text-amber-500">•</span> Allenamenti con strumenti innovativi</li>
+                      <li className="flex items-start gap-2"><span className="text-amber-500">•</span> Metodologia 1vs1 con Gingawall</li>
+                      <li className="flex items-start gap-2"><span className="text-amber-500">•</span> Esercitazioni specifiche per ruolo</li>
+                      <li className="flex items-start gap-2"><span className="text-amber-500">•</span> Attività suddivise per fascia d’età</li>
+                    </ul>
+                    <p className="mt-6 text-sm italic text-amber-500 font-mono">
+                        Oltre al campo, spazio al divertimento: musica, giochi e gli immancabili gavettoni assicurati! 💦
+                    </p>
+                  </div>
+
+                  <div className="border-l border-amber-500/30 pl-6">
+                    <h4 className="font-bold uppercase tracking-widest mb-4 text-base text-amber-500">📦 La Formula: Allenamento & Pranzo</h4>
+                    <p className="text-sm font-bold text-white mb-4">Una soluzione completa per vivere il camp con la massima energy (Orario: 8:30 – 15:00):</p>
+                    <ul className="space-y-3 text-sm font-mono text-zinc-400 uppercase tracking-wide">
+                      <li className="flex items-start gap-2"><span className="text-amber-500">•</span> Spuntino di metà mattina</li>
+                      <li className="flex items-start gap-2"><span className="text-amber-500">•</span> Pranzo incluso</li>
+                      <li className="flex items-start gap-2"><span className="text-amber-500">•</span> Assicurazione inclusa</li>
+                    </ul>
+                  </div>
+
+                  <div className="flex flex-col sm:flex-row gap-6 items-end sm:items-center">
+                    <div className="flex-1 border-l border-amber-500/30 pl-6">
+                      <h4 className="font-bold uppercase tracking-widest mb-4 text-base text-amber-500">📝 Iscrizioni & Scadenza</h4>
+                      <p className="text-sm text-zinc-400 font-mono uppercase mb-4">
+                          Aperte fino al <span className="text-white">10 Maggio</span>. Posti limitati.
+                      </p>
+                      <div className="p-4 border border-amber-500/20 bg-amber-500/5 text-xs font-mono text-amber-200/80 uppercase">
+                          Pagamento in un’unica soluzione o in due rate (acconto e saldo).
+                      </div>
                     </div>
+                    <div className="w-full max-w-[200px] shrink-0 border border-amber-500/20 bg-amber-500/5 p-2 animate-in fade-in zoom-in-95 duration-1000 delay-150 mx-auto sm:mx-0">
+                      <div className="overflow-hidden relative group aspect-[4/5]">
+                          <img 
+                              src="/images/forli-casacche.jpeg" 
+                              alt="Forlì Casacche"
+                              className="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" 
+                          />
+                          <div className="absolute inset-0 bg-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none mix-blend-color"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div className="border-l border-zinc-800 pl-6 pt-6 grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all">
+              <h4 className="font-bold uppercase tracking-widest mb-4 text-base text-zinc-500">Le Altre Nostre Sedi</h4>
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <p className="text-sm font-bold uppercase text-white">Forlì</p>
+                  <p className="text-xs text-zinc-500 font-mono">Via Tripoli 137</p>
+                </div>
+                <div>
+                  <p className="text-sm font-bold uppercase text-white">Lerchi (PG)</p>
+                  <p className="text-xs text-zinc-500 font-mono">Città di Castello</p>
                 </div>
               </div>
             </div>
 
-              <div className="border-l border-accent/30 pl-6 pt-6 grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all">
-                <h4 className="font-bold uppercase tracking-widest mb-4 text-base text-zinc-500">Le Altre Nostre Sedi</h4>
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <p className="text-sm font-bold uppercase text-white">Forlì</p>
-                    <p className="text-xs text-zinc-500 font-mono">Via Tripoli 137</p>
-                  </div>
-                  <div>
-                    <p className="text-sm font-bold uppercase text-white">Lerchi (PG)</p>
-                    <p className="text-xs text-zinc-500 font-mono">Città di Castello</p>
-                  </div>
-                </div>
-              </div>
+            <div className="mt-12">
+              <h4 className="font-bold uppercase tracking-widest mb-4 text-base text-accent/50 filter">Info e Prenotazioni</h4>
+              <p className="text-sm font-mono text-zinc-400 mb-2">Per maggiori informazioni contatta <strong>Zuppardo Liborio</strong>:</p>
+              <a href="tel:3478894076" className="text-2xl font-bold text-white hover:text-accent cursor-pointer transition-all font-mono block mb-2">📱 347 8894076</a>
+              <p className="text-lg font-medium text-white cursor-pointer transition-all font-mono uppercase">ACADEMY19@LIBERO.IT</p>
+            </div>
 
-              <div>
-                <h4 className="font-bold uppercase tracking-widest mb-4 text-base text-accent/50 filter">Info e Prenotazioni</h4>
-                <p className="text-sm font-mono text-zinc-400 mb-2">Per maggiori informazioni contatta <strong>Zuppardo Liborio</strong>:</p>
-                <a href="tel:3478894076" className="text-2xl font-bold text-white hover:text-accent cursor-pointer transition-all font-mono block mb-2">📱 347 8894076</a>
-                <p className="text-lg font-medium text-white cursor-pointer transition-all font-mono uppercase">ACADEMY19@LIBERO.IT</p>
-              </div>
-
-              <div>
-                <h4 className="font-bold uppercase tracking-widest mb-2 text-sm text-accent/50 filter">Social</h4>
-                <div className="flex gap-4 mt-4">
-                  {socialLinks.map((social) => (
-                    <a
-                      key={social.label}
-                      href={social.href}
-                      className="w-12 h-12 border border-zinc-700 flex items-center justify-center text-white hover:border-accent hover:bg-accent hover:text-black transition-all duration-300"
-                    >
-                      <social.icon className="w-5 h-5" />
-                    </a>
-                  ))}
-                </div>
+            <div className="mt-8">
+              <h4 className="font-bold uppercase tracking-widest mb-2 text-sm text-accent/50 filter">Social</h4>
+              <div className="flex gap-4 mt-4">
+                {socialLinks.map((social) => (
+                  <a
+                    key={social.label}
+                    href={social.href}
+                    className="w-12 h-12 border border-zinc-700 flex items-center justify-center text-white hover:border-accent hover:bg-accent hover:text-black transition-all duration-300"
+                  >
+                    <social.icon className="w-5 h-5" />
+                  </a>
+                ))}
               </div>
             </div>
+          </div>
 
           {/* Form Side */}
           <div className="bg-black border border-accent/20 p-8 md:p-12 relative">
