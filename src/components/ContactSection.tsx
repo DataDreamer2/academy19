@@ -140,13 +140,13 @@ const ContactSection = () => {
                     </div>
                   </div>
 
-                  <div className="flex flex-col sm:flex-row gap-6 items-end sm:items-center">
+                  <div className="flex flex-col sm:flex-row gap-8 items-end sm:items-center">
                     <div className="flex-1 border-l border-accent/30 pl-6">
                       <h4 className="font-bold uppercase tracking-widest mb-4 text-base text-accent">📝 Iscrizioni & Scadenza</h4>
                       <p className="text-sm text-zinc-400 font-mono uppercase mb-4">
                           Aperte fino al <span className="text-white">10 Giugno</span>. Posti limitati.
                       </p>
-                      <div className="p-4 border border-orange-500/20 bg-orange-500/5 text-xs font-mono text-orange-200/80 uppercase">
+                      <div className="p-4 border border-accent/20 bg-accent/5 text-xs font-mono text-accent/80 uppercase">
                           Pagamento in un’unica soluzione o in due rate (acconto e saldo).
                       </div>
                     </div>
