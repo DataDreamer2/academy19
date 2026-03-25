@@ -31,8 +31,22 @@ const Kit = () => {
                 url="https://academy19.it/kit"
             />
             <Navbar />
+            
+            <div className="relative min-h-screen">
+                {/* Background with fixed attachment */}
+                <div 
+                    className="absolute inset-0 z-0"
+                    style={{ 
+                        backgroundImage: `url('/images/sfondo-kit-contatti.jpg')`, 
+                        backgroundSize: 'cover', 
+                        backgroundAttachment: 'fixed', 
+                        backgroundPosition: 'center' 
+                    }}
+                />
+                {/* Dark overlay for readability */}
+                <div className="absolute inset-0 bg-black/92 z-0" />
 
-            <main className="pt-32 pb-20 px-6 md:px-12 max-w-7xl mx-auto">
+                <main className="relative z-10 pt-32 pb-20 px-6 md:px-12 max-w-7xl mx-auto">
                 {/* Header Section */}
                 <div className="text-center mb-16 animate-fade-in">
                     <h1 className="text-4xl md:text-7xl font-bold tracking-tighter uppercase mb-6">
@@ -172,6 +186,7 @@ const Kit = () => {
             </main>
 
             <Footer />
+            </div>
         </div>
     );
 };
