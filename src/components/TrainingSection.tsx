@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 
 const TrainingSection = () => {
   return (
-    <section id="percorsi" className="py-24 text-accent border-t border-accent/20 relative" style={{ backgroundImage: `url('/images/sfondo-kit-contatti.jpg')`, backgroundSize: 'cover', backgroundAttachment: 'fixed', backgroundPosition: 'center' }}>
+    <section id="percorsi" className="py-24 text-accent border-t border-accent/20 relative" style={{ backgroundImage: `url('/gallery/immagine back kit e conntatti.JPG')`, backgroundSize: 'cover', backgroundAttachment: 'fixed', backgroundPosition: 'center' }}>
       <div className="absolute inset-0 bg-black/90"></div>
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         <div className="mb-20 border-b border-accent/20 pb-8 max-w-4xl">
