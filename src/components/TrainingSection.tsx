@@ -8,10 +8,10 @@ const TrainingSection = () => {
       <div className="absolute inset-0 bg-black/95"></div>
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         <div className="mb-20 border-b border-accent/20 pb-8 max-w-4xl">
-          <h2 className="text-[clamp(2.5rem,10vw,4.5rem)] font-bold tracking-tighter uppercase mb-6 leading-[1] md:leading-tight shadow-text">
+          <h2 className="text-[clamp(2.5rem,10vw,4.5rem)] font-bold tracking-tighter uppercase mb-6 leading-[1] md:leading-tight">
             I Nostri <br /> Pacchetti
           </h2>
-          <p className="text-xl md:text-2xl text-zinc-400 leading-relaxed font-mono shadow-text">
+          <p className="text-xl md:text-2xl text-zinc-400 leading-relaxed font-mono">
             La formazione continua è la chiave per il successo. Scegli il pacchetto che più si adatta alle tue esigenze.
           </p>
         </div>

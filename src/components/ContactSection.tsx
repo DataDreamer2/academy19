@@ -81,14 +81,14 @@ const ContactSection = () => {
       {/* Decorative background lines */}
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-accent/50 to-transparent"></div>
       <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-accent/50 to-transparent"></div>
-      <div className="absolute inset-0 bg-black/95"></div>
+      <div className="absolute inset-0 bg-black/92"></div>
 
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 md:gap-24">
 
           {/* Info Side */}
           <div>
-            <h2 className="text-5xl md:text-7xl font-bold uppercase tracking-tighter mb-6 text-accent leading-none shadow-text">
+            <h2 className="text-5xl md:text-7xl font-bold uppercase tracking-tighter mb-6 text-accent leading-none">
               Camp Estivo <br /> <span className="text-white">Academy19</span>
             </h2>
 

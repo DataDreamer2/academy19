@@ -39,7 +39,7 @@ const AboutSection = () => {
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         {/* Header - Minimal */}
         <div className="mb-20 border-b border-accent/20 pb-8 max-w-4xl">
-          <h2 className="text-[clamp(2.5rem,10vw,4.5rem)] font-bold tracking-tighter uppercase mb-4 leading-[1] md:leading-tight shadow-text">
+          <h2 className="text-[clamp(2.5rem,10vw,4.5rem)] font-bold tracking-tighter uppercase mb-4 leading-[1] md:leading-tight">
             La Nostra <br /> Filosofia
           </h2>
         </div>
@@ -49,10 +49,10 @@ const AboutSection = () => {
           {/* Text Content */}
           <div className="lg:col-span-12 flex flex-col justify-between">
             <div>
-                <h2 className="text-3xl font-bold uppercase mb-8 leading-tight shadow-text">
+                <h2 className="text-3xl font-bold uppercase mb-8 leading-tight">
                 Il Metodo <span className="text-accent">Academy 19</span>
               </h2>
-              <p className="text-xl text-zinc-300 mb-8 leading-relaxed max-w-4xl font-mono shadow-text">
+              <p className="text-xl text-zinc-300 mb-8 leading-relaxed max-w-4xl font-mono">
                 Il nostro metodo unisce <strong>preparazione tecnica d'élite</strong>, sviluppo <strong>atletico e coordinativo</strong> e crescita <strong>mentale</strong>.
                 Per noi la formazione non è solo allenamento: è costruzione della persona, dentro e fuori dal campo.
                 Crediamo che il talento, senza disciplina, sia un'opportunità sprecata. Per questo lavoriamo ogni giorno su tecnica, mentalità e cultura del lavoro.
@@ -160,12 +160,12 @@ const AboutSection = () => {
             </div>
 
             <div className="lg:col-span-7 space-y-6">
-              <h3 className="text-[clamp(2rem,6vw,3rem)] font-bold uppercase mb-4 text-white leading-tight shadow-text">La Mia Storia</h3>
-              <p className="text-lg text-zinc-300 font-mono leading-relaxed shadow-text">
+              <h3 className="text-[clamp(2rem,6vw,3rem)] font-bold uppercase mb-4 text-white leading-tight">La Mia Storia</h3>
+              <p className="text-lg text-zinc-300 font-mono leading-relaxed">
                 Il calcio per me non è mai stato solo uno sport. È stata una scelta di vita.
                 A 15 anni ho lasciato la mia terra, la Sicilia. Non è stata una decisione semplice: significava allontanarmi dalla famiglia, dagli amici, dalle certezze di ogni giorno. C'erano emozione, paura, sacrificio. Ma c'era soprattutto un sogno troppo grande per restare fermo.
               </p>
-              <p className="text-lg text-zinc-300 font-mono leading-relaxed mt-8 shadow-text">
+              <p className="text-lg text-zinc-300 font-mono leading-relaxed mt-8">
                 Dopo numerosi provini, il mio percorso mi ha portato prima all’<strong className="text-white">Ancona Calcio</strong> e successivamente alla <strong className="text-white">Fiorentina</strong>: tappe decisive che hanno formato non solo il calciatore, ma soprattutto l'uomo.
                 Da oltre vent’anni vivo il calcio con passione e professionalità. Ho avuto la fortuna di vestire le maglie di tante squadre: con alcune ho vinto, con altre ho affrontato momenti difficili. Ogni vittoria mi ha dato consapevolezza, ogni sconfitta mi ha insegnato a non mollare mai.
               </p>

@@ -25,7 +25,7 @@ const NutritionistSection = () => {
             <div className="absolute inset-0 bg-black/92 z-0"></div>
             <div className="container mx-auto px-6 md:px-12 relative z-10">
                 <div className="mb-20 border-b border-accent/20 pb-8 max-w-4xl">
-                    <h2 className="text-[clamp(2.5rem,10vw,4.5rem)] font-bold tracking-tighter uppercase mb-4 leading-[1] md:leading-tight shadow-text">
+                    <h2 className="text-[clamp(2.5rem,10vw,4.5rem)] font-bold tracking-tighter uppercase mb-4 leading-[1] md:leading-tight">
                         Il Mio <br /> Nutrizionista
                     </h2>
                 </div>
@@ -55,14 +55,14 @@ const NutritionistSection = () => {
                     </div>
 
                     <div className="lg:col-span-7 space-y-6">
-                        <h3 className="text-[clamp(2rem,6vw,3rem)] font-bold uppercase mb-4 text-white leading-tight shadow-text">Chi Sono?</h3>
-                        <p className="text-lg text-zinc-300 font-mono leading-relaxed shadow-text">
+                        <h3 className="text-[clamp(2rem,6vw,3rem)] font-bold uppercase mb-4 text-white leading-tight">Chi Sono?</h3>
+                        <p className="text-lg text-zinc-300 font-mono leading-relaxed">
                             Fin da quando ero un bambino la mia più grande passione è stata lo sport e il continuo voler migliorare me stesso e i miei risultati, in ogni allenamento.
                         </p>
-                        <p className="text-lg text-zinc-300 font-mono leading-relaxed shadow-text">
+                        <p className="text-lg text-zinc-300 font-mono leading-relaxed">
                             Ho conseguito la laurea triennale in Scienze e Tecnologie del Fitness presso l’Università degli Studi di Camerino durante la quale ho avuto l’opportunità, tramite il progetto Erasmus, di fare un esperienza di 6 mesi presso l’Accademia dell’Educazione Fisica e Sport di Danzica (Polonia), un centro avanzato di scienza e sport che mi ha permesso di approfondire tutto ciò che riguarda la Performance atletica e di elaborare la mia tesi sperimentale in Biochimica dal titolo: <em>‘’L'effetto di 12 settimane di supplementazione di L-Carnitina L-Tartrate sulla composizione corporea, la forza e la capacità aerobica’’</em>
                         </p>
-                        <p className="text-lg text-zinc-300 font-mono leading-relaxed shadow-text">
+                        <p className="text-lg text-zinc-300 font-mono leading-relaxed">
                             Ho proseguito il mio percorso formativo con la Laurea Magistrale in Biological Sciences indirizzo “Nutrition and Functional Food” sempre presso l’Università degli Studi di Camerino. Nel mentre ho frequentato molteplici corsi teorico-pratici nell’ambito sportivo conseguendo il patentino di Istruttore di Atletica Leggera di 1° livello e la Licenza UEFA C grassroots per l’insegnamento ai giovani calciatori, il patentino FISDIR (Federazione italiana sport paralimpici degli intellettivi relazionali).
                         </p>
                         
