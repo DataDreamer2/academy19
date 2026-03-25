@@ -172,7 +172,7 @@ export default {
 				'2xl': 'var(--shadow-2xl)'
 			},
 			fontFamily: {
-				sans: ['Work Sans', 'sans-serif'],
+				sans: ['Inter', 'sans-serif'],
 				display: ['Barlow Condensed', 'sans-serif'],
 				mono: ['Inconsolata', 'monospace'],
 			}
