@@ -183,7 +183,6 @@ const ContactSection = () => {
                 </div>
               </div>
             </div>
-          </div>
 
           {/* Form Side */}
           <div className="bg-black border border-accent/20 p-8 md:p-12 relative">
@@ -244,6 +243,7 @@ const ContactSection = () => {
                       <SelectValue placeholder="Seleziona..." />
                     </SelectTrigger>
                     <SelectContent className="bg-black border-zinc-800 text-white rounded-none">
+                      <SelectItem className="focus:bg-zinc-900 focus:text-white" value="camp-estivo">Camp Estivo Monte S.M. Tiberina</SelectItem>
                       <SelectItem className="focus:bg-zinc-900 focus:text-white" value="Richiesta Kit Ufficiale">Kit Ufficiale</SelectItem>
                       <SelectItem className="focus:bg-zinc-900 focus:text-white" value="pacchetto-5">Pacchetto 5 Lezioni</SelectItem>
                       <SelectItem className="focus:bg-zinc-900 focus:text-white" value="pacchetto-10">Pacchetto 10 Lezioni</SelectItem>
