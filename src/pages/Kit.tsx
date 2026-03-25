@@ -26,8 +26,8 @@ const Kit = () => {
     return (
         <div className="min-h-screen bg-black text-white selection:bg-accent selection:text-white">
             <SEO
-                title="Kit Ufficiale Academy19 | Equipaggiamento Tecnico"
-                description="Indossa i colori dell'Academy19. Scopri il kit ufficiale: abbigliamento tecnico premium progettato per le massime prestazioni sul campo."
+                title="Kit Ufficiale Academy19 | Equipaggiamento Tecnico d'Élite"
+                description="Indossa l'eccellenza. Scopri il kit ufficiale Academy19: abbigliamento tecnico premium progettato per i talenti che puntano al professionismo."
                 url="https://academy19.it/kit"
             />
             <Navbar />
