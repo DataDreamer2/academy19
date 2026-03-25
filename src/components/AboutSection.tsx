@@ -143,12 +143,16 @@ const AboutSection = () => {
                   <p className="text-accent font-bold uppercase tracking-widest text-xs mt-2 font-mono">Founder & Head Coach</p>
                 </div>
               </div>
-              <div className="mt-8 aspect-[4/3] bg-black overflow-hidden relative border border-accent/20 group">
-                <img
-                  src={fiorentinaLibo}
-                  alt="Liborio Zuppardo Fiorentina"
-                  className="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700"
-                />
+              <div className="mt-8 grid grid-cols-3 gap-4">
+                  <div className="aspect-video relative overflow-hidden border border-accent/20 bg-black/50">
+                      <img src={fiorentinaLibo} alt="Liborio Zuppardo Fiorentina" className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity" />
+                  </div>
+                  <div className="aspect-video relative overflow-hidden border border-accent/20 bg-black/50">
+                      <img src={aboutUser2} alt="Dettagli Tecnici Academy 19" className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity" />
+                  </div>
+                  <div className="aspect-video relative overflow-hidden border border-accent/20 bg-black/50">
+                      <img src={liborioLaurea} alt="Liborio Zuppardo Laurea" className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity" />
+                  </div>
               </div>
               <div className="mt-8 p-8 bg-accent/10 border border-accent/30 backdrop-blur-sm relative overflow-hidden">
                 <div className="absolute top-0 left-0 w-1 h-full bg-accent"></div>
@@ -164,15 +168,7 @@ const AboutSection = () => {
                 Il calcio per me non è mai stato solo uno sport. È stata una scelta di vita.
                 A 15 anni ho lasciato la mia terra, la Sicilia. Non è stata una decisione semplice: significava allontanarmi dalla famiglia, dagli amici, dalle certezze di ogni giorno. C'erano emozione, paura, sacrificio. Ma c'era soprattutto un sogno troppo grande per restare fermo.
               </p>
-              <div className="grid grid-cols-2 gap-4 my-8">
-                  <div className="aspect-video relative overflow-hidden border border-accent/20 bg-black/50">
-                      <img src={aboutUser2} alt="Dettagli Tecnici Academy 19" className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity" />
-                  </div>
-                  <div className="aspect-video relative overflow-hidden border border-accent/20 bg-black/50">
-                      <img src={liborioLaurea} alt="Liborio Zuppardo Laurea" className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity" />
-                  </div>
-              </div>
-              <p className="text-lg text-zinc-300 font-mono leading-relaxed">
+              <p className="text-lg text-zinc-300 font-mono leading-relaxed mt-8">
                 Dopo numerosi provini, il mio percorso mi ha portato prima all’<strong className="text-white">Ancona Calcio</strong> e successivamente alla <strong className="text-white">Fiorentina</strong>: tappe decisive che hanno formato non solo il calciatore, ma soprattutto l'uomo.
                 Da oltre vent’anni vivo il calcio con passione e professionalità. Ho avuto la fortuna di vestire le maglie di tante squadre: con alcune ho vinto, con altre ho affrontato momenti difficili. Ogni vittoria mi ha dato consapevolezza, ogni sconfitta mi ha insegnato a non mollare mai.
               </p>
