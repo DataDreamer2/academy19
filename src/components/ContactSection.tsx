@@ -140,17 +140,19 @@ const ContactSection = () => {
                     </div>
                   </div>
 
-                  <div className="flex flex-col sm:flex-row gap-8 items-end sm:items-center">
+                  <div className="flex flex-col md:flex-row gap-8 items-start">
                     <div className="flex-1 border-l border-accent/30 pl-6">
                       <h4 className="font-bold uppercase tracking-widest mb-4 text-base text-accent">📝 Iscrizioni & Scadenza</h4>
-                      <p className="text-sm text-zinc-400 font-mono uppercase mb-4">
-                          Aperte fino al <span className="text-white">10 Giugno</span>. Posti limitati.
-                      </p>
-                      <div className="p-4 border border-accent/20 bg-accent/5 text-xs font-mono text-accent/80 uppercase">
-                          Pagamento in un’unica soluzione o in due rate (acconto e saldo).
+                      <div className="space-y-4">
+                        <p className="text-sm text-zinc-400 font-mono uppercase">
+                            Aperte fino al <span className="text-white">10 Giugno</span>. Posti limitati.
+                        </p>
+                        <div className="p-4 border border-accent/20 bg-accent/5 text-xs font-mono text-accent/80 uppercase">
+                            Pagamento in un’unica soluzione o in due rate (acconto e saldo).
+                        </div>
                       </div>
                     </div>
-                    <div className="w-full max-w-[200px] shrink-0 border border-accent/20 bg-accent/5 p-2 animate-in fade-in zoom-in-95 duration-700 mx-auto sm:mx-0">
+                    <div className="w-full md:w-[260px] lg:w-[300px] shrink-0 border border-accent/20 bg-accent/5 p-2 animate-in fade-in zoom-in-95 duration-700">
                       <video 
                           src="/videos/monte-video.mov" 
                           className="w-full aspect-[4/5] object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-500" 
@@ -209,17 +211,19 @@ const ContactSection = () => {
                     </ul>
                   </div>
 
-                  <div className="flex flex-col sm:flex-row gap-6 items-end sm:items-center">
+                  <div className="flex flex-col md:flex-row gap-8 items-start">
                     <div className="flex-1 border-l border-amber-500/30 pl-6">
                       <h4 className="font-bold uppercase tracking-widest mb-4 text-base text-amber-500">📝 Iscrizioni & Scadenza</h4>
-                      <p className="text-sm text-zinc-400 font-mono uppercase mb-4">
-                          Aperte fino al <span className="text-white">10 Maggio</span>. Posti limitati.
-                      </p>
-                      <div className="p-4 border border-amber-500/20 bg-amber-500/5 text-xs font-mono text-amber-200/80 uppercase">
-                          Pagamento in un’unica soluzione o in due rate (acconto e saldo).
+                      <div className="space-y-4">
+                        <p className="text-sm text-zinc-400 font-mono uppercase">
+                            Aperte fino al <span className="text-white">10 Maggio</span>. Posti limitati.
+                        </p>
+                        <div className="p-4 border border-amber-500/20 bg-amber-500/5 text-xs font-mono text-amber-200/80 uppercase">
+                            Pagamento in un’unica soluzione o in due rate (acconto e saldo).
+                        </div>
                       </div>
                     </div>
-                    <div className="w-full max-w-[200px] shrink-0 border border-amber-500/20 bg-amber-500/5 p-2 animate-in fade-in zoom-in-95 duration-1000 delay-150 mx-auto sm:mx-0">
+                    <div className="w-full md:w-[260px] lg:w-[300px] shrink-0 border border-amber-500/20 bg-amber-500/5 p-2 animate-in fade-in zoom-in-95 duration-1000 delay-150">
                       <div className="overflow-hidden relative group aspect-[4/5]">
                           <img 
                               src="/images/forli-casacche.jpeg" 
