@@ -47,7 +47,7 @@ const StickyMobileCTA = () => {
                         className="flex flex-col gap-0.5 h-auto py-2 text-accent/70 hover:text-accent hover:bg-accent/10 rounded-none border border-transparent hover:border-accent/30 transition-all"
                     >
                         <Phone className="w-5 h-5 mb-1" />
-                        <span className="text-[9px] font-bold uppercase tracking-widest font-mono">Chiama</span>
+                        <span className="text-[9px] font-bold uppercase tracking-widest font-sans">Chiama</span>
                     </Button>
 
                     <Button
@@ -56,7 +56,7 @@ const StickyMobileCTA = () => {
                         className="flex flex-col gap-0.5 h-auto py-2 text-accent/70 hover:text-accent hover:bg-accent/10 rounded-none border border-transparent hover:border-accent/30 transition-all"
                     >
                         <MessageCircle className="w-5 h-5 mb-1" />
-                        <span className="text-[9px] font-bold uppercase tracking-widest font-mono">Chat</span>
+                        <span className="text-[9px] font-bold uppercase tracking-widest font-sans">Chat</span>
                     </Button>
 
                     <Button
@@ -64,7 +64,7 @@ const StickyMobileCTA = () => {
                         className="flex flex-col gap-0.5 h-auto py-2 bg-accent hover:bg-white text-black rounded-none transition-all duration-300 border border-accent"
                     >
                         <Calendar className="w-5 h-5 mb-1" />
-                        <span className="text-[9px] font-bold uppercase tracking-widest font-mono">Prenota</span>
+                        <span className="text-[9px] font-bold uppercase tracking-widest font-sans">Prenota</span>
                     </Button>
                 </div>
             </div>

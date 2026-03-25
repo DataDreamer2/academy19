@@ -7,13 +7,13 @@ const NextEventsSection = () => {
     ];
 
     return (
-        <div className="w-full bg-accent text-black overflow-hidden border-y border-black font-mono relative z-20">
+        <div className="w-full bg-accent text-black overflow-hidden border-y border-black font-sans relative z-20">
             <div className="flex animate-marquee whitespace-nowrap py-3 items-center">
                 {/* We repeat the content to ensure an infinite scroll effect */}
                 {[...Array(6)].map((_, i) => (
                     <div key={i} className="flex">
                         {events.map((event, index) => (
-                            <div key={index} className="flex items-center mx-8 uppercase font-bold tracking-wider text-sm md:text-base">
+                            <div key={index} className="flex items-center mx-8 uppercase font-bold tracking-wider text-sm md:text-base font-sans">
                                 <span className="flex items-center gap-2">
                                     <MapPin className="w-4 h-4 md:w-5 md:h-5 text-black/70" />
                                     {event.location}
@@ -23,7 +23,7 @@ const NextEventsSection = () => {
                                     <Calendar className="w-4 h-4 md:w-5 md:h-5 text-black/70" />
                                     {event.text}
                                 </span>
-                                <span className="ml-16 md:ml-24 text-black/30 text-xl font-light">/</span>
+                                <span className="ml-16 md:ml-24 text-black/30 text-xl font-light font-display">/</span>
                             </div>
                         ))}
                     </div>

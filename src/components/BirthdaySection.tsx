@@ -49,34 +49,34 @@ const BirthdaySection = () => {
           
           {/* Text Content */}
           <div className="lg:w-1/2 space-y-8">
-            <div className="inline-block px-4 py-1 bg-accent/10 border border-accent/20 text-accent font-mono text-sm uppercase tracking-widest mb-4">
+            <div className="inline-block px-4 py-1 bg-accent/10 border border-accent/20 text-accent font-sans text-sm uppercase tracking-widest mb-4 reveal-hidden fade-up will-animate" data-delay="0.1">
               Eventi Speciali
             </div>
-            <h2 className="text-5xl md:text-7xl font-bold uppercase tracking-tighter leading-none text-white">
+            <h2 className="text-5xl md:text-7xl font-bold uppercase tracking-tighter leading-none text-white font-display translate-x-left will-animate" data-delay="0.2">
               Un Compleanno <br /> 
               <span className="text-accent underline decoration-accent/30 decoration-8 underline-offset-8">Da Vero PRO</span>
-              <Cake className="inline-block ml-4 w-12 h-12 text-accent animate-bounce-slow" />
+              <Cake className="inline-block ml-4 w-12 h-12 text-accent" />
             </h2>
-            <p className="text-xl text-zinc-200 max-w-xl leading-relaxed font-mono">
+            <p className="text-xl text-zinc-200 max-w-xl leading-relaxed font-sans fade-up will-animate" data-delay="0.4">
               Regala un'esperienza indimenticabile sul campo. <br />
               Più di una semplice festa: un vero stage da campioni guidato dai nostri tecnici.
             </p>
             
-            <div className="grid sm:grid-cols-2 gap-4 pt-4">
+            <div className="grid sm:grid-cols-2 gap-4 pt-4 will-animate" data-stagger="0.1">
               {features.map((feature, index) => (
-                <div key={index} className="flex flex-col gap-3 p-6 border border-zinc-800 bg-black/80 hover:border-accent/50 transition-colors">
+                <div key={index} className="flex flex-col gap-3 p-6 border border-zinc-800 bg-black/80 hover:border-accent/50 transition-colors card-reveal">
                   <feature.icon className="w-8 h-8 text-accent" />
                   <div>
-                    <h4 className="text-white font-bold uppercase text-base tracking-wide mb-2">{feature.title}</h4>
-                    <p className="text-zinc-400 text-sm leading-relaxed font-mono">{feature.description}</p>
+                    <h4 className="text-white font-bold uppercase text-base tracking-wide mb-2 font-display">{feature.title}</h4>
+                    <p className="text-zinc-400 text-sm leading-relaxed font-sans">{feature.description}</p>
                   </div>
                 </div>
               ))}
             </div>
 
-            <div className="pt-8">
+            <div className="pt-8 slide-up-reveal will-animate" data-delay="0.6">
               <Link to="/contatti?program=compleanno-academy">
-                <Button className="bg-accent text-black hover:bg-white h-16 px-10 text-lg font-bold uppercase tracking-widest rounded-none group transition-all duration-300">
+                <Button className="bg-accent text-black hover:bg-white h-16 px-10 text-lg font-bold uppercase tracking-widest rounded-none group transition-all duration-300 btn-bounce font-display">
                   Prenota la Festa 
                   <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-2 transition-transform" />
                 </Button>
@@ -85,7 +85,7 @@ const BirthdaySection = () => {
           </div>
 
           {/* Image Side */}
-          <div className="lg:w-1/2 relative">
+          <div className="lg:w-1/2 relative staff-reveal will-animate" data-delay="0.4">
             <div className="relative z-10 border border-accent/20 p-2 bg-black">
               <img 
                 src="/gallery/foto-compleanni.jpg" 

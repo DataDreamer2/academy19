@@ -13,6 +13,7 @@ import Kit from "./pages/Kit";
 import Compleanno from "./pages/Compleanno";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
+import AnimationInitializer from "./components/AnimationInitializer";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => (
         <Sonner />
         <BrowserRouter>
           <ScrollToTop />
+          <AnimationInitializer />
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/chi-siamo" element={<ChiSiamo />} />

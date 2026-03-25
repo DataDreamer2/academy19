@@ -8,92 +8,37 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Padel Club Theme - Pantone 16-6340 Classic Green */
-    --background: 0 0% 0%;
-    /* Pure Black */
-    --foreground: 127 49% 44%;
-    /* Pantone Classic Green */
+    /* Academy19 Official Palette - RESTORED GREEN AS PRIMARY */
+    --background: 229 24% 6%;    /* #0b0e12 - Dark */
+    --foreground: 215 23% 93%;   /* #e8ecf2 - White */
+    
+    --primary: 141 65% 29%;      /* #1a7a3c - Green (Primary) */
+    --primary-foreground: 215 23% 93%;
 
-    --card: 0 0% 2%;
-    /* Barely off-black for slight depth if needed (zinc-950) */
-    --card-foreground: 127 49% 44%;
+    --secondary: 46 78% 52%;     /* #e8b824 - Gold (Secondary highlight) */
+    --secondary-foreground: 229 24% 6%;
 
-    --popover: 0 0% 0%;
-    --popover-foreground: 127 49% 44%;
+    --accent: 141 65% 29%;       /* Green is the main accent for buttons/borders */
+    --accent-foreground: 215 23% 93%;
 
-    --primary: 127 49% 44%;
-    /* Pantone Classic Green */
-    --primary-foreground: 0 0% 0%;
-    /* Black text on green bg */
+    --muted: 141 30% 15%;        /* Dark green tint for muted areas */
+    --muted-foreground: 141 10% 70%;
 
-    --secondary: 0 0% 5%;
-    /* Very dark grey for secondary areas */
-    --secondary-foreground: 127 49% 44%;
+    --card: 229 24% 8%;
+    --card-foreground: 215 23% 93%;
 
-    --muted: 0 0% 5%;
-    --muted-foreground: 127 49% 34%;
-    /* Slightly darker green for muted text */
-
-    --accent: 127 49% 44%;
-    /* Pantone Classic Green */
-    --accent-foreground: 0 0% 0%;
-
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
-
-    --border: 127 49% 44%;
-    /* Borders are now pantone green */
-    --input: 127 49% 44%;
-    /* Input borders are pantone green */
-    --ring: 127 49% 44%;
-    /* Rings are pantone green */
+    --border: 141 65% 29%;       /* Green borders */
+    --input: 141 65% 29%;
+    --ring: 141 65% 29%;
 
     --radius: 0rem;
-    /* Sharp edges for that brutalist Padel Club feel */
 
-    /* Sidebar - mapped to main simplified theme */
-    --sidebar-background: 0 0% 0%;
-    --sidebar-foreground: 127 49% 44%;
-    --sidebar-primary: 127 49% 44%;
-    --sidebar-primary-foreground: 0 0% 0%;
-    --sidebar-accent: 0 0% 5%;
-    --sidebar-accent-foreground: 127 49% 44%;
-    --sidebar-border: 127 49% 44%;
-    --sidebar-ring: 127 49% 44%;
-
-    /* Vivid Electric Green for Accents */
-    --electric-green: 127 49% 44%;
-  }
-
-  .dark {
-    /* Identical to :root to prevent any flashes or mode switching issues */
-    --background: 0 0% 0%;
-    --foreground: 127 49% 44%;
-    --card: 0 0% 2%;
-    --card-foreground: 127 49% 44%;
-    --popover: 0 0% 0%;
-    --popover-foreground: 127 49% 44%;
-    --primary: 127 49% 44%;
-    --primary-foreground: 0 0% 0%;
-    --secondary: 0 0% 5%;
-    --secondary-foreground: 127 49% 44%;
-    --muted: 0 0% 5%;
-    --muted-foreground: 127 49% 34%;
-    --accent: 127 49% 44%;
-    --accent-foreground: 0 0% 0%;
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
-    --border: 127 49% 44%;
-    --input: 127 49% 44%;
-    --ring: 127 49% 44%;
-    --sidebar-background: 0 0% 0%;
-    --sidebar-foreground: 127 49% 44%;
-    --sidebar-primary: 127 49% 44%;
-    --sidebar-primary-foreground: 0 0% 0%;
-    --sidebar-accent: 0 0% 5%;
-    --sidebar-accent-foreground: 127 49% 44%;
-    --sidebar-border: 127 49% 44%;
-    --sidebar-ring: 127 49% 44%;
+    /* Animation Timing Tokens */
+    --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+    --dur-fast: 0.35s;
+    --dur-mid: 0.6s;
+    --dur-slow: 0.9s;
   }
 }
 
@@ -103,12 +48,12 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-[#E8E8E8] leading-[1.7];
+    @apply bg-background text-foreground leading-[1.7];
   }
 
   h1, h2, h3, h4, h5, h6 {
     @apply text-white;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+    text-shadow: 0 2px 10px rgba(0,0,0,0.8);
   }
 
   .text-column {
@@ -129,4 +74,138 @@ All colors MUST be HSL.
 
 .will-animate {
   will-change: transform, opacity;
+}
+
+/* Base Animation States - Fix for Hero Visibility */
+.reveal-hidden {
+  opacity: 0;
+  transition: opacity var(--dur-slow) var(--ease-out-expo);
+}
+
+.reveal-hidden.visible {
+  opacity: 1;
+}
+
+/* HERO: Line Reveal - Improved fallback */
+.line-reveal {
+  clip-path: inset(0 0 100% 0);
+  transition: clip-path var(--dur-slow) var(--ease-out-expo);
+}
+
+.line-reveal.visible {
+  clip-path: inset(0 0 0% 0);
+}
+
+/* Ensure Hero is visible if animation fails or JS is slow */
+#home .line-reveal:not(.visible) {
+  /* Fallback: at least show it with reduced opacity instead of totally clipped if transition hasn't started after 2s */
+  animation: fallback-reveal 0.1s forwards 2s;
+}
+
+@keyframes fallback-reveal {
+  to { clip-path: inset(0 0 0% 0); }
+}
+
+/* HERO: Fade Up */
+.fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity var(--dur-slow) var(--ease-out-expo), 
+              transform var(--dur-slow) var(--ease-out-expo);
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* SCROLL: Translate X (Section Titles & Features) */
+.translate-x-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity var(--dur-slow) var(--ease-out-expo), 
+              transform var(--dur-slow) var(--ease-out-expo);
+}
+
+.translate-x-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.translate-x-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity var(--dur-slow) var(--ease-out-expo), 
+              transform var(--dur-slow) var(--ease-out-expo);
+}
+
+.translate-x-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* SCROLL: Cards & Staff */
+.card-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity var(--dur-mid) var(--ease-out-expo), 
+              transform var(--dur-mid) var(--ease-out-expo);
+}
+
+.card-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.staff-reveal {
+  opacity: 0;
+  transform: scale(0.94) translateY(20px);
+  transition: opacity var(--dur-mid) var(--ease-out-expo), 
+              transform var(--dur-mid) var(--ease-out-expo);
+}
+
+.staff-reveal.visible {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+/* MICRO-INTERACTIONS */
+.hover-accent-line {
+  position: relative;
+}
+
+.hover-accent-line::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: hsl(var(--accent));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--dur-fast) var(--ease-out-expo);
+}
+
+.hover-accent-line:hover::after {
+  transform: scaleX(1);
+}
+
+.btn-bounce {
+  transition: transform var(--dur-fast) var(--ease-out-back), 
+              background-color var(--dur-fast) ease;
+}
+
+.btn-bounce:hover {
+  transform: translateY(-2px);
+}
+
+/* NAVBAR */
+.nav-slide-down {
+  transform: translateY(-100%);
+  transition: transform var(--dur-slow) var(--ease-out-expo);
+}
+
+.nav-slide-down.visible {
+  transform: translateY(0);
 }

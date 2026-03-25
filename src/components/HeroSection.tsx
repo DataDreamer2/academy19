@@ -48,35 +48,34 @@ const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-6 md:px-12 pt-28 md:pt-20">
         <div className="max-w-4xl">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-none border border-accent/40 bg-black/50 backdrop-blur-sm mb-8 animate-goal-celebration">
-            <span className="w-2 h-2 rounded-full bg-accent animate-bounce-ball"></span>
-            <span className="text-white/80 text-xs font-bold tracking-widest uppercase font-mono">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-none border border-accent/40 bg-black/50 backdrop-blur-sm mb-8 reveal-hidden fade-up will-animate" data-delay="0.3">
+            <span className="w-2 h-2 rounded-full bg-accent"></span>
+            <span className="text-white/80 text-xs font-bold tracking-widest uppercase font-sans">
               Stagione 2025/2026
             </span>
           </div>
 
           {/* Main Headline - BIG TYPE - Added Responsive clamp() */}
           <h1 
-            className="text-[clamp(3.5rem,15vw,9rem)] font-bold text-accent tracking-tighter leading-[0.85] mb-8 animate-kick-in drop-shadow-[0_8px_24px_rgba(0,0,0,0.6)]" 
-            style={{ animationDelay: '0.2s' }}
+            className="text-[clamp(3.5rem,15vw,9rem)] font-bold tracking-tighter leading-[0.85] mb-8 drop-shadow-[0_8px_24px_rgba(0,0,0,0.6)] font-display" 
           >
-            GIOVANI <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-accent/50">
+            <span className="text-white block fade-up will-animate" data-delay="0.5">GIOVANI</span>
+            <span className="text-secondary block fade-up will-animate" data-delay="0.7">
               CAMPIONI.
             </span>
           </h1>
 
-          <p className="text-xl mobile:text-2xl md:text-3xl text-zinc-100 max-w-xl mb-12 leading-relaxed font-mono animate-dribble drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]" style={{ animationDelay: '0.4s' }}>
+          <p className="text-xl mobile:text-2xl md:text-3xl text-zinc-100 max-w-xl mb-12 leading-relaxed font-sans fade-up will-animate drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]" data-delay="1.1">
             Il calcio è disciplina, tecnica e crescita. <br />
             Costruiamo il futuro dei talenti d'élite.
           </p>
 
           {/* CTA Group */}
-          <div className="flex flex-col sm:flex-row gap-6 animate-sprint" style={{ animationDelay: '0.6s' }}>
+          <div className="flex flex-col sm:flex-row gap-6 fade-up will-animate" data-delay="1.3">
             <Button
               size="lg"
               onClick={() => scrollToSection('#contatti')}
-              className="group bg-accent hover:bg-accent/80 text-black text-lg px-10 py-8 rounded-none transition-all duration-300 font-bold uppercase tracking-wider"
+              className="group bg-accent hover:bg-accent/80 text-black text-lg px-10 py-8 rounded-none transition-all duration-300 font-bold uppercase tracking-wider btn-bounce font-display"
             >
               <span className="flex items-center gap-3">
                 Prenota la Prova
@@ -88,21 +87,21 @@ const HeroSection = () => {
               size="lg"
               variant="outline"
               onClick={() => scrollToSection('#percorsi')}
-              className="bg-transparent border-accent/40 text-accent hover:bg-accent/10 hover:border-accent text-lg px-10 py-8 rounded-none backdrop-blur-sm transition-all duration-300 font-bold uppercase tracking-wider"
+              className="bg-transparent border-accent/40 text-accent hover:bg-accent/10 hover:border-accent text-lg px-10 py-8 rounded-none backdrop-blur-sm transition-all duration-300 font-bold uppercase tracking-wider font-display btn-bounce"
             >
               Scopri i Programmi
             </Button>
           </div>
 
           {/* Stats/Trust - Optimized for mobile-xs */}
-          <div className="mt-12 md:mt-20 flex flex-wrap items-center gap-8 md:gap-12 border-t border-accent/20 pt-8 animate-pass-through" style={{ animationDelay: '0.8s' }}>
+          <div className="mt-12 md:mt-20 flex flex-wrap items-center gap-8 md:gap-12 border-t border-accent/20 pt-8 card-reveal will-animate" data-delay="1.5">
             <div className="min-w-[120px]">
-              <p className="text-4xl md:text-5xl font-bold text-accent">500+</p>
-              <p className="text-zinc-400 text-xs font-mono uppercase tracking-widest mt-2">Atleti Formati</p>
+              <p className="text-4xl md:text-5xl font-bold text-accent font-display">500+</p>
+              <p className="text-zinc-400 text-xs font-sans uppercase tracking-widest mt-2">Atleti Formati</p>
             </div>
             <div className="min-w-[120px]">
-              <p className="text-4xl md:text-5xl font-bold text-accent">FIGC</p>
-              <p className="text-zinc-400 text-xs font-mono uppercase tracking-widest mt-2">Certificati</p>
+              <p className="text-4xl md:text-5xl font-bold text-accent font-display">FIGC</p>
+              <p className="text-zinc-400 text-xs font-sans uppercase tracking-widest mt-2">Certificati</p>
             </div>
           </div>
         </div>

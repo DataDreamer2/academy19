@@ -39,9 +39,9 @@ const Footer = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <span className="font-bold text-4xl tracking-tight uppercase text-accent">Academy19</span>
+              <span className="font-bold text-4xl tracking-tight uppercase text-accent font-display">Academy19</span>
             </div>
-            <p className="text-zinc-400 max-w-md text-lg leading-relaxed font-mono">
+            <p className="text-zinc-400 max-w-md text-lg leading-relaxed font-sans">
               Il punto di riferimento per la formazione calcistica d'eccellenza.
               Disciplina, tecnica e passione.
             </p>
@@ -59,7 +59,7 @@ const Footer = () => {
                   <Link
                     to={link.href}
                     onClick={scrollToTop}
-                    className="text-accent/60 hover:text-accent transition-all font-mono text-sm uppercase"
+                    className="text-accent/60 hover:text-accent transition-all font-sans text-sm uppercase tracking-widest"
                   >
                     {link.label}
                   </Link>
@@ -77,7 +77,7 @@ const Footer = () => {
                   <Link
                     to={link.href}
                     onClick={scrollToTop}
-                    className="text-accent/60 hover:text-accent transition-all font-mono text-sm uppercase"
+                    className="text-accent/60 hover:text-accent transition-all font-sans text-sm uppercase tracking-widest"
                   >
                     {link.label}
                   </Link>
@@ -89,7 +89,7 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-accent/20 pt-10 flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="text-zinc-500 text-xs font-mono uppercase tracking-widest flex flex-col md:flex-row gap-4 md:gap-8 items-center">
+          <div className="text-zinc-500 text-xs font-sans uppercase tracking-widest flex flex-col md:flex-row gap-4 md:gap-8 items-center">
             <span>© {new Date().getFullYear()} Academy19</span>
             <span className="hidden md:inline">•</span>
             <span>Via Tripoli 137 - Forlì</span>
@@ -100,7 +100,7 @@ const Footer = () => {
           {/* Back to top */}
           <button
             onClick={scrollToTop}
-            className="group flex items-center gap-2 text-accent font-bold uppercase tracking-widest text-xs transition-all"
+            className="group flex items-center gap-2 text-accent font-bold uppercase tracking-widest text-xs transition-all font-display"
           >
             Torna su
             <ChevronUp className="w-4 h-4 group-hover:-translate-y-1 transition-transform" />

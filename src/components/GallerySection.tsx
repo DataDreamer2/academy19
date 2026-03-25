@@ -59,32 +59,29 @@ const GallerySection = () => {
   return (
     <section id="galleria" className="py-24 text-accent border-b border-accent/20 relative overflow-hidden">
       <div 
-        className="absolute inset-0 z-0" 
+        className="absolute inset-0 z-0 bg-cover bg-center bg-fixed" 
         style={{ 
-          backgroundImage: `url(${sfondoChiSiamo})`, 
-          backgroundSize: 'cover', 
-          backgroundAttachment: 'fixed', 
-          backgroundPosition: 'center',
+          backgroundImage: `url(${sfondoChiSiamo})`,
           filter: 'brightness(0.7) contrast(1.1)' 
         }} 
       />
       <div className="absolute inset-0 bg-black/60 z-0"></div>
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         <div className="mb-20 border-b border-accent/20 pb-8 max-w-4xl">
-          <h2 className="text-[clamp(2.5rem,10vw,4.5rem)] font-bold uppercase tracking-tighter mb-6 text-accent leading-[1] md:leading-tight">
+          <h2 className="text-[clamp(2.5rem,10vw,4.5rem)] font-bold uppercase tracking-tighter mb-6 text-accent leading-[1] md:leading-tight font-display translate-x-left will-animate">
             Momenti <br /> Unici.
           </h2>
-          <p className="text-xl text-zinc-400 font-mono">
+          <p className="text-xl text-zinc-400 font-sans fade-up will-animate" data-delay="0.2">
             L'intensità e la passione di ogni allenamento.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3 gap-2">
+        <div className="grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3 gap-2 will-animate" data-stagger="0.1">
           {galleryItems.map((item, index) => (
               <div
                 key={item.id + index} // Key fix for demo duplicate
                 onClick={() => setSelectedImage(item)}
-                className="group relative aspect-square bg-black overflow-hidden cursor-pointer border border-accent/10 hover:border-accent transition-all duration-300"
+                className="group relative aspect-square bg-black overflow-hidden cursor-pointer border border-accent/10 hover:border-accent transition-all duration-300 staff-reveal"
               >
                 <img
                   src={item.src}
@@ -107,8 +104,8 @@ const GallerySection = () => {
                     </div>
                   </div>
                   <div>
-                    <p className="text-white/80 text-xs font-bold uppercase tracking-widest mb-2 font-mono bg-black/50 inline-block px-2 py-1 backdrop-blur-sm border border-white/20">{item.category}</p>
-                    <h3 className="text-white text-2xl font-bold uppercase bg-black/50 inline-block px-3 py-1 backdrop-blur-sm mt-2">{item.alt}</h3>
+                    <p className="text-white/80 text-xs font-bold uppercase tracking-widest mb-2 font-sans bg-black/50 inline-block px-2 py-1 backdrop-blur-sm border border-white/20">{item.category}</p>
+                    <h3 className="text-white text-2xl font-bold uppercase bg-black/50 inline-block px-3 py-1 backdrop-blur-sm mt-2 font-display">{item.alt}</h3>
                   </div>
                 </div>
               </div>

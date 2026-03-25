@@ -38,7 +38,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`fixed top-4 left-0 right-0 z-50 transition-all duration-300 px-4 desktop:px-8`}
+        className={`fixed top-4 left-0 right-0 z-50 px-4 desktop:px-8 nav-slide-down will-animate`}
       >
         <div
           className={`mx-auto max-w-7xl rounded-none transition-all duration-300 ${isScrolled
@@ -70,8 +70,8 @@ const Navbar = () => {
                 <Link
                   key={link.to}
                   to={link.to}
-                  className={`text-sm font-bold tracking-wide uppercase transition-all duration-300 hover:text-accent  ${isActive(link.to)
-                    ? 'text-accent  border-b-2 border-accent pb-1'
+                  className={`text-sm font-bold tracking-wide uppercase transition-colors duration-[var(--dur-fast)] hover:text-accent font-display ${isActive(link.to)
+                    ? 'text-accent border-b-2 border-accent pb-1'
                     : 'text-accent/60'
                     }`}
                 >
@@ -80,7 +80,7 @@ const Navbar = () => {
               ))}
               <Link to="/contatti">
                 <Button
-                  className="rounded-none bg-accent hover:bg-accent/80 text-black font-bold tracking-widest uppercase text-xs px-8 py-6 transition-all duration-300"
+                  className="rounded-none bg-accent hover:bg-accent/80 text-black font-bold tracking-widest uppercase text-xs px-8 py-6 transition-all btn-bounce font-display"
                 >
                   Iscriviti al Campus
                 </Button>

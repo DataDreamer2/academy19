@@ -34,15 +34,15 @@ const NutritionistSection = () => {
             />
             <div className="absolute inset-0 bg-black/60 z-0"></div>
             <div className="container mx-auto px-6 md:px-12 relative z-10">
-                <div className="mb-20 border-b border-accent/20 pb-8 max-w-4xl">
-                    <h2 className="text-[clamp(2.5rem,10vw,4.5rem)] font-bold tracking-tighter uppercase mb-4 leading-[1] md:leading-tight">
+                <div className="mb-20 border-b border-accent/20 pb-8 max-w-4xl translate-x-left will-animate">
+                    <h2 className="text-[clamp(2.5rem,10vw,4.5rem)] font-bold tracking-tighter uppercase mb-4 leading-[1] md:leading-tight font-display">
                         Il Mio <br /> Nutrizionista
                     </h2>
                 </div>
 
                 <div className="grid lg:grid-cols-12 gap-16 items-start">
                     <div className="lg:col-span-5 relative">
-                        <div className="aspect-[3/4] bg-black overflow-hidden relative border border-accent/20 group">
+                        <div className="aspect-[3/4] bg-black overflow-hidden relative border border-accent/20 group staff-reveal will-animate">
                             {/* We use the video prominently here */}
                             <video
                                 src="/video-nutrizionista.mp4"
@@ -53,53 +53,53 @@ const NutritionistSection = () => {
                             />
                             <div className="absolute inset-0 pointer-events-none group-hover:opacity-0 transition-opacity"></div>
                         </div>
-                        <div className="mt-8 p-8 bg-accent/10 border border-accent/30 backdrop-blur-sm relative overflow-hidden">
+                        <div className="mt-8 p-8 bg-accent/10 border border-accent/30 backdrop-blur-sm relative overflow-hidden fade-up will-animate" data-delay="0.2">
                             <div className="absolute top-0 left-0 w-1 h-full bg-accent"></div>
-                            <p className="text-xl font-bold italic leading-tight text-white">
+                            <p className="text-xl font-bold italic leading-tight text-white font-sans">
                                 “Ogni volta che impariamo qualcosa di nuovo, noi stessi diventiamo qualcosa di nuovo”.
                             </p>
-                            <p className="mt-4 text-zinc-300 font-mono text-sm">
+                            <p className="mt-4 text-zinc-300 font-sans text-sm">
                                 Questa è la mentalità alla base della mia attività professionale, che mi porta ad un continuo aggiornamento ed elaborazione di nuovi progetti futuri.
                             </p>
                         </div>
                     </div>
 
-                    <div className="lg:col-span-7 space-y-6">
-                        <h3 className="text-[clamp(2rem,6vw,3rem)] font-bold uppercase mb-4 text-white leading-tight">Chi Sono?</h3>
-                        <p className="text-lg text-zinc-300 font-mono leading-relaxed">
+                    <div className="lg:col-span-7 space-y-6" data-stagger="0.1">
+                        <h3 className="text-[clamp(2rem,6vw,3rem)] font-bold uppercase mb-4 text-white leading-tight font-display translate-x-right will-animate">Chi Sono?</h3>
+                        <p className="text-lg text-zinc-300 font-sans leading-relaxed fade-up will-animate">
                             Fin da quando ero un bambino la mia più grande passione è stata lo sport e il continuo voler migliorare me stesso e i miei risultati, in ogni allenamento.
                         </p>
-                        <p className="text-lg text-zinc-300 font-mono leading-relaxed">
+                        <p className="text-lg text-zinc-300 font-sans leading-relaxed fade-up will-animate">
                             Ho conseguito la laurea triennale in Scienze e Tecnologie del Fitness presso l’Università degli Studi di Camerino durante la quale ho avuto l’opportunità, tramite il progetto Erasmus, di fare un esperienza di 6 mesi presso l’Accademia dell’Educazione Fisica e Sport di Danzica (Polonia), un centro avanzato di scienza e sport che mi ha permesso di approfondire tutto ciò che riguarda la Performance atletica e di elaborare la mia tesi sperimentale in Biochimica dal titolo: <em>‘’L'effetto di 12 settimane di supplementazione di L-Carnitina L-Tartrate sulla composizione corporea, la forza e la capacità aerobica’’</em>
                         </p>
-                        <p className="text-lg text-zinc-300 font-mono leading-relaxed">
+                        <p className="text-lg text-zinc-300 font-sans leading-relaxed fade-up will-animate">
                             Ho proseguito il mio percorso formativo con la Laurea Magistrale in Biological Sciences indirizzo “Nutrition and Functional Food” sempre presso l’Università degli Studi di Camerino. Nel mentre ho frequentato molteplici corsi teorico-pratici nell’ambito sportivo conseguendo il patentino di Istruttore di Atletica Leggera di 1° livello e la Licenza UEFA C grassroots per l’insegnamento ai giovani calciatori, il patentino FISDIR (Federazione italiana sport paralimpici degli intellettivi relazionali).
                         </p>
                         
-                        <div className="grid md:grid-cols-3 gap-6 my-10">
+                        <div className="grid md:grid-cols-3 gap-6 my-10" data-stagger="0.1">
                             {values.map((value) => (
-                            <div key={value.title} className="p-6 bg-accent/5 border border-accent/20">
+                            <div key={value.title} className="p-6 bg-accent/5 border border-accent/20 fade-up will-animate">
                                 <value.icon className="w-8 h-8 text-accent mb-4" />
-                                <h4 className="font-bold uppercase tracking-widest text-white mb-2">{value.title}</h4>
-                                <p className="text-sm text-zinc-400 font-mono">{value.description}</p>
+                                <h4 className="font-bold uppercase tracking-widest text-white mb-2 font-display text-xl">{value.title}</h4>
+                                <p className="text-sm text-zinc-400 font-sans">{value.description}</p>
                             </div>
                             ))}
                         </div>
 
-                        <p className="text-lg text-zinc-300 font-mono leading-relaxed">
+                        <p className="text-lg text-zinc-300 font-sans leading-relaxed fade-up will-animate">
                             Grazie alla frequentazione del laboratorio di ricerca di Nutrizione dell’Università (Nutricam) ho avuto modo di imparare ad utilizzare gli strumenti del mestiere e di approfondire tutto ciò che rientra nell’ambito della Nutrizione e della Biochimica e di come la Nutrizione, Sport e Salute siano una triade imprescindibile.
                         </p>
-                        <p className="text-lg text-zinc-300 font-mono leading-relaxed">
+                        <p className="text-lg text-zinc-300 font-sans leading-relaxed fade-up will-animate">
                             Parallelamente, grazie alla mia laurea in Scienze Motorie ho portato avanti l’attività da Fitness Trainer presso le varie società di calcio con le quali ho instaurato proficue collaborazioni. Questo percorso, tra Nutrizione e Sport, è culminato con la mia tesi sperimentale magistrale in Biochimica Applicata dal titolo: “Il ruolo della composizione corporea nel Calciatore Amatoriale”.
                         </p>
 
-                        <blockquote className="text-2xl font-bold border-l-4 border-accent pl-6 py-2 my-8 bg-accent/5 uppercase tracking-widest text-accent">
+                        <blockquote className="text-2xl font-bold border-l-4 border-accent pl-6 py-2 my-8 bg-accent/5 uppercase tracking-widest text-accent font-display translate-x-left will-animate">
                             ALIMENTAZIONE ED INTEGRAZIONE
                         </blockquote>
-                        <p className="text-lg text-zinc-300 font-mono leading-relaxed">
+                        <p className="text-lg text-zinc-300 font-sans leading-relaxed fade-up will-animate">
                             Ho ampliato le mie conoscenze con il <strong>Corso di Perfezionamento Universitario “Nutrizione sportiva: assessment dell’atleta, alimentazione ed integrazione”</strong> presso l’Università di Camerino.
                         </p>
-                        <p className="text-lg text-zinc-300 font-mono leading-relaxed border-t border-accent/20 pt-6 mt-6">
+                        <p className="text-lg text-zinc-300 font-sans leading-relaxed border-t border-accent/20 pt-6 mt-6 fade-up will-animate">
                             Ho infine conseguito l’abilitazione per l’esercizio della Professione di Biologo e attualmente sono iscritto al n. <strong className="text-white">AA_087369</strong>.
                         </p>
                     </div>
