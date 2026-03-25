@@ -35,18 +35,20 @@ const values = [
 const AboutSection = () => {
   return (
     <section id="chi-siamo" className="py-24 text-accent border-t border-accent/20 relative overflow-hidden">
-      <div 
-        className="absolute inset-0 z-0 bg-no-repeat" 
-        style={{ 
-          backgroundImage: `url(${sfondoChiSiamo})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center top',
-          backgroundAttachment: 'fixed',
-          filter: 'brightness(0.7) contrast(1.1)' 
-        }} 
-        aria-hidden="true"
-      />
-      <div className="absolute inset-0 bg-black/60 z-0"></div>
+      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+        <div className="sticky top-0 w-full h-screen">
+          <div 
+            className="absolute inset-0 bg-cover bg-center" 
+            style={{ 
+              backgroundImage: `url(${sfondoChiSiamo})`,
+              filter: 'brightness(0.7) contrast(1.1)' 
+            }} 
+            aria-hidden="true"
+          />
+          {/* Main uniform overlay for text readability */}
+          <div className="absolute inset-0 bg-black/60"></div>
+        </div>
+      </div>
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         {/* Header - Minimal */}
         <div className="mb-20 border-b border-accent/20 pb-8 max-w-4xl">

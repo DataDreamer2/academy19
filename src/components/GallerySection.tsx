@@ -60,7 +60,7 @@ const GallerySection = () => {
     <section id="galleria" className="py-24 text-accent border-b border-accent/20 relative overflow-hidden">
       <div className="absolute inset-0 z-0 overflow-hidden">
         <div 
-          className="absolute inset-0 z-0 bg-cover bg-center bg-scroll md:bg-fixed blur-sm opacity-50 scale-105" 
+          className="absolute inset-0 z-0 bg-no-repeat bg-cover bg-center bg-scroll md:bg-fixed blur-sm opacity-50 scale-105" 
           style={{ 
             backgroundImage: `url(${sfondoChiSiamo})`,
             filter: 'brightness(0.7) contrast(1.1)' 

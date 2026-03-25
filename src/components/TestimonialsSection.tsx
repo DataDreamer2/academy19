@@ -26,7 +26,14 @@ const testimonials = [
 
 const TestimonialsSection = () => {
     return (
-        <section className="py-24 text-accent border-b border-accent/20 relative" style={{ backgroundImage: `url('/gallery/immagine back kit e contatti.JPG')`, backgroundSize: 'cover', backgroundAttachment: 'fixed', backgroundPosition: 'center', filter: 'brightness(0.7) contrast(1.1)' }}>
+        <section className="py-24 text-accent border-b border-accent/20 relative overflow-hidden">
+            <div 
+                className="absolute inset-0 z-0 bg-cover bg-center bg-scroll md:bg-fixed" 
+                style={{ 
+                    backgroundImage: `url('/gallery/immagine back kit e contatti.JPG')`, 
+                    filter: 'brightness(0.7) contrast(1.1)' 
+                }} 
+            />
             <div className="absolute inset-0 bg-black/60 z-0"></div>
             <div className="container mx-auto px-6 md:px-12">
                 <div className="flex flex-col items-center text-center mb-20">

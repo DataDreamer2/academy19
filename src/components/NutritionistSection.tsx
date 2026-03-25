@@ -22,16 +22,19 @@ const values = [
 const NutritionistSection = () => {
     return (
         <section id="nutrizionista" className="py-24 text-accent border-t border-accent/20 relative overflow-hidden">
-            <div className="absolute inset-0 z-0 overflow-hidden">
-                <img 
-                    src="/gallery/immagine back kit e contatti.JPG" 
-                    alt="" 
-                    className="w-full h-full object-cover blur-sm opacity-50 scale-105"
-                    aria-hidden="true"
-                />
-                <div className="absolute inset-0 bg-black/40" />
+            <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+                <div className="sticky top-0 w-full h-screen">
+                    <div 
+                        className="absolute inset-0 bg-cover bg-center" 
+                        style={{ 
+                            backgroundImage: `url('/gallery/immagine back kit e contatti.JPG')`, 
+                            filter: 'brightness(0.7) contrast(1.1)' 
+                        }} 
+                        aria-hidden="true"
+                    />
+                    <div className="absolute inset-0 bg-black/60"></div>
+                </div>
             </div>
-            <div className="absolute inset-0 bg-black/60 z-0"></div>
             <div className="container mx-auto px-6 md:px-12 relative z-10">
                 <div className="mb-20 border-b border-accent/20 pb-8 max-w-4xl translate-x-left will-animate">
                     <h2 className="text-[clamp(2.5rem,10vw,4.5rem)] font-bold tracking-tighter uppercase mb-4 leading-[1] md:leading-tight font-display">
