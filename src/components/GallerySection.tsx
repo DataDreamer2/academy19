@@ -9,7 +9,6 @@ const imageFiles = [
   "33adfee4-e077-4d6d-88a2-0b9c1e45c911.JPG",
   "46a02128-0f37-4c9a-ab30-cccca3b2bab0.JPG",
   "48f6787b-59f2-4f25-a236-738b34a3ff4d.JPG",
-  "51915107-3322-45bf-924f-ea764da13779.JPG",
   "57a85bed-9b4d-42c8-a73c-e35450825db9.JPG",
   "5d79e793-a3ef-4963-9e2b-b2bf7cee3bb6.jpg",
   "67cbc476-96f7-42d8-9f1e-4326e15e5a3e.JPG",
