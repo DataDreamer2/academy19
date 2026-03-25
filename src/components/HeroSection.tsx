@@ -57,13 +57,13 @@ const HeroSection = () => {
 
           {/* Main Headline - BIG TYPE - Added Responsive clamp() */}
           <h1 
-            className="text-[clamp(3.5rem,15vw,10rem)] font-extrabold tracking-tighter leading-[0.8] mb-8 drop-shadow-none font-sans text-white will-animate" 
-            data-delay="0.5"
+            className="text-[clamp(3.5rem,15vw,9rem)] font-bold text-accent tracking-tighter leading-[0.85] mb-8 drop-shadow-[0_12px_32px_rgba(0,0,0,0.8)] font-display" 
           >
-            Giovani <br />
-            Campioni.
+            <span className="block fade-up will-animate" data-delay="0.5">GIOVANI</span>
+            <span className="block fade-up will-animate" data-delay="0.7">
+              CAMPIONI.
+            </span>
           </h1>
-
           <p className="text-xl mobile:text-2xl md:text-3xl text-zinc-100 max-w-xl mb-12 leading-relaxed font-sans fade-up will-animate drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]" data-delay="1.1">
             Il calcio è disciplina, tecnica e crescita. <br />
             Costruiamo il futuro dei talenti d'élite.

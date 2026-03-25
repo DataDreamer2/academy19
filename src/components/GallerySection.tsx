@@ -41,8 +41,7 @@ const imageFiles = [
   "img_3712.jpg",
   "img_3893.jpg",
   "img_4551.jpg",
-  "foto-laurea-liborio.jpg",
-  "img_3573.png"
+  "foto-laurea-liborio.jpg"
 ];
 
 const galleryItems = imageFiles.map((filename, index) => ({
