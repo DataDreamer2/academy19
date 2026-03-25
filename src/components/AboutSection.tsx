@@ -5,7 +5,8 @@ import aboutUser1 from '@/assets/about-highlight-1.jpg';
 import aboutUser2 from '@/assets/about-highlight-2.jpg';
 import liborioUser from '@/assets/liborio-storia.jpg';
 import liborioLaurea from '@/assets/liborio-laurea.jpg';
-import fotoStoriaLiborio from '/images/foto-storia-liborio.jpg';
+import nuovaFotoStoria from '/images/nuova-foto-storia.jpeg';
+import fiorentinaLibo from '/images/fiorentina-libo.jpeg';
 import sfondoChiSiamo from '/images/sfondo-chi-siamo.jpeg';
 
 const values = [
@@ -130,7 +131,7 @@ const AboutSection = () => {
             <div className="lg:col-span-5 relative">
               <div className="aspect-[3/4] bg-black overflow-hidden relative border border-accent/20 group">
                 <img
-                  src={liborioUser}
+                  src={nuovaFotoStoria}
                   alt="Liborio Zuppardo - Fondatore e Head Coach di Academy19"
                   className="w-full h-full object-cover opacity-100 group-hover:scale-105 transition-transform duration-700"
                 />
@@ -141,6 +142,13 @@ const AboutSection = () => {
                   <h3 className="text-3xl font-bold uppercase text-white">Liborio Zuppardo</h3>
                   <p className="text-accent font-bold uppercase tracking-widest text-xs mt-2 font-mono">Founder & Head Coach</p>
                 </div>
+              </div>
+              <div className="mt-8 aspect-[4/3] bg-black overflow-hidden relative border border-accent/20 group">
+                <img
+                  src={fiorentinaLibo}
+                  alt="Liborio Zuppardo Fiorentina"
+                  className="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700"
+                />
               </div>
               <div className="mt-8 p-8 bg-accent/10 border border-accent/30 backdrop-blur-sm relative overflow-hidden">
                 <div className="absolute top-0 left-0 w-1 h-full bg-accent"></div>
@@ -156,10 +164,7 @@ const AboutSection = () => {
                 Il calcio per me non è mai stato solo uno sport. È stata una scelta di vita.
                 A 15 anni ho lasciato la mia terra, la Sicilia. Non è stata una decisione semplice: significava allontanarmi dalla famiglia, dagli amici, dalle certezze di ogni giorno. C'erano emozione, paura, sacrificio. Ma c'era soprattutto un sogno troppo grande per restare fermo.
               </p>
-              <div className="grid grid-cols-3 gap-4 my-8">
-                  <div className="aspect-video relative overflow-hidden border border-accent/20 bg-black/50">
-                      <img src={fotoStoriaLiborio} alt="Foto Storia Liborio" className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity" />
-                  </div>
+              <div className="grid grid-cols-2 gap-4 my-8">
                   <div className="aspect-video relative overflow-hidden border border-accent/20 bg-black/50">
                       <img src={aboutUser2} alt="Dettagli Tecnici Academy 19" className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity" />
                   </div>
