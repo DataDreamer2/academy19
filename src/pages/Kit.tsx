@@ -37,7 +37,7 @@ const Kit = () => {
                 <div 
                     className="absolute inset-0 z-0"
                     style={{ 
-                        backgroundImage: `url('/images/sfondo-kit-contatti.jpg')`, 
+                        backgroundImage: `url('/gallery/immagine back kit e contatti.JPG')`, 
                         backgroundSize: 'cover', 
                         backgroundAttachment: 'fixed', 
                         backgroundPosition: 'center' 

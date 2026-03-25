@@ -77,7 +77,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contatti" className="py-24 text-accent border-t border-accent/20 relative overflow-hidden" style={{ backgroundImage: `url('/gallery/immagine back kit e conntatti.JPG')`, backgroundSize: 'cover', backgroundAttachment: 'fixed', backgroundPosition: 'center' }}>
+    <section id="contatti" className="py-24 text-accent border-t border-accent/20 relative overflow-hidden" style={{ backgroundImage: `url('/gallery/immagine back kit e contatti.JPG')`, backgroundSize: 'cover', backgroundAttachment: 'fixed', backgroundPosition: 'center' }}>
       {/* Decorative background lines */}
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-accent/50 to-transparent"></div>
       <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-accent/50 to-transparent"></div>
