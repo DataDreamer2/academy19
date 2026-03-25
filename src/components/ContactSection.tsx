@@ -77,10 +77,11 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contatti" className="py-24 bg-black border-t border-accent/20 relative overflow-hidden">
+    <section id="contatti" className="py-24 text-accent border-t border-accent/20 relative overflow-hidden" style={{ backgroundImage: `url('/gallery/immagine background.JPG')`, backgroundSize: 'cover', backgroundAttachment: 'fixed', backgroundPosition: 'center' }}>
       {/* Decorative background lines */}
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-accent/50 to-transparent"></div>
       <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-accent/50 to-transparent"></div>
+      <div className="absolute inset-0 bg-black/85"></div>
 
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 md:gap-24">

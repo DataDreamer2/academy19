@@ -2,11 +2,9 @@ import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
-import sfondoChiSiamo from '/images/sfondo-chi-siamo.jpeg';
-
 const TrainingSection = () => {
   return (
-    <section id="percorsi" className="py-24 text-accent border-t border-accent/20 relative" style={{ backgroundImage: `url(${sfondoChiSiamo})`, backgroundSize: 'cover', backgroundAttachment: 'fixed', backgroundPosition: 'center' }}>
+    <section id="percorsi" className="py-24 text-accent border-t border-accent/20 relative" style={{ backgroundImage: `url('/gallery/immagine background.JPG')`, backgroundSize: 'cover', backgroundAttachment: 'fixed', backgroundPosition: 'center' }}>
       <div className="absolute inset-0 bg-black/85"></div>
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         <div className="mb-20 border-b border-accent/20 pb-8 max-w-4xl">
