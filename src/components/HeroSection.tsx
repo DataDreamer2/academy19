@@ -60,7 +60,7 @@ const HeroSection = () => {
             className="text-[clamp(3.5rem,15vw,9rem)] font-bold text-accent tracking-tighter leading-[0.85] mb-8 drop-shadow-[0_8px_24px_rgba(0,0,0,0.6)] font-display" 
           >
             <span className="block fade-up will-animate" data-delay="0.5">GIOVANI</span>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-accent/50 block fade-up will-animate" data-delay="0.7">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-[#2ed26e] block fade-up will-animate" data-delay="0.7">
               CAMPIONI.
             </span>
           </h1>
