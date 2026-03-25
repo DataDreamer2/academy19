@@ -36,15 +36,16 @@ const AboutSection = () => {
   return (
     <section id="chi-siamo" className="py-24 text-accent border-t border-accent/20 relative overflow-hidden">
       <div 
-        className="absolute inset-0 z-0 bg-cover bg-center bg-scroll md:bg-fixed" 
+        className="absolute inset-0 z-0 bg-no-repeat" 
         style={{ 
           backgroundImage: `url(${sfondoChiSiamo})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center top',
+          backgroundAttachment: 'fixed',
           filter: 'brightness(0.7) contrast(1.1)' 
         }} 
         aria-hidden="true"
-      >
-        <div className="absolute inset-0 bg-black/40" />
-      </div>
+      />
       <div className="absolute inset-0 bg-black/60 z-0"></div>
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         {/* Header - Minimal */}
@@ -153,11 +154,11 @@ const AboutSection = () => {
                 </div>
               </div>
               <div className="mt-8 grid grid-cols-2 gap-4">
-                  <div className="aspect-video relative overflow-hidden border border-accent/20 bg-black/50">
-                      <img src={fiorentinaLibo} alt="Liborio Zuppardo Fiorentina" className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity" />
+                  <div className="aspect-[4/5] relative overflow-hidden border border-accent/20 bg-black">
+                      <img src={fiorentinaLibo} alt="Liborio Zuppardo Fiorentina" className="w-full h-full object-cover object-top opacity-90 hover:opacity-100 transition-opacity" />
                   </div>
-                  <div className="aspect-video relative overflow-hidden border border-accent/20 bg-black/50">
-                      <img src={liborioLaurea} alt="Liborio Zuppardo Laurea" className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity" />
+                  <div className="aspect-[4/5] relative overflow-hidden border border-accent/20 bg-black">
+                      <img src={liborioLaurea} alt="Liborio Zuppardo" className="w-full h-full object-cover object-center opacity-90 hover:opacity-100 transition-opacity" />
                   </div>
               </div>
               <div className="mt-8 p-8 bg-accent/10 border border-accent/30 backdrop-blur-sm relative overflow-hidden">
