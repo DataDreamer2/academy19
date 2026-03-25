@@ -140,8 +140,8 @@ const ContactSection = () => {
                     </div>
                   </div>
 
-                  <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
-                    <div className="md:col-span-7 lg:col-span-8 border-l border-accent/30 pl-6">
+                  <div className="grid grid-cols-1 desktop:grid-cols-12 gap-8 items-start">
+                    <div className="desktop:col-span-7 widescreen:col-span-8 border-l border-accent/30 pl-6">
                       <h4 className="font-bold uppercase tracking-widest mb-4 text-base text-accent">📝 Iscrizioni & Scadenza</h4>
                       <div className="space-y-4">
                         <p className="text-sm text-zinc-400 font-mono uppercase">
@@ -152,7 +152,7 @@ const ContactSection = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="md:col-span-5 lg:col-span-4 border border-accent/20 bg-accent/5 p-2 animate-in fade-in zoom-in-95 duration-700">
+                    <div className="desktop:col-span-5 widescreen:col-span-4 border border-accent/20 bg-accent/5 p-2 animate-in fade-in zoom-in-95 duration-700">
                       <video 
                           src="/videos/monte-video.mov" 
                           className="w-full aspect-[4/5] object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-500" 
@@ -211,8 +211,8 @@ const ContactSection = () => {
                     </ul>
                   </div>
 
-                  <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
-                    <div className="md:col-span-7 lg:col-span-8 border-l border-amber-500/30 pl-6">
+                  <div className="grid grid-cols-1 desktop:grid-cols-12 gap-8 items-start">
+                    <div className="desktop:col-span-7 widescreen:col-span-8 border-l border-amber-500/30 pl-6">
                       <h4 className="font-bold uppercase tracking-widest mb-4 text-base text-amber-500">📝 Iscrizioni & Scadenza</h4>
                       <div className="space-y-4">
                         <p className="text-sm text-zinc-400 font-mono uppercase">
@@ -223,7 +223,7 @@ const ContactSection = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="md:col-span-5 lg:col-span-4 border border-amber-500/20 bg-amber-500/5 p-2 animate-in fade-in zoom-in-95 duration-1000 delay-150">
+                    <div className="desktop:col-span-5 widescreen:col-span-4 border border-amber-500/20 bg-amber-500/5 p-2 animate-in fade-in zoom-in-95 duration-1000 delay-150">
                       <div className="overflow-hidden relative group aspect-[4/5]">
                           <img 
                               src="/images/forli-casacche.jpeg" 
