@@ -40,11 +40,12 @@ const Kit = () => {
                         backgroundImage: `url('/gallery/immagine back kit e contatti.JPG')`, 
                         backgroundSize: 'cover', 
                         backgroundAttachment: 'fixed', 
-                        backgroundPosition: 'center' 
+                        backgroundPosition: 'center',
+                        filter: 'brightness(0.7) contrast(1.1)'
                     }}
                 />
                 {/* Dark overlay for readability */}
-                <div className="absolute inset-0 bg-black/92 z-0" />
+                <div className="absolute inset-0 bg-black/60 z-0" />
 
                 <main className="relative z-10 pt-32 pb-20 px-6 md:px-12 max-w-7xl mx-auto">
                 {/* Header Section */}
