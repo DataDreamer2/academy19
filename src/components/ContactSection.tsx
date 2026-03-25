@@ -108,13 +108,12 @@ const ContactSection = () => {
                     Monte S.M. Tiberina (PG) ⚽
                 </div>
                 
-                <div className="space-y-6 text-zinc-400 max-w-xl leading-relaxed font-mono text-base">
+                <div className="text-column space-y-6 text-zinc-300 leading-relaxed font-mono">
                     <p className="text-xl text-white font-bold italic mb-4">
-                        "Un’esperienza esclusiva dedicata a ragazzi e ragazze dai 6 anni in su."
+                        "Passione, crescita e puro divertimento."
                     </p>
                     <p>
-                        Passione per il calcio, crescita personale e divertimento si incontrano in un ambiente professionale e stimolante. 
-                        Un percorso studiato per far vivere un’estate indimenticabile, migliorando le proprie capacità tecniche e sviluppando valori fondamentali come impegno, collaborazione e spirito di squadra.
+                        Un’esperienza d’élite dai 6 anni in su. Un percorso per migliorare la tecnica e vivere i valori del calcio in un ambiente professionale.
                     </p>
                 </div>
 
@@ -182,15 +181,12 @@ const ContactSection = () => {
                     Forlì ☀️
                 </div>
                 
-                <div className="space-y-6 text-zinc-400 max-w-xl leading-relaxed font-mono text-base">
+                <div className="text-column space-y-6 text-zinc-300 leading-relaxed font-mono">
                     <p className="text-xl text-white font-bold italic mb-4">
-                        "Le iscrizioni al Camp Estivo Academy19 di Forlì sono ufficialmente aperte!"
+                        "Le iscrizioni sono ufficialmente aperte!"
                     </p>
                     <p>
-                        Un’esperienza esclusiva dedicata a ragazzi e ragazze dai 6 anni in su, dove la passione per il calcio incontra il divertimento in un ambiente professionale e stimolante.
-                    </p>
-                    <p>
-                        Impara divertendoti: il nostro obiettivo è far vivere un’estate indimenticabile, migliorando le capacità tecniche e condividendo momenti di pura allegria.
+                        Un’estate indimenticabile tra tecnica e allegria. Migliora le tue capacità e condividi momenti di puro sport con i nostri coach.
                     </p>
                 </div>
 

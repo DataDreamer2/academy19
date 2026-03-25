@@ -164,35 +164,48 @@ const AboutSection = () => {
               <div className="mt-8 p-8 bg-accent/10 border border-accent/30 backdrop-blur-sm relative overflow-hidden">
                 <div className="absolute top-0 left-0 w-1 h-full bg-accent"></div>
                 <p className="text-xl font-bold italic leading-tight text-white">
-                  "Academy 19 non è solo un'accademia. È il percorso che avrei voluto avere a 15 anni."
+                  "Oggi insegno quello che avrei voluto sapere io a 15 anni."
                 </p>
               </div>
             </div>
 
-            <div className="lg:col-span-7 space-y-6">
-              <h3 className="text-[clamp(2rem,6vw,3rem)] font-bold uppercase mb-4 text-white leading-tight">La Mia Storia</h3>
-              <p className="text-lg text-zinc-300 font-mono leading-relaxed">
-                Il calcio per me non è mai stato solo uno sport. È stata una scelta di vita.
-                A 15 anni ho lasciato la mia terra, la Sicilia. Non è stata una decisione semplice: significava allontanarmi dalla famiglia, dagli amici, dalle certezze di ogni giorno. C'erano emozione, paura, sacrificio. Ma c'era soprattutto un sogno troppo grande per restare fermo.
-              </p>
-              <p className="text-lg text-zinc-300 font-mono leading-relaxed mt-8">
-                Dopo numerosi provini, il mio percorso mi ha portato prima all’<strong className="text-white">Ancona Calcio</strong> e successivamente alla <strong className="text-white">Fiorentina</strong>: tappe decisive che hanno formato non solo il calciatore, ma soprattutto l'uomo.
-                Da oltre vent’anni vivo il calcio con passione e professionalità. Ho avuto la fortuna di vestire le maglie di tante squadre: con alcune ho vinto, con altre ho affrontato momenti difficili. Ogni vittoria mi ha dato consapevolezza, ogni sconfitta mi ha insegnato a non mollare mai.
-              </p>
-              <p className="text-lg text-zinc-300 font-mono leading-relaxed">
-                Perché sono proprio le esperienze, positive e negative, a costruire il carattere. Ho fatto del sacrificio, della disciplina e dell'esempio la mia filosofia. Perché non conta quello che dici, ma quello che dimostri ogni giorno.
-              </p>
-              <blockquote className="text-2xl font-bold border-l-4 border-accent pl-6 py-2 my-8 bg-accent/5 uppercase tracking-widest text-accent">
+            <div className="lg:col-span-7 space-y-8">
+              <h3 className="text-[clamp(2rem,6vw,3.5rem)] font-bold uppercase mb-8 text-accent leading-tight">
+                A 15 ANNI HO SCELTO IL CALCIO. <br /> 
+                HO LASCIATO LA SICILIA.
+              </h3>
+              <div className="text-column space-y-6">
+                <p className="text-xl text-zinc-200 font-mono leading-relaxed">
+                  Non è stata una scelta facile. Ma era l'unica possibile.
+                  Lasciare la propria terra a 15 anni significa allontanarsi da tutto: famiglia, amici, certezze.
+                </p>
+                <p className="text-lg text-zinc-300 font-mono leading-relaxed">
+                  C'erano emozione e paura, ma soprattutto un sogno troppo grande per restare fermo.
+                  Un sogno che mi ha portato prima all’<strong>Ancona Calcio</strong> e poi alla <strong>Fiorentina</strong>.
+                </p>
+                <p className="text-lg text-zinc-300 font-mono leading-relaxed">
+                  Queste tappe hanno formato il calciatore, ma soprattutto l'uomo. 
+                  Oggi, dopo vent'anni di professionismo, porto in campo ogni vittoria e ogni sconfitta.
+                </p>
+              </div>
+
+              <blockquote className="text-2xl font-bold border-l-4 border-accent pl-6 py-4 my-10 bg-accent/5 uppercase tracking-widest text-accent italic">
                 IL RAGAZZO AL PRIMO POSTO
               </blockquote>
-              <p className="text-lg text-zinc-300 font-mono leading-relaxed">
-                La voglia di crescere non si è mai fermata. Ho investito nella mia formazione conseguendo la <strong className="text-white">laurea in Scienze Motorie</strong> e ho lavorato come maestro di educazione fisica nella scuola primaria. Esperienze che hanno rafforzato in me una convinzione profonda: <strong className="text-white">educare viene prima di allenare.</strong>
-              </p>
-              <p className="text-lg text-zinc-300 font-mono leading-relaxed">
-                Da questa visione nasce <strong className="text-white">Academy 19</strong>. Un progetto che racchiude la mia storia, i miei sacrifici, le mie vittorie e le mie lezioni più dure. Un luogo dove il talento viene guidato, la disciplina viene insegnata e il ragazzo viene messo al centro.
-              </p>
-              <p className="text-xl font-bold pt-4 uppercase tracking-widest border-t border-accent/20 mt-8 text-white">
-                Talento, educazione e passione: la nostra identità.
+
+              <div className="text-column space-y-6">
+                <p className="text-lg text-zinc-300 font-mono leading-relaxed">
+                  La mia crescita non si è mai fermata. Con la <strong>laurea in Scienze Motorie</strong> ho capito una verità profonda: 
+                  <span className="text-white block mt-2 text-xl">EDUCARE VIENE PRIMA DI ALLENARE.</span>
+                </p>
+                <p className="text-lg text-zinc-300 font-mono leading-relaxed">
+                  Da questa visione nasce <strong>Academy 19</strong>. Un luogo dove il talento viene guidato, 
+                  la disciplina viene insegnata e ogni ragazzo è al centro del progetto.
+                </p>
+              </div>
+
+              <p className="text-xl font-bold pt-8 uppercase tracking-widest border-t border-accent/20 mt-10 text-accent">
+                Talento, educazione, passione. <br /> Questa è la mia storia.
               </p>
             </div>
           </div>

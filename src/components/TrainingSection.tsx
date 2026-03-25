@@ -18,11 +18,11 @@ const TrainingSection = () => {
       <div className="absolute inset-0 bg-black/60 z-0"></div>
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         <div className="mb-20 border-b border-accent/20 pb-8 max-w-4xl">
-          <h2 className="text-[clamp(2.5rem,10vw,4.5rem)] font-bold tracking-tighter uppercase mb-6 leading-[1] md:leading-tight">
-            I Nostri <br /> Pacchetti
+          <h2 className="text-[clamp(2.5rem,10vw,4.5rem)] font-bold tracking-tighter uppercase mb-6 leading-[1] md:leading-tight text-accent">
+            Scegli il tuo <br /> Percorso di Crescita
           </h2>
-          <p className="text-xl md:text-2xl text-zinc-400 leading-relaxed font-mono">
-            La formazione continua è la chiave per il successo. Scegli il pacchetto che più si adatta alle tue esigenze.
+          <p className="text-xl md:text-2xl text-zinc-300 leading-relaxed font-mono max-w-2xl">
+            La formazione d'élite non è per tutti. È per chi vuole superare i propri limiti e puntare all'eccellenza.
           </p>
         </div>
 

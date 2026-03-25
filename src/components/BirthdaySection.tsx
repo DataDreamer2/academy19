@@ -53,23 +53,22 @@ const BirthdaySection = () => {
               Eventi Speciali
             </div>
             <h2 className="text-5xl md:text-7xl font-bold uppercase tracking-tighter leading-none text-white">
-              Festeggia in <br /> 
-              <span className="text-accent underline decoration-accent/30 decoration-8 underline-offset-8">Grande!</span>
+              Un Compleanno <br /> 
+              <span className="text-accent underline decoration-accent/30 decoration-8 underline-offset-8">Da Vero PRO</span>
               <Cake className="inline-block ml-4 w-12 h-12 text-accent animate-bounce-slow" />
             </h2>
-            <p className="text-xl text-zinc-400 max-w-xl leading-relaxed font-mono">
-              Regala a tuo figlio un compleanno da vero campione. Campo di calcio, 
-              attività sportive guidate dai nostri tecnici e tutto il divertimento 
-              del mondo Academy19 in un'unica festa.
+            <p className="text-xl text-zinc-200 max-w-xl leading-relaxed font-mono">
+              Regala un'esperienza indimenticabile sul campo. <br />
+              Più di una semplice festa: un vero stage da campioni guidato dai nostri tecnici.
             </p>
             
-            <div className="grid sm:grid-cols-2 gap-6 pt-4">
+            <div className="grid sm:grid-cols-2 gap-4 pt-4">
               {features.map((feature, index) => (
-                <div key={index} className="flex gap-4 p-4 border border-zinc-800 bg-zinc-900/30">
-                  <feature.icon className="w-6 h-6 text-accent shrink-0" />
+                <div key={index} className="flex flex-col gap-3 p-6 border border-zinc-800 bg-black/80 hover:border-accent/50 transition-colors">
+                  <feature.icon className="w-8 h-8 text-accent" />
                   <div>
-                    <h4 className="text-white font-bold uppercase text-sm tracking-wide mb-1">{feature.title}</h4>
-                    <p className="text-zinc-500 text-xs leading-relaxed">{feature.description}</p>
+                    <h4 className="text-white font-bold uppercase text-base tracking-wide mb-2">{feature.title}</h4>
+                    <p className="text-zinc-400 text-sm leading-relaxed font-mono">{feature.description}</p>
                   </div>
                 </div>
               ))}

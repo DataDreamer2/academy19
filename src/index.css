@@ -103,7 +103,18 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-[#E8E8E8] leading-[1.7];
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-white;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+  }
+
+  .text-column {
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

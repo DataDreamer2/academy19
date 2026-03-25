@@ -42,7 +42,7 @@ const HeroSection = () => {
             </div>
 
             {/* Substantial uniform overlay for text readability */}
-            <div className="absolute inset-0 bg-black/60" />
+            <div className="absolute inset-0 bg-black/70" />
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 md:px-12 pt-28 md:pt-20">
@@ -66,9 +66,9 @@ const HeroSection = () => {
             </span>
           </h1>
 
-          <p className="text-xl mobile:text-2xl md:text-3xl text-zinc-100 max-w-xl mb-12 leading-relaxed font-mono animate-dribble drop-shadow-md" style={{ animationDelay: '0.4s' }}>
-            Non è solo calcio. È disciplina, tecnica e crescita personale.
-            Il percorso d'élite per giovani talenti.
+          <p className="text-xl mobile:text-2xl md:text-3xl text-zinc-100 max-w-xl mb-12 leading-relaxed font-mono animate-dribble drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]" style={{ animationDelay: '0.4s' }}>
+            Il calcio è disciplina, tecnica e crescita. <br />
+            Costruiamo il futuro dei talenti d'élite.
           </p>
 
           {/* CTA Group */}
