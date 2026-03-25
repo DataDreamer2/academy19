@@ -26,7 +26,8 @@ const testimonials = [
 
 const TestimonialsSection = () => {
     return (
-        <section className="py-24 bg-black text-accent border-b border-accent/20">
+        <section className="py-24 text-accent border-b border-accent/20 relative" style={{ backgroundImage: `url('/images/sfondo-kit-contatti.jpg')`, backgroundSize: 'cover', backgroundAttachment: 'fixed', backgroundPosition: 'center' }}>
+            <div className="absolute inset-0 bg-black/92 z-0"></div>
             <div className="container mx-auto px-6 md:px-12">
                 <div className="flex flex-col items-center text-center mb-20">
                     <div className="flex gap-1 mb-6">
