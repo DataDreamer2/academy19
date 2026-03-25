@@ -87,28 +87,80 @@ const ContactSection = () => {
 
           {/* Info Side */}
           <div>
-            <h2 className="text-5xl md:text-7xl font-bold uppercase tracking-tighter mb-8 text-accent">
-              Entra in <br /> Academy19.
+            <h2 className="text-5xl md:text-7xl font-bold uppercase tracking-tighter mb-4 text-accent leading-none">
+              Camp Estivo <br /> <span className="text-white">Academy19</span>
             </h2>
-            <p className="text-xl text-zinc-400 mb-12 max-w-md leading-relaxed font-mono">
-              Vieni a provare il nostro metodo. La prima sessione è gratuita e senza impegno.
-              Ti aspettiamo in campo.
-            </p>
+            <div className="inline-block px-3 py-1 bg-accent/20 border border-accent/40 text-accent text-xs font-bold uppercase tracking-widest mb-8 font-mono">
+                Monte S.M. Tiberina (PG) ⚽
+            </div>
+            
+            <div className="space-y-6 text-zinc-400 max-w-xl leading-relaxed font-mono text-sm">
+                <p className="text-lg text-white font-bold italic mb-4">
+                    "Un’esperienza esclusiva dedicata a ragazzi e ragazze dai 6 anni in su."
+                </p>
+                <p>
+                    Passione per il calcio, crescita personale e divertimento si incontrano in un ambiente professionale e stimolante. 
+                    Un percorso studiato per far vivere un’estate indimenticabile, migliorando le proprie capacità tecniche e sviluppando valori fondamentali come impegno, collaborazione e spirito di squadra.
+                </p>
+            </div>
 
-            <div className="space-y-8 border-l border-accent/30 pl-8">
-              <div>
-                <h4 className="font-bold uppercase tracking-widest mb-2 text-sm text-accent/50 filter">Le Nostre Sedi</h4>
-                <div className="space-y-4">
-                  <div className="group">
-                    <p className="text-xl font-bold uppercase text-white group- transition-all">Forlì</p>
-                    <p className="text-zinc-400 font-mono text-sm">Via Tripoli 137</p>
+            <div className="mt-12 space-y-12">
+              <div className="border-l border-accent/30 pl-6">
+                <h4 className="font-bold uppercase tracking-widest mb-4 text-sm text-accent">🎯 Un Percorso Completo</h4>
+                <ul className="space-y-2 text-xs font-mono text-zinc-400 uppercase tracking-wide">
+                  <li className="flex items-start gap-2"><span className="text-accent">•</span> Perfezionamento tecnico e coordinativo</li>
+                  <li className="flex items-start gap-2"><span className="text-accent">•</span> Sviluppo di agilità, velocità e rapidità</li>
+                  <li className="flex items-start gap-2"><span className="text-accent">•</span> Allenamenti con strumenti innovativi</li>
+                  <li className="flex items-start gap-2"><span className="text-accent">•</span> Metodologia 1vs1 con Gingawall</li>
+                  <li className="flex items-start gap-2"><span className="text-accent">•</span> Esercitazioni specifiche per ruolo</li>
+                  <li className="flex items-start gap-2"><span className="text-accent">•</span> Attività suddivise per età e livello</li>
+                </ul>
+              </div>
+
+              <div className="border-l border-accent/30 pl-6">
+                <h4 className="font-bold uppercase tracking-widest mb-4 text-sm text-accent">📦 Le Formule</h4>
+                <div className="space-y-6">
+                  <div>
+                    <p className="text-white font-bold text-sm uppercase mb-1">🔹 FORMULA GIORNALIERA (9:00 – 17:30)</p>
+                    <p className="text-[10px] text-zinc-500 font-mono leading-relaxed italic">
+                        Spuntino, Pranzo, Merenda, Lavanderia, Assicurazione. 
+                        Incluso: Kit Academy19, Premi, Attestato.
+                    </p>
                   </div>
-                  <div className="group">
-                    <p className="text-xl font-bold uppercase text-white group- transition-all">Città di Castello</p>
-                    <p className="text-zinc-400 font-mono text-sm">Via Toscana - Centro Sportivo Lerchi, 06012 (PG)</p>
+                  <div>
+                    <p className="text-white font-bold text-sm uppercase mb-1">🔹 FORMULA CON PERNOTTAMENTO</p>
+                    <p className="text-[10px] text-zinc-500 font-mono leading-relaxed italic">
+                        Esperienza immersiva: Pensione completa, Lavanderia, Pulizie. 
+                        Incluso: Kit Academy19, Premi, Attestato.
+                    </p>
                   </div>
                 </div>
               </div>
+
+              <div className="border-l border-accent/30 pl-6">
+                <h4 className="font-bold uppercase tracking-widest mb-4 text-sm text-accent">📝 Iscrizioni & Scadenza</h4>
+                <p className="text-xs text-zinc-400 font-mono uppercase mb-4">
+                    Aperte fino al <span className="text-white">10 Giugno</span>. Posti limitati.
+                </p>
+                <div className="p-3 border border-orange-500/20 bg-orange-500/5 text-[10px] font-mono text-orange-200/70 uppercase">
+                    Pagamento in un’unica soluzione o in due rate (acconto e saldo).
+                </div>
+              </div>
+
+              <div className="border-l border-accent/30 pl-6 pt-6 grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all">
+                <h4 className="font-bold uppercase tracking-widest mb-4 text-sm text-zinc-500">Le Altre Nostre Sedi</h4>
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <p className="text-xs font-bold uppercase text-white">Forlì</p>
+                    <p className="text-[10px] text-zinc-500 font-mono">Via Tripoli 137</p>
+                  </div>
+                  <div>
+                    <p className="text-xs font-bold uppercase text-white">Lerchi (PG)</p>
+                    <p className="text-[10px] text-zinc-500 font-mono">Città di Castello</p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
               <div>
                 <h4 className="font-bold uppercase tracking-widest mb-2 text-sm text-accent/50 filter">Contatti</h4>
