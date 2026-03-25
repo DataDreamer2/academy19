@@ -4,7 +4,6 @@ import { Dialog, DialogContent } from '@/components/ui/dialog';
 import sfondoChiSiamo from '/images/sfondo-chi-siamo.jpeg';
 
 const imageFiles = [
-  "02de3a3c-71cd-422f-b2ac-b61c3d39a760.JPG",
   "2ae1cccf-3a07-4025-9d64-983cc5dfd975.JPG",
   "33adfee4-e077-4d6d-88a2-0b9c1e45c911.JPG",
   "46a02128-0f37-4c9a-ab30-cccca3b2bab0.JPG",
