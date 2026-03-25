@@ -48,6 +48,8 @@ const Kit = () => {
                 <div className="absolute inset-0 bg-black/60 z-0" />
 
                 <main className="relative z-10 pt-32 pb-20 px-6 md:px-12 max-w-7xl mx-auto">
+                {/* ... existing main content ... */}
+
                 {/* Header Section */}
                 <div className="text-center mb-16 translate-x-left will-animate">
                     <h1 className="text-4xl md:text-7xl font-bold tracking-tighter uppercase mb-6 font-display">
@@ -185,9 +187,8 @@ const Kit = () => {
                     </div>
                 </div>
             </main>
-
-            <Footer />
             </div>
+            <Footer />
         </div>
     );
 };

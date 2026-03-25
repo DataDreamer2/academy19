@@ -40,7 +40,7 @@ export const useScrollAnimation = () => {
         });
       }, observerOptions);
 
-      const elements = document.querySelectorAll('.will-animate, .line-reveal, .fade-up, .translate-x-left, .translate-x-right, .card-reveal, .staff-reveal, .nav-slide-down');
+      const elements = document.querySelectorAll('.will-animate, .line-reveal, .fade-up, .translate-x-left, .translate-x-right, .card-reveal, .staff-reveal, .nav-slide-down, .reveal-hidden');
       elements.forEach((el) => observer.observe(el));
 
       // Safety fallback: if elements are still not visible after 800ms, force them visible

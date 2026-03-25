@@ -35,13 +35,15 @@ const values = [
 const AboutSection = () => {
   return (
     <section id="chi-siamo" className="py-24 text-accent border-t border-accent/20 relative overflow-hidden">
-      <div 
-        className="absolute inset-0 z-0 bg-cover bg-center bg-fixed" 
-        style={{ 
-          backgroundImage: `url(${sfondoChiSiamo})`,
-          filter: 'brightness(0.7) contrast(1.1)' 
-        }} 
-      />
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <img 
+          src={sfondoChiSiamo} 
+          alt="" 
+          className="w-full h-full object-cover blur-sm opacity-50 scale-105"
+          aria-hidden="true"
+        />
+        <div className="absolute inset-0 bg-black/40" />
+      </div>
       <div className="absolute inset-0 bg-black/60 z-0"></div>
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         {/* Header - Minimal */}
