@@ -214,9 +214,9 @@ const AboutSection = () => {
 
                 <blockquote className="pl-4">
                   <p className="text-[clamp(2rem,5vw,3.8rem)] font-extrabold uppercase tracking-tight leading-[1.05] text-white font-display">
-                    <span className="block fade-up will-animate" data-delay="0.1">Talento, educazione,</span>
-                    <span className="block fade-up will-animate text-accent" data-delay="0.3">rispetto e passione.</span>
-                    <span className="block fade-up will-animate mt-2 text-zinc-300 text-[0.65em] tracking-widest font-sans font-bold" data-delay="0.5">Questa è la mia storia.</span>
+                    <span className="block fade-up will-animate text-white" data-delay="0.1">Talento, educazione,</span>
+                    <span className="block fade-up will-animate text-white" data-delay="0.3">rispetto e passione.</span>
+                    <span className="block fade-up will-animate mt-2 text-accent text-[0.65em] tracking-widest font-sans font-bold" data-delay="0.5">Questa è la mia storia.</span>
                   </p>
                 </blockquote>
 
