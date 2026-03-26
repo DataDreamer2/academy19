@@ -29,7 +29,7 @@ const TrainingSection = () => {
         {/* Packages and Kit */}
         <div className="grid md:grid-cols-2 gap-12">
           {/* Pacchetti Lezioni */}
-          <div className="p-6 md:p-12 bg-[#161616] border border-[#2a2a2a] flex flex-col justify-between relative group overflow-hidden card-reveal will-animate" data-delay="0.1">
+          <div className="p-6 md:p-12 bg-[#161616] border border-[#2a2a2a] rounded-[16px] flex flex-col justify-between relative group overflow-hidden card-reveal will-animate" data-delay="0.1">
             {/* Decorative Corner Borders */}
             <div className="absolute -top-2 -right-2 w-10 h-10 border-t-2 border-r-2 border-[#e6a817] opacity-40 group-hover:opacity-70 transition-opacity" />
             <div className="absolute -bottom-2 -left-2 w-10 h-10 border-b-2 border-l-2 border-[#4caf50] opacity-40 group-hover:opacity-70 transition-opacity" />
@@ -44,7 +44,7 @@ const TrainingSection = () => {
                   <Link
                     key={num}
                     to={`/contatti?program=pacchetto-${num}`}
-                    className="group/btn relative p-4 mobile:p-8 border border-[#2a2a2a] hover:border-[#4caf50] bg-[#0d0d0d] hover:bg-[#1a3a1a]/20 transition-all duration-300 flex flex-col items-center justify-center text-center overflow-hidden shadow-none card-reveal"
+                    className="group/btn relative p-4 mobile:p-8 border border-[#2a2a2a] hover:border-[#4caf50] rounded-[12px] bg-[#0d0d0d] hover:bg-[#1a3a1a]/20 transition-all duration-300 flex flex-col items-center justify-center text-center overflow-hidden shadow-none card-reveal"
                   >
                     <span className="relative z-10 text-5xl font-black mb-2 transition-transform group-hover/btn:-translate-y-2 font-display italic text-[#4caf50]">
                       {num}
@@ -66,7 +66,7 @@ const TrainingSection = () => {
           </div>
 
           {/* Kit Ufficiale */}
-          <div className="p-8 md:p-12 bg-[#161616] border border-[#2a2a2a] text-white flex flex-col justify-between relative group card-reveal will-animate" data-delay="0.3">
+          <div className="p-8 md:p-12 bg-[#161616] border border-[#2a2a2a] rounded-[16px] text-white flex flex-col justify-between relative group card-reveal will-animate" data-delay="0.3">
             {/* Decorative Corner Borders */}
             <div className="absolute -top-2 -right-2 w-10 h-10 border-t-2 border-r-2 border-[#e6a817] opacity-40 group-hover:opacity-70 transition-opacity" />
             <div className="absolute -bottom-2 -left-2 w-10 h-10 border-b-2 border-l-2 border-[#4caf50] opacity-40 group-hover:opacity-70 transition-opacity" />

@@ -61,7 +61,7 @@ const Kit = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 staff-reveal will-animate w-full lg:col-span-1" data-delay="0.1">
                         {images.map((img, idx) => (
-                            <div key={idx} className="w-full bg-white border border-[#2a2a2a] relative group overflow-hidden shadow-2xl transition-transform duration-500 hover:scale-[1.02]">
+                            <div key={idx} className="w-full bg-white border border-[#2a2a2a] rounded-[16px] relative group overflow-hidden shadow-2xl transition-transform duration-500 hover:scale-[1.02]">
                                 <img
                                     src={img}
                                     alt={`Kit Ufficiale Academy19 - Dettaglio ${idx + 1}`}
@@ -95,7 +95,7 @@ const Kit = () => {
                             </p>
                         </div>
 
-                        <div className="bg-[#161616] border border-[#2a2a2a] p-8 md:p-10 relative group transition-all duration-300">
+                        <div className="bg-[#161616] border border-[#2a2a2a] rounded-[16px] p-8 md:p-10 relative group transition-all duration-300">
                             {/* Decorative Corner Borders */}
                             <div className="absolute -top-2 -right-2 w-8 h-8 border-t-2 border-r-2 border-[#e6a817] opacity-40 group-hover:opacity-70 transition-opacity" />
                             <div className="absolute -bottom-2 -left-2 w-8 h-8 border-b-2 border-l-2 border-[#4caf50] opacity-40 group-hover:opacity-70 transition-opacity" />
@@ -127,7 +127,7 @@ const Kit = () => {
                             Scegli il piano completo per avere tutto l'equipaggiamento tecnico necessario per l'anno sportivo.
                         </p>
                     </div>
-                    <div className="bg-[#161616] border border-[#2a2a2a] p-8 md:p-12 relative overflow-hidden group">
+                    <div className="bg-[#161616] border border-[#2a2a2a] rounded-[16px] p-8 md:p-12 relative overflow-hidden group">
                         {/* Glow effect */}
                         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#4caf50]/10 blur-[120px] rounded-full pointer-events-none opacity-50 group-hover:opacity-80 transition-opacity duration-700"></div>
                         
@@ -157,13 +157,13 @@ const Kit = () => {
                                 </ul>
                             </div>
 
-                            <div className="w-full md:w-auto bg-[#0d0d0d] p-8 md:p-10 border border-[#2a2a2a] flex flex-col items-center flex-shrink-0 relative">
+                            <div className="w-full md:w-auto bg-[#0d0d0d] rounded-[12px] p-8 md:p-10 border border-[#2a2a2a] flex flex-col items-center flex-shrink-0 relative">
                                 <div className="text-center mb-10">
                                     <p className="text-[10px] text-[#4caf50] uppercase tracking-[3px] mb-2 font-black font-display italic">PREZZO SU RICHIESTA</p>
                                     <div className="text-5xl font-['Barlow_Condensed'] font-[900] tracking-tighter text-white uppercase italic">Full Kit</div>
                                 </div>
                                 <Link to="/contatti?interesse=Richiesta Kit Ufficiale" className="w-full">
-                                    <Button className="w-full h-16 text-lg font-bold uppercase tracking-widest rounded-none bg-[#4caf50] hover:opacity-90 text-white transition-all duration-300 group/btn font-display italic btn-bounce">
+                                    <Button className="w-full h-16 text-lg font-bold uppercase tracking-widest rounded-[8px] bg-[#4caf50] hover:opacity-90 text-white transition-all duration-300 group/btn font-display italic btn-bounce">
                                         RICHIEDI INFO KIT
                                         <ArrowRight className="ml-2 group-hover/btn:translate-x-1 transition-transform" />
                                     </Button>
