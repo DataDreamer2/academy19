@@ -103,7 +103,7 @@ const ContactSection = () => {
         <div className="grid grid-cols-1 tablet:grid-cols-2 gap-8 mb-16">
           
           {/* Card 1 - Camp Estivo Completo */}
-          <div className="bg-[#161616]/90 backdrop-blur-md border border-[#2a2a2a] rounded-[12px] overflow-hidden transition-all duration-250 hover:border-[#4caf50] hover:-translate-y-1 group">
+          <div className="bg-[#161616]/90 backdrop-blur-md border border-[#39ff7a] rounded-[12px] overflow-hidden transition-all duration-250 hover:border-[#39ff7a] hover:-translate-y-1 group" style={{ boxShadow: '0 0 0 1px #39ff7a22' }}>
             <div className="bg-[#111111] p-6 border-b border-[#2a2a2a]">
               <span className="inline-block bg-[#1a3a1a] text-[#4caf50] text-[12px] font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4">
                 Camp Estivo · Monte S.M. Tiberina (PG)
@@ -199,7 +199,7 @@ const ContactSection = () => {
           </div>
 
           {/* Card 2 - Formula Novità */}
-          <div className="bg-[#161616]/90 backdrop-blur-md border border-[#2a2a2a] rounded-[12px] overflow-hidden transition-all duration-250 hover:border-[#4caf50] hover:-translate-y-1 group">
+          <div className="bg-[#161616]/90 backdrop-blur-md border border-[#ffe238] rounded-[12px] overflow-hidden transition-all duration-250 hover:border-[#ffe238] hover:-translate-y-1 group" style={{ boxShadow: '0 0 0 1px #ffe23822' }}>
             <div className="bg-[#111111] p-6 border-b border-[#2a2a2a]">
               <span className="inline-block bg-[#3a2a00] text-[#e6a817] text-[12px] font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4">
                 NOVITÀ · Forlì

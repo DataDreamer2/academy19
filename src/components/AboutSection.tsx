@@ -202,8 +202,8 @@ const AboutSection = () => {
                 </p>
               </div>
 
-              <p className="text-xl font-bold pt-8 uppercase tracking-widest border-t border-accent/20 mt-10 text-accent font-display">
-                Talento, educazione, passione. <br /> Questa è la mia storia.
+              <p className="text-xl font-bold pt-8 uppercase tracking-widest border-t border-accent/20 mt-10 text-white font-display">
+                Talento, educazione, rispetto e passione. <br /> Questa è la mia storia.
               </p>
             </div>
           </div>
