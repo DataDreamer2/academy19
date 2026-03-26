@@ -202,9 +202,32 @@ const AboutSection = () => {
                 </p>
               </div>
 
-              <p className="text-xl font-bold pt-8 uppercase tracking-widest border-t border-accent/20 mt-10 text-white font-display">
-                Talento, educazione, rispetto e passione. <br /> Questa è la mia storia.
-              </p>
+              {/* Closing Quote - Premium Animated */}
+              <div className="relative mt-12 pt-10 border-t border-accent/20">
+                {/* Decorative quote mark */}
+                <span 
+                  className="absolute -top-6 left-0 text-[7rem] leading-none text-accent/30 font-display select-none pointer-events-none"
+                  aria-hidden="true"
+                >
+                  "
+                </span>
+
+                <blockquote className="pl-4">
+                  <p className="text-[clamp(1.5rem,4vw,2.8rem)] font-extrabold uppercase tracking-tight leading-[1.05] text-white font-display">
+                    <span className="block fade-up will-animate" data-delay="0.1">Talento, educazione,</span>
+                    <span className="block fade-up will-animate text-accent" data-delay="0.3">rispetto e passione.</span>
+                    <span className="block fade-up will-animate mt-2 text-zinc-300 text-[0.65em] tracking-widest font-sans font-bold" data-delay="0.5">Questa è la mia storia.</span>
+                  </p>
+                </blockquote>
+
+                {/* Closing quote */}
+                <span 
+                  className="absolute -bottom-4 right-0 text-[7rem] leading-none text-accent/15 font-display select-none pointer-events-none"
+                  aria-hidden="true"
+                >
+                  "
+                </span>
+              </div>
             </div>
           </div>
         </div>
