@@ -57,11 +57,12 @@ const HeroSection = () => {
 
           {/* Main Headline - BIG TYPE - Added Responsive clamp() */}
           <h1 
-            className="text-[clamp(3.5rem,15vw,9rem)] font-bold text-white tracking-tighter leading-[0.8] mb-8 drop-shadow-none font-sans" 
+            className="text-[clamp(3.5rem,12vw,9.5rem)] font-extrabold text-white tracking-tighter leading-[0.8] mb-8 drop-shadow-none font-inter" 
+            style={{ textShadow: 'none' }}
           >
-            <span className="block fade-up will-animate" data-delay="0.5">GIOVANI</span>
+            <span className="block fade-up will-animate" data-delay="0.5">Giovani</span>
             <span className="block fade-up will-animate" data-delay="0.7">
-              CAMPIONI.
+              Campioni.
             </span>
           </h1>
           <p className="text-xl mobile:text-2xl md:text-3xl text-zinc-100 max-w-xl mb-12 leading-relaxed font-sans fade-up will-animate drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]" data-delay="1.1">
