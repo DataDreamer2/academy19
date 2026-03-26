@@ -21,8 +21,6 @@ const Kit = () => {
         "/images/kit/kit-3.jpg",
     ];
 
-    const [activeImage, setActiveImage] = useState(images[0]);
-
     return (
         <div className="min-h-screen bg-black text-white selection:bg-accent selection:text-white">
             <SEO
@@ -61,44 +59,27 @@ const Kit = () => {
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                    {/* Gallery Section */}
-                    <div className="space-y-8 flex flex-col items-center justify-center staff-reveal will-animate w-full" data-delay="0.1">
-                        <div className="w-full max-w-[480px] aspect-square overflow-hidden rounded-none bg-[#161616] border border-[#2a2a2a] relative group shadow-2xl">
-                            <img
-                                src={activeImage}
-                                alt="Kit Ufficiale Academy19 - Maglia tecnica e zaino"
-                                className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
-                                onError={(e) => {
-                                    const target = e.target as HTMLImageElement;
-                                    target.src = "https://images.unsplash.com/photo-1518605368461-1ee715da8b35?auto=format&fit=crop&q=80";
-                                }}
-                            />
-                            {/* Decorative element — remove absolute to avoid layer issues if needed, but relative group already holds it */}
-                            <div className="absolute inset-0 border border-[#4caf50]/10 pointer-events-none"></div>
-                        </div>
-
-                        <div className="grid grid-cols-4 gap-4 w-full max-w-[480px]">
-                            {images.map((img, idx) => (
-                                <button
-                                    key={idx}
-                                    onClick={() => setActiveImage(img)}
-                                    className={`aspect-square overflow-hidden rounded-none bg-[#161616] border transition-all duration-300 ${activeImage === img
-                                        ? 'border-[#4caf50] ring-1 ring-[#4caf50]/20'
-                                        : 'border-[#2a2a2a] hover:border-[#4caf50]/40 opacity-60 hover:opacity-100'
-                                        }`}
-                                >
-                                    <img
-                                        src={img}
-                                        alt={`Foto prodotto ${idx + 1}`}
-                                        className="w-full h-full object-cover object-center"
-                                        onError={(e) => {
-                                            const target = e.target as HTMLImageElement;
-                                            target.src = "https://images.unsplash.com/photo-1518605368461-1ee715da8b35?auto=format&fit=crop&q=80";
-                                        }}
-                                    />
-                                </button>
-                            ))}
-                        </div>
+                    <div className="space-y-6 md:space-y-12 flex flex-col items-center justify-start staff-reveal will-animate w-full" data-delay="0.1">
+                        {images.map((img, idx) => (
+                            <div key={idx} className="w-full max-w-[480px] bg-white border border-[#2a2a2a] relative group overflow-hidden shadow-2xl transition-transform duration-500 hover:scale-[1.02]">
+                                <img
+                                    src={img}
+                                    alt={`Kit Ufficiale Academy19 - Dettaglio ${idx + 1}`}
+                                    className="w-full h-auto object-cover object-center"
+                                    onError={(e) => {
+                                        const target = e.target as HTMLImageElement;
+                                        target.src = "https://images.unsplash.com/photo-1518605368461-1ee715da8b35?auto=format&fit=crop&q=80";
+                                    }}
+                                />
+                                {/* Decorative elements on the first image to maintain style */}
+                                {idx === 0 && (
+                                    <>
+                                        <div className="absolute -top-2 -right-2 w-8 h-8 border-t-2 border-r-2 border-[#e6a817] opacity-60 pointer-events-none" />
+                                        <div className="absolute -bottom-2 -left-2 w-8 h-8 border-b-2 border-l-2 border-[#4caf50] opacity-60 pointer-events-none" />
+                                    </>
+                                )}
+                            </div>
+                        ))}
                     </div>
 
                     {/* Details Section */}
