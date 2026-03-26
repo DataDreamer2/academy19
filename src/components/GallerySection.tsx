@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { X, ZoomIn } from 'lucide-react';
+import { X } from 'lucide-react';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
 import sfondoChiSiamo from '/images/sfondo-chi-siamo.jpeg';
 
@@ -83,7 +83,7 @@ const GallerySection = () => {
               <div
                 key={item.id + index} // Key fix for demo duplicate
                 onClick={() => setSelectedImage(item)}
-                className="group relative aspect-square bg-black overflow-hidden cursor-pointer border border-accent/10 hover:border-accent transition-all duration-300 staff-reveal"
+                className="group relative aspect-square bg-black overflow-hidden cursor-pointer border border-accent/10 transition-all duration-300 staff-reveal"
               >
                 <img
                   src={item.src}
@@ -91,25 +91,8 @@ const GallerySection = () => {
                   width={600}
                   height={600}
                   loading="lazy"
-                  className="w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700 will-animate"
+                  className="w-full h-full object-cover opacity-100 transition-all duration-700 will-animate"
                 />
-
-                {/* Subtle green tint overlay */}
-                <div className="absolute inset-0 bg-accent/10 mix-blend-multiply opacity-100 group-hover:opacity-0 transition-opacity duration-500 pointer-events-none"></div>
-
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500" />
-
-                <div className="absolute inset-0 p-8 flex flex-col justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <div className="self-end">
-                    <div className="w-12 h-12 bg-white rounded-none flex items-center justify-center border border-black group-hover:bg-accent transition-colors">
-                      <ZoomIn className="w-5 h-5 text-black" />
-                    </div>
-                  </div>
-                  <div>
-                    <p className="text-white/80 text-xs font-bold uppercase tracking-widest mb-2 font-sans bg-black/50 inline-block px-2 py-1 backdrop-blur-sm border border-white/20">{item.category}</p>
-                    <h3 className="text-white text-2xl font-bold uppercase bg-black/50 inline-block px-3 py-1 backdrop-blur-sm mt-2 font-display">{item.alt}</h3>
-                  </div>
-                </div>
               </div>
             ))}
           </div>

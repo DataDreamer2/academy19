@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { MapPin, Phone, Mail, Instagram, Facebook, Youtube, Send, ArrowRight } from 'lucide-react';
+import { MapPin, Phone, Mail, Instagram, Facebook, Youtube, Send, ArrowRight, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -31,6 +31,7 @@ const ContactSection = () => {
       setFormData(prev => ({ ...prev, program: programParam }));
     }
   }, [location]);
+  
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -78,306 +79,329 @@ const ContactSection = () => {
 
   return (
     <section id="contatti" className="py-24 text-accent border-t border-accent/20 relative overflow-hidden">
+      {/* Immersive Background Section */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         <div className="sticky top-0 w-full h-screen">
           <div 
             className="absolute inset-0 bg-cover bg-center" 
             style={{ 
               backgroundImage: `url('/gallery/immagine back kit e contatti.JPG')`, 
-              filter: 'brightness(0.7) contrast(1.1)' 
+              filter: 'brightness(0.5) contrast(1.1)' 
             }} 
             aria-hidden="true"
           />
-          <div className="absolute inset-0 bg-black/60"></div>
+          <div className="absolute inset-0 bg-black/70"></div>
         </div>
       </div>
 
-      <div className="container mx-auto px-6 md:px-12 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 md:gap-24">
+      <div className="container mx-auto px-6 tablet:px-12 relative z-10">
+        <h2 className="text-5xl tablet:text-7xl font-bold uppercase tracking-tighter mb-12 text-accent leading-none font-display text-center tablet:text-left">
+          Contatti & <span className="text-white">Iscrizioni</span>
+        </h2>
 
-          {/* Info Side */}
-          <div>
-            <h2 className="text-5xl md:text-7xl font-bold uppercase tracking-tighter mb-6 text-accent leading-none font-display translate-x-left will-animate">
-              Camp Estivo <br /> <span className="text-white">Academy19</span>
-            </h2>
-
-            {/* --- MONTE S.M. TIBERINA --- */}
-            <div className="mb-24">
-                <div className="inline-block px-4 py-2 bg-accent/20 border border-accent/40 text-accent text-sm font-bold uppercase tracking-widest mb-8 font-sans fade-up will-animate" data-delay="0.1">
-                    Monte S.M. Tiberina (PG) ⚽
-                </div>
-                
-                <div className="text-column space-y-6 text-zinc-300 leading-relaxed font-sans fade-up will-animate" data-delay="0.2">
-                    <p className="text-xl text-white font-bold italic mb-4">
-                        "Passione, crescita e puro divertimento."
-                    </p>
-                    <p>
-                        Un’esperienza d’élite dai 6 anni in su. Un percorso per migliorare la tecnica e vivere i valori del calcio in un ambiente professionale.
-                    </p>
-                </div>
-
-                <div className="mt-12 space-y-12 will-animate" data-stagger="0.1">
-                  <div className="border-l border-accent/30 pl-6 translate-x-left">
-                    <h4 className="font-bold uppercase tracking-widest mb-4 text-accent font-display text-xl">🎯 Un Percorso Completo</h4>
-                    <ul className="space-y-3 text-sm font-sans text-zinc-400 uppercase tracking-wide">
-                      <li className="flex items-start gap-2"><span className="text-accent">•</span> Perfezionamento tecnico e coordinativo</li>
-                      <li className="flex items-start gap-2"><span className="text-accent">•</span> Sviluppo di agilità, velocità e rapidità</li>
-                      <li className="flex items-start gap-2"><span className="text-accent">•</span> Allenamenti con strumenti innovativi</li>
-                      <li className="flex items-start gap-2"><span className="text-accent">•</span> Metodologia 1vs1 con Gingawall</li>
-                      <li className="flex items-start gap-2"><span className="text-accent">•</span> Esercitazioni specifiche per ruolo</li>
-                      <li className="flex items-start gap-2"><span className="text-accent">•</span> Attività suddivise per età e livello</li>
-                    </ul>
-                  </div>
-
-                  <div className="border-l border-accent/30 pl-6 translate-x-left will-animate">
-                    <h4 className="font-bold uppercase tracking-widest mb-4 text-accent font-display text-xl">📦 Le Formule</h4>
-                    <div className="space-y-6">
-                      <div>
-                        <p className="text-white font-bold uppercase mb-1 font-display">🔹 FORMULA GIORNALIERA (9:00 – 17:30)</p>
-                        <p className="text-xs text-zinc-500 font-sans leading-relaxed italic">
-                            Spuntino, Pranzo, Merenda, Lavanderia, Assicurazione. 
-                            Incluso: Kit Academy19, Premi, Attestato.
-                        </p>
-                      </div>
-                      <div>
-                        <p className="text-white font-bold uppercase mb-1 font-display">🔹 FORMULA CON PERNOTTAMENTO</p>
-                        <p className="text-xs text-zinc-500 font-sans leading-relaxed italic">
-                            Esperienza immersiva: Pensione completa, Lavanderia, Pulizie. 
-                            Incluso: Kit Academy19, Premi, Attestato.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="flex flex-col gap-8">
-                    <div className="border-l border-accent/20 pl-6 space-y-4 translate-x-left will-animate">
-                      <h4 className="font-bold uppercase tracking-widest text-accent font-display text-xl">📝 Iscrizioni & Scadenza</h4>
-                      <p className="text-sm text-zinc-400 font-sans uppercase">
-                          Aperte fino al <span className="text-white">10 Giugno</span>. Posti limitati.
-                      </p>
-                      <div className="p-4 border border-accent/20 bg-accent/5 text-xs font-sans text-accent/80 uppercase max-w-lg">
-                          Pagamento in un’unica soluzione o in due rate (acconto e saldo).
-                      </div>
-                    </div>
-                    {/* Media centered and smaller as per fallback request */}
-                    <div className="w-full max-w-[280px] border border-accent/20 bg-accent/5 p-2 staff-reveal will-animate" data-delay="0.3">
-                      <video 
-                          src="/videos/monte-video.mov" 
-                          className="w-full aspect-[4/5] object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-500" 
-                          autoPlay 
-                          muted 
-                          loop 
-                          playsInline 
-                      />
-                    </div>
-                  </div>
-                </div>
+        {/* Registration Cards Grid */}
+        <div className="grid grid-cols-1 tablet:grid-cols-2 gap-8 mb-16">
+          
+          {/* Card 1 - Camp Estivo Completo */}
+          <div className="bg-[#161616]/90 backdrop-blur-md border border-[#2a2a2a] rounded-[12px] overflow-hidden transition-all duration-250 hover:border-[#4caf50] hover:-translate-y-1 group">
+            <div className="bg-[#111111] p-6 border-b border-[#2a2a2a]">
+              <span className="inline-block bg-[#1a3a1a] text-[#4caf50] text-[12px] font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4">
+                Camp Estivo · Monte S.M. Tiberina (PG)
+              </span>
+              <h3 className="font-display text-[32px] tablet:text-[40px] font-[900] text-white uppercase leading-none tracking-tight mb-2">
+                CAMP ESTIVO ACADEMY19
+              </h3>
+              <p className="font-sans text-[16px] text-[#bbbbbb]">
+                Per ragazzi/e <span className="text-[#4caf50] font-medium">dai 6 anni in su</span>
+              </p>
             </div>
-
-            {/* --- FORLÌ --- */}
-            <div className="mb-24 pt-12 border-t border-amber-500/10">
-                <div className="inline-block px-4 py-2 bg-amber-500/20 border border-amber-500/40 text-amber-500 text-sm font-bold uppercase tracking-widest mb-8 font-sans fade-up will-animate">
-                    Forlì ☀️
-                </div>
-                
-                <div className="text-column space-y-6 text-zinc-300 leading-relaxed font-sans fade-up will-animate" data-delay="0.1">
-                    <p className="text-xl text-white font-bold italic mb-4">
-                        "Le iscrizioni sono ufficialmente aperte!"
-                    </p>
-                    <p>
-                        Un’estate indimenticabile tra tecnica e allegria. Migliora le tue capacità e condividi momenti di puro sport con i nostri coach.
-                    </p>
-                </div>
-
-                <div className="mt-12 space-y-12 will-animate" data-stagger="0.1">
-                  <div className="border-l border-amber-500/30 pl-6 translate-x-left">
-                    <h4 className="font-bold uppercase tracking-widest mb-4 text-base text-amber-500 font-display text-xl">🎯 Il Percorso Tecnico</h4>
-                    <p className="text-sm font-bold text-white mb-4 font-display">Ogni partecipante sarà inserito in un programma strutturato che prevede:</p>
-                    <ul className="space-y-3 text-sm font-sans text-zinc-400 uppercase tracking-wide">
-                      <li className="flex items-start gap-2"><span className="text-amber-500">•</span> Perfezionamento tecnico e coordinativo</li>
-                      <li className="flex items-start gap-2"><span className="text-amber-500">•</span> Sviluppo di agilità e rapidità</li>
-                      <li className="flex items-start gap-2"><span className="text-amber-500">•</span> Allenamenti con strumenti innovativi</li>
-                      <li className="flex items-start gap-2"><span className="text-amber-500">•</span> Metodologia 1vs1 con Gingawall</li>
-                      <li className="flex items-start gap-2"><span className="text-amber-500">•</span> Esercitazioni specifiche per ruolo</li>
-                      <li className="flex items-start gap-2"><span className="text-amber-500">•</span> Attività suddivise per fascia d’età</li>
-                    </ul>
-                    <p className="mt-6 text-sm italic text-amber-500 font-sans">
-                        Oltre al campo, spazio al divertimento: musica, giochi e gli immancabili gavettoni assicurati! 💦
-                    </p>
-                  </div>
-
-                  <div className="border-l border-amber-500/30 pl-6 translate-x-left will-animate">
-                    <h4 className="font-bold uppercase tracking-widest mb-4 text-base text-amber-500 font-display text-xl">📦 La Formula: Allenamento & Pranzo</h4>
-                    <p className="text-sm font-bold text-white mb-4 font-display">Una soluzione completa per vivere il camp con la massima energy (Orario: 8:30 – 15:00):</p>
-                    <ul className="space-y-3 text-sm font-sans text-zinc-400 uppercase tracking-wide">
-                      <li className="flex items-start gap-2"><span className="text-amber-500">•</span> Spuntino di metà mattina</li>
-                      <li className="flex items-start gap-2"><span className="text-amber-500">•</span> Pranzo incluso</li>
-                      <li className="flex items-start gap-2"><span className="text-amber-500">•</span> Assicurazione inclusa</li>
+            
+            <div className="p-6 space-y-8">
+              <div className="grid grid-cols-1 mobile:grid-cols-2 gap-6 items-start">
+                <div className="space-y-6">
+                  <p className="font-sans text-[#bbbbbb] leading-relaxed text-sm">
+                    Un'esperienza esclusiva dove passione per il calcio, crescita personale e divertimento si incontrano in un ambiente professionale.
+                  </p>
+                  
+                  <div>
+                    <h4 className="text-[#4caf50] font-display font-bold uppercase tracking-wider text-[13px] mb-3">
+                      IL PERCORSO
+                    </h4>
+                    <ul className="space-y-2">
+                      {[
+                        "Perfezionamento tecnico",
+                        "Agilità, velocità e rapidità",
+                        "Strumenti innovativi",
+                        "Metodologia Gingawall",
+                        "Esercitazioni specifiche",
+                        "Suddivisi per età/livello"
+                      ].map((item, i) => (
+                        <li key={i} className="flex items-center gap-2 text-[#bbbbbb] font-sans text-[13px]">
+                          <span className="w-1 h-1 bg-[#4caf50] rounded-full flex-shrink-0" />
+                          {item}
+                        </li>
+                      ))}
                     </ul>
                   </div>
-
-                  <div className="flex flex-col gap-8">
-                    <div className="border-l border-amber-500/20 pl-6 space-y-4 translate-x-left will-animate">
-                      <h4 className="font-bold uppercase tracking-widest text-base text-amber-500 font-display text-xl">📝 Iscrizioni & Scadenza</h4>
-                      <p className="text-sm text-zinc-400 font-sans uppercase">
-                          Aperte fino al <span className="text-white">10 Maggio</span>. Posti limitati.
-                      </p>
-                      <div className="p-4 border border-amber-500/20 bg-amber-500/5 text-xs font-sans text-amber-200/80 uppercase max-w-lg">
-                          Pagamento in un’unica soluzione o in due rate (acconto e saldo).
-                      </div>
-                    </div>
-                    {/* Media centered and smaller as per fallback request */}
-                    <div className="w-full max-w-[280px] border border-amber-500/20 bg-amber-500/5 p-2 staff-reveal will-animate" data-delay="0.3">
-                      <div className="overflow-hidden relative group aspect-[4/5]">
-                          <img 
-                              src="/images/forli-casacche.jpeg" 
-                              alt="Forlì Casacche"
-                              className="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" 
-                          />
-                          <div className="absolute inset-0 bg-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none mix-blend-color"></div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-            </div>
 
-            <div className="border-l border-zinc-800 pl-6 pt-6 grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all fade-up will-animate" data-delay="0.4">
-              <h4 className="font-bold uppercase tracking-widest mb-4 text-base text-zinc-500 font-display">Le Altre Nostre Sedi</h4>
-              <div className="grid grid-cols-2 gap-4">
-                <div>
-                  <p className="text-sm font-bold uppercase text-white font-display text-base">Forlì</p>
-                  <p className="text-xs text-zinc-500 font-sans">Via Tripoli 137</p>
-                </div>
-                <div>
-                  <p className="text-sm font-bold uppercase text-white font-display text-base">Lerchi (PG)</p>
-                  <p className="text-xs text-zinc-500 font-sans">Città di Castello</p>
+                {/* Video Media Integration */}
+                <div className="w-full border border-accent/20 bg-accent/5 p-2 rounded-[8px]">
+                   <video 
+                      src="/videos/monte-video.mov" 
+                      className="w-full aspect-[4/5] object-cover rounded-[4px] grayscale-[0.2] hover:grayscale-0 transition-all duration-500" 
+                      autoPlay 
+                      muted 
+                      loop 
+                      playsInline 
+                  />
                 </div>
               </div>
-            </div>
-
-            <div className="mt-12 fade-up will-animate" data-delay="0.5">
-              <h4 className="font-bold uppercase tracking-widest mb-4 text-base text-accent/50 font-display text-xl">Info e Prenotazioni</h4>
-              <p className="text-sm font-sans text-zinc-400 mb-2">Per maggiori informazioni contatta <strong>Zuppardo Liborio</strong>:</p>
-              <a href="tel:3478894076" className="text-2xl font-bold text-white hover:text-accent cursor-pointer transition-all font-display block mb-2">📱 347 8894076</a>
-              <p className="text-lg font-medium text-white cursor-pointer transition-all font-display uppercase tracking-widest">ACADEMY19@LIBERO.IT</p>
-            </div>
-
-            <div className="mt-8 fade-up will-animate" data-delay="0.6">
-              <h4 className="font-bold uppercase tracking-widest mb-2 text-sm text-accent/50 font-display">Social</h4>
-              <div className="flex gap-4 mt-4">
-                {socialLinks.map((social) => (
-                  <a
-                    key={social.label}
-                    href={social.href}
-                    className="w-12 h-12 border border-zinc-700 flex items-center justify-center text-white hover:border-accent hover:bg-accent hover:text-black transition-all duration-300"
-                  >
-                    <social.icon className="w-5 h-5" />
-                  </a>
-                ))}
+              
+              <div className="space-y-3 pt-4 border-t border-[#2a2a2a]">
+                <div className="bg-[#1a1a1a] p-4 rounded-[8px] border border-[#262626]">
+                  <div className="flex justify-between items-start mb-1">
+                    <span className="text-white font-bold text-[14px]">🔹 Formula Giornaliera</span>
+                    <span className="text-[#e6a817] font-bold text-[13px]">9:00 – 17:30</span>
+                  </div>
+                  <p className="text-[#888888] text-[12px] leading-snug">
+                    Spuntino, Pranzo, Merenda, Lavanderia, Assicurazione, Kit, Attestato
+                  </p>
+                </div>
+                <div className="bg-[#1a1a1a] p-4 rounded-[8px] border border-[#262626]">
+                  <div className="flex justify-between items-start mb-1">
+                    <span className="text-white font-bold text-[14px]">🔹 Formula con Pernottamento</span>
+                    <span className="text-[#e6a817] font-bold text-[13px]">Pensione completa</span>
+                  </div>
+                  <p className="text-[#888888] text-[12px] leading-snug">
+                    Colazione, Pranzo, Cena, Lavanderia, Pulizie, Assicurazione, Kit, Attestato
+                  </p>
+                </div>
               </div>
+              
+              <div className="bg-[#1a2a1a] border border-[#2a4a2a] p-4 rounded-[6px] flex justify-between items-center">
+                <div>
+                  <div className="text-[#4caf50] font-bold text-[13px] uppercase tracking-wide">ISCRIZIONI APERTE</div>
+                  <div className="text-[#888888] text-[11px]">Posti limitati · 1 o 2 rate</div>
+                </div>
+                <div className="text-[#e6a817] font-bold text-[13px] text-right">
+                  ENTRO 10 GIUGNO
+                </div>
+              </div>
+              
+              <a 
+                href="tel:3478894076"
+                className="block w-full bg-[#4caf50] text-white text-center py-4 rounded-[8px] font-bold uppercase tracking-widest transition-all hover:opacity-85 active:scale-[0.99]"
+              >
+                PRENOTA ORA
+              </a>
             </div>
           </div>
 
-          {/* Form Side */}
-          <div className="bg-black border border-accent/20 p-8 md:p-12 relative translate-x-right will-animate">
-            {/* Corner styling */}
-            <div className="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-accent"></div>
-            <div className="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-accent"></div>
-            <div className="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-accent"></div>
-            <div className="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-accent"></div>
+          {/* Card 2 - Formula Novità */}
+          <div className="bg-[#161616]/90 backdrop-blur-md border border-[#2a2a2a] rounded-[12px] overflow-hidden transition-all duration-250 hover:border-[#4caf50] hover:-translate-y-1 group">
+            <div className="bg-[#111111] p-6 border-b border-[#2a2a2a]">
+              <span className="inline-block bg-[#3a2a00] text-[#e6a817] text-[12px] font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4">
+                NOVITÀ · Forlì
+              </span>
+              <h3 className="font-display text-[32px] tablet:text-[40px] font-[900] text-white uppercase leading-none tracking-tight mb-2">
+                ALLENAMENTO + PRANZO
+              </h3>
+              <p className="font-sans text-[16px] text-[#bbbbbb]">
+                Per ragazzi/e <span className="text-[#4caf50] font-medium">dai 6 anni in su</span>
+              </p>
+            </div>
+            
+            <div className="p-6 space-y-8">
+              <div className="grid grid-cols-1 mobile:grid-cols-2 gap-6 items-start">
+                <div className="space-y-6">
+                  <p className="font-sans text-[#bbbbbb] leading-relaxed text-sm">
+                    La nuova formula per chi vuole allenarsi senza rinunciare al divertimento. Musica, giochi e gavettoni assicurati!
+                  </p>
+                  
+                  <div>
+                    <h4 className="text-[#4caf50] font-display font-bold uppercase tracking-wider text-[13px] mb-3">
+                      CORSO TECNICO
+                    </h4>
+                    <ul className="space-y-2">
+                      {[
+                        "Perfezionamento tecnico",
+                        "Agilità e rapidità",
+                        "Strumenti innovativi",
+                        "Metodologia Gingawall",
+                        "Esercitazioni specifiche",
+                        "Suddivisi per fascia d'età"
+                      ].map((item, i) => (
+                        <li key={i} className="flex items-center gap-2 text-[#bbbbbb] font-sans text-[13px]">
+                          <span className="w-1 h-1 bg-[#4caf50] rounded-full flex-shrink-0" />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
 
-            <h3 className="text-2xl font-bold uppercase mb-8 flex items-center gap-3 text-accent font-display text-3xl">
-              Prenota la Prova
-              <span className="w-2 h-2 bg-accent rounded-none animate-bounce-ball"></span>
-            </h3>
+                {/* Photo Media Integration */}
+                <div className="w-full border border-amber-500/20 bg-amber-500/5 p-2 rounded-[8px]">
+                   <div className="overflow-hidden relative group aspect-[4/5] rounded-[4px]">
+                      <img 
+                          src="/images/forli-casacche.jpeg" 
+                          alt="Forlì Casacche"
+                          className="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" 
+                      />
+                      <div className="absolute inset-0 bg-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none mix-blend-color"></div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="space-y-3 pt-4 border-t border-[#2a2a2a]">
+                <div className="bg-[#1a1a1a] p-4 rounded-[8px] border border-[#262626]">
+                  <div className="flex justify-between items-start mb-1">
+                    <span className="text-white font-bold text-[14px]">🔹 Formula Allenamento + Pranzo</span>
+                    <span className="text-[#e6a817] font-bold text-[13px]">8:30 – 15:00</span>
+                  </div>
+                  <p className="text-[#888888] text-[12px] leading-snug">
+                    Spuntino metà mattina, Pranzo incluso, Assicurazione inclusa
+                  </p>
+                </div>
+                <div className="p-4 border border-zinc-800 rounded-[8px] grayscale opacity-60">
+                  <p className="text-[11px] text-zinc-500 uppercase font-sans">Altre sedi: Lerchi (PG) / Città di Castello</p>
+                </div>
+              </div>
+              
+              <div className="bg-[#1a2a1a] border border-[#2a4a2a] p-4 rounded-[6px] flex justify-between items-center">
+                <div>
+                  <div className="text-[#4caf50] font-bold text-[13px] uppercase tracking-wide">ISCRIZIONI APERTE</div>
+                  <div className="text-[#888888] text-[11px]">Posti limitati · 1 o 2 rate</div>
+                </div>
+                <div className="text-[#e6a817] font-bold text-[13px] text-right">
+                  ENTRO 10 MAGGIO
+                </div>
+              </div>
+              
+              <a 
+                href="tel:3478894076"
+                className="block w-full bg-transparent border-2 border-[#e6a817] text-[#e6a817] text-center py-4 rounded-[8px] font-bold uppercase tracking-widest transition-all hover:bg-[#e6a817] hover:text-[#0d0d0d] active:scale-[0.99]"
+              >
+                PRENOTA ORA
+              </a>
+            </div>
+          </div>
+        </div>
 
-            <form onSubmit={handleSubmit} className="space-y-6 will-animate" data-stagger="0.05">
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-2 fade-up">
-                  <label className="text-xs font-bold uppercase tracking-widest text-zinc-400 font-sans">Nome</label>
+        {/* --- FORM DI CONTATTO --- */}
+        <div className="bg-[#111111]/90 backdrop-blur-md border border-[#2a2a2a] rounded-[12px] p-8 tablet:p-12 mb-16 relative overflow-hidden group hover:border-[#4caf50]/50 transition-colors animate-fade-up">
+           <div className="absolute top-0 right-0 w-32 h-32 bg-[#4caf50]/5 blur-[60px] rounded-full -mr-16 -mt-16 group-hover:bg-[#4caf50]/10 transition-colors"></div>
+           
+           <h3 className="font-display text-[32px] tablet:text-[42px] font-[900] text-white uppercase leading-none tracking-tight mb-8">
+             Hai una <span className="text-[#4caf50]">domanda?</span>
+           </h3>
+
+           <form onSubmit={handleSubmit} className="space-y-6">
+              <div className="grid grid-cols-1 tablet:grid-cols-3 gap-6">
+                <div className="space-y-2">
+                  <label className="text-xs font-bold uppercase tracking-widest text-[#888888] font-sans">Nome</label>
                   <Input
                     required
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="bg-black border-zinc-800 text-white placeholder:text-zinc-600 focus:border-accent focus:ring-accent rounded-none h-12 font-sans"
-                    placeholder="Mario Rossi"
+                    className="bg-[#1a1a1a] border-[#2a2a2a] text-white placeholder:text-[#444] focus:border-[#4caf50] focus:ring-[#4caf50] rounded-[8px] h-12 font-sans"
+                    placeholder="Il tuo nome"
                   />
                 </div>
-                <div className="space-y-2 fade-up will-animate">
-                  <label className="text-xs font-bold uppercase tracking-widest text-zinc-400 font-sans">Email</label>
+                <div className="space-y-2">
+                  <label className="text-xs font-bold uppercase tracking-widest text-[#888888] font-sans">Email</label>
                   <Input
                     required
                     type="email"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="bg-black border-zinc-800 text-white placeholder:text-zinc-600 focus:border-accent focus:ring-accent rounded-none h-12 font-sans"
-                    placeholder="mario@email.com"
+                    className="bg-[#1a1a1a] border-[#2a2a2a] text-white placeholder:text-[#444] focus:border-[#4caf50] focus:ring-[#4caf50] rounded-[8px] h-12 font-sans"
+                    placeholder="email@esempio.it"
                   />
                 </div>
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-2 fade-up will-animate">
-                  <label className="text-xs font-bold uppercase tracking-widest text-zinc-400 font-sans">Telefono</label>
-                  <Input
-                    type="tel"
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="bg-black border-zinc-800 text-white placeholder:text-zinc-600 focus:border-accent focus:ring-accent rounded-none h-12 font-sans"
-                    placeholder="+39 333 1234567"
-                  />
-                </div>
-                <div className="space-y-2 fade-up will-animate">
-                  <label className="text-xs font-bold uppercase tracking-widest text-zinc-400 font-sans">Interesse</label>
+                <div className="space-y-2">
+                  <label className="text-xs font-bold uppercase tracking-widest text-[#888888] font-sans">Interesse</label>
                   <Select
                     value={formData.program}
                     onValueChange={(value) => setFormData({ ...formData, program: value })}
                   >
-                    <SelectTrigger className="bg-black border-zinc-800 text-white focus:border-accent focus:ring-accent rounded-none h-12 font-sans">
+                    <SelectTrigger className="bg-[#1a1a1a] border-[#2a2a2a] text-white focus:border-[#4caf50] focus:ring-[#4caf50] rounded-[8px] h-12 font-sans">
                       <SelectValue placeholder="Seleziona..." />
                     </SelectTrigger>
-                    <SelectContent className="bg-black border-zinc-800 text-white rounded-none font-sans">
-                      <SelectItem className="focus:bg-zinc-900 focus:text-white" value="camp-estivo">Camp Estivo Monte S.M. Tiberina</SelectItem>
-                      <SelectItem className="focus:bg-zinc-900 focus:text-white" value="camp-estivo-forli">Camp Estivo Forlì</SelectItem>
-                      <SelectItem className="focus:bg-zinc-900 focus:text-white" value="Richiesta Kit Ufficiale">Kit Ufficiale</SelectItem>
-                      <SelectItem className="focus:bg-zinc-900 focus:text-white" value="pacchetto-5">Pacchetto 5 Lezioni</SelectItem>
-                      <SelectItem className="focus:bg-zinc-900 focus:text-white" value="pacchetto-10">Pacchetto 10 Lezioni</SelectItem>
-                      <SelectItem className="focus:bg-zinc-900 focus:text-white" value="pacchetto-15">Pacchetto 15 Lezioni</SelectItem>
-                      <SelectItem className="focus:bg-zinc-900 focus:text-white" value="pacchetto-20">Pacchetto 20 Lezioni</SelectItem>
-                      <SelectItem className="focus:bg-zinc-900 focus:text-white" value="compleanno-academy">Compleanno con AcademY</SelectItem>
+                    <SelectContent className="bg-[#1a1a1a] border-[#2a2a2a] text-white rounded-[8px] font-sans">
+                      <SelectItem value="camp-estivo">Camp Estivo Monte S.M. Tiberina</SelectItem>
+                      <SelectItem value="camp-estivo-forli">Camp Estivo Forlì</SelectItem>
+                      <SelectItem value="Kit Ufficiale">Richiesta Kit Ufficiale</SelectItem>
+                      <SelectItem value="pacchetti-lezioni">Pacchetti Lezioni</SelectItem>
+                      <SelectItem value="compleanno">Compleanno con AcademY</SelectItem>
+                      <SelectItem value="altro">Altro...</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
               </div>
 
-              <div className="space-y-2 fade-up will-animate">
-                <label className="text-xs font-bold uppercase tracking-widest text-zinc-400 font-sans">Messaggio</label>
+              <div className="space-y-2">
+                <label className="text-xs font-bold uppercase tracking-widest text-[#888888] font-sans">Messaggio</label>
                 <Textarea
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   rows={4}
-                  className="bg-black border-zinc-800 text-white placeholder:text-zinc-600 focus:border-accent focus:ring-accent rounded-none resize-none font-sans"
-                  placeholder="Scrivi qui..."
+                  className="bg-[#1a1a1a] border-[#2a2a2a] text-white placeholder:text-[#444] focus:border-[#4caf50] focus:ring-[#4caf50] rounded-[8px] resize-none font-sans"
+                  placeholder="Come possiamo aiutarti?"
                 />
               </div>
 
-              <Button
-                type="submit"
-                disabled={isSubmitting}
-                className="w-full bg-accent text-black hover:bg-white h-14 text-lg font-bold uppercase tracking-widest rounded-none mt-4 group transition-all duration-300 font-display btn-bounce"
-              >
-                {isSubmitting ? 'Invio in corso...' : (
-                  <span className="flex items-center gap-3">
-                    Invia Richiesta <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
-                  </span>
-                )}
-              </Button>
-            </form>
+              <div className="flex justify-end">
+                <Button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="bg-[#4caf50] text-white hover:opacity-85 h-14 px-12 text-lg font-bold uppercase tracking-widest rounded-[8px] transition-all group font-display w-full tablet:w-auto"
+                >
+                  {isSubmitting ? 'Invio in corso...' : (
+                    <span className="flex items-center gap-3">
+                      Invia Messaggio <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                    </span>
+                  )}
+                </Button>
+              </div>
+           </form>
+        </div>
+
+        {/* Contact Banner */}
+        <div className="bg-[#111111]/90 backdrop-blur-md border border-[#2a2a2a] rounded-[12px] p-6 tablet:p-8 flex flex-col tablet:flex-row justify-between items-center gap-6 mb-20 animate-fade-up">
+          <div className="text-center tablet:text-left">
+            <span className="block text-[#4caf50] font-display font-bold uppercase tracking-widest text-[12px] mb-1">
+              INFO & PRENOTAZIONI
+            </span>
+            <h4 className="font-display text-[26px] tablet:text-[32px] font-[900] text-white uppercase leading-none tracking-tight mb-1">
+              ZUPPARDO LIBORIO
+            </h4>
+            <p className="text-[#888888] text-[14px] font-sans">
+              Vi aspettiamo in campo!
+            </p>
+          </div>
+          
+          <div className="flex flex-col mobile:flex-row gap-4 w-full tablet:w-auto">
+            <a 
+              href="tel:3478894076" 
+              className="flex items-center justify-center gap-2 px-6 py-3 border border-white text-white rounded-full font-bold transition-all hover:bg-white hover:text-[#0d0d0d] text-[14px] uppercase tracking-wider w-full mobile:w-auto"
+            >
+              <Phone size={18} />
+              347 889 4076
+            </a>
+            <a 
+              href="tel:3478894076" 
+              className="flex items-center justify-center gap-2 px-6 py-3 bg-[#4caf50] text-white rounded-full font-bold transition-all hover:opacity-85 text-[14px] uppercase tracking-wider w-full mobile:w-auto"
+            >
+              <MessageCircle size={18} />
+              SCRIVICI ORA
+            </a>
           </div>
         </div>
 
         {/* Map Strip */}
-        <div className="mt-20 grid grid-cols-1 md:grid-cols-2 h-[500px] md:h-80 w-full bg-black border border-accent/20 relative fade-up will-animate" data-delay="0.2">
+        <div className="grid grid-cols-1 tablet:grid-cols-2 h-[500px] tablet:h-80 w-full bg-black border border-accent/20 relative rounded-[12px] overflow-hidden">
           <div className="absolute inset-0 bg-accent/20 mix-blend-color pointer-events-none z-10"></div>
           <iframe
             src="https://maps.google.com/maps?q=Via+Tripoli+137,+Forl%C3%AC&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -388,7 +412,7 @@ const ContactSection = () => {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             title="Mappa Sede Forlì"
-            className="grayscale contrast-125 hover:grayscale-0 transition-all duration-700 border-b md:border-b-0 md:border-r border-accent/50"
+            className="grayscale contrast-125 hover:grayscale-0 transition-all duration-700 border-b tablet:border-b-0 tablet:border-r border-accent/50"
           />
           <iframe
             src="https://maps.google.com/maps?q=Centro+sportivo+Lerchi+via+toscana,+06012+Citt%C3%A0+di+castello&t=&z=15&ie=UTF8&iwloc=&output=embed"

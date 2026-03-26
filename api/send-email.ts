@@ -2,7 +2,7 @@ import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export default async function handler(req: any, res: any) {
+export default async function handler(req: any, res: any) { // eslint-disable-line @typescript-eslint/no-explicit-any
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
@@ -56,8 +56,9 @@ export default async function handler(req: any, res: any) {
     });
 
     return res.status(200).json({ success: true, notificationId: notification.data?.id, confirmationId: confirmation.data?.id });
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error('Resend Error:', error);
-    return res.status(500).json({ error: error.message || 'Failed to send email' });
+    const errorMessage = error instanceof Error ? error.message : 'Failed to send email';
+    return res.status(500).json({ error: errorMessage });
   }
 }

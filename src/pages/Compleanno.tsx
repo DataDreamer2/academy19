@@ -13,20 +13,8 @@ const Compleanno = () => {
                 url="https://www.academy19.it/compleanno-con-academy"
             />
 
-            <main className="min-h-screen pt-20">
+            <main className="min-h-screen pt-24">
                 <Navbar />
-                
-                {/* Hero Header for the page */}
-                <div className="bg-black py-16 border-b border-accent/10">
-                    <div className="container mx-auto px-6 md:px-12">
-                        <h1 className="text-4xl md:text-6xl font-bold uppercase tracking-tighter text-white mb-4">
-                            Compleanno con <span className="text-accent">AcademY</span>
-                        </h1>
-                        <p className="text-zinc-500 font-mono uppercase tracking-widest text-sm">
-                            Rendi speciale il tuo giorno più importante
-                        </p>
-                    </div>
-                </div>
 
                 <BirthdaySection />
                 

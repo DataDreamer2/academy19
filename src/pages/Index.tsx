@@ -6,6 +6,7 @@ import NextEventsSection from '@/components/NextEventsSection';
 import TrainingSection from '@/components/TrainingSection';
 import GallerySection from '@/components/GallerySection';
 import BirthdaySection from '@/components/BirthdaySection';
+import ContactSection from '@/components/ContactSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import Footer from '@/components/Footer';
 import StickyMobileCTA from '@/components/StickyMobileCTA';
@@ -41,6 +42,7 @@ const Index = () => {
         <GallerySection />
         <BirthdaySection />
         <TestimonialsSection />
+        <ContactSection />
         <Footer />
         <StickyMobileCTA />
       </main>

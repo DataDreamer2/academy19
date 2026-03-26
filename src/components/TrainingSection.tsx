@@ -29,44 +29,55 @@ const TrainingSection = () => {
         {/* Packages and Kit */}
         <div className="grid md:grid-cols-2 gap-12">
           {/* Pacchetti Lezioni */}
-          <div className="p-6 md:p-12 bg-black border border-accent/20 flex flex-col justify-between relative overflow-hidden card-reveal will-animate" data-delay="0.1">
-            {/* Neon glow effect in corner */}
-            <div className="absolute top-0 right-0 w-32 h-32 bg-accent/10 blur-[50px] pointer-events-none rounded-full"></div>
+          <div className="p-6 md:p-12 bg-[#161616] border border-[#2a2a2a] flex flex-col justify-between relative group overflow-hidden card-reveal will-animate" data-delay="0.1">
+            {/* Decorative Corner Borders */}
+            <div className="absolute -top-2 -right-2 w-10 h-10 border-t-2 border-r-2 border-[#e6a817] opacity-40 group-hover:opacity-70 transition-opacity" />
+            <div className="absolute -bottom-2 -left-2 w-10 h-10 border-b-2 border-l-2 border-[#4caf50] opacity-40 group-hover:opacity-70 transition-opacity" />
 
             <div className="relative z-10">
-              <h3 className="text-3xl font-bold uppercase mb-8 flex items-center gap-4 text-accent font-display">
+              <h3 className="text-3xl font-bold uppercase mb-8 flex items-center gap-4 text-white font-display italic">
                 Pacchetti Lezioni
-                <span className="h-px flex-grow bg-accent/30"></span>
+                <span className="h-px flex-grow bg-[#4caf50]/30"></span>
               </h3>
               <div className="grid grid-cols-2 gap-6 will-animate" data-stagger="0.08">
                 {[5, 10, 15, 20].map((num) => (
                   <Link
                     key={num}
                     to={`/contatti?program=pacchetto-${num}`}
-                    className="group relative p-4 mobile:p-8 border border-accent/20 hover:border-accent bg-black hover:bg-accent/5 transition-all duration-300 flex flex-col items-center justify-center text-center overflow-hidden shadow-none card-reveal"
+                    className="group/btn relative p-4 mobile:p-8 border border-[#2a2a2a] hover:border-[#4caf50] bg-[#0d0d0d] hover:bg-[#1a3a1a]/20 transition-all duration-300 flex flex-col items-center justify-center text-center overflow-hidden shadow-none card-reveal"
                   >
-                    <span className="text-5xl font-bold mb-2 transition-transform group-hover:-translate-y-2 font-display">{num}</span>
-                    <span className="text-sm uppercase tracking-widest text-zinc-400 group-hover:text-white transition-colors font-sans">Lezioni</span>
+                    <span className="relative z-10 text-5xl font-black mb-2 transition-transform group-hover/btn:-translate-y-2 font-display italic text-[#4caf50]">
+                      {num}
+                    </span>
+                    <span className="relative z-10 text-sm uppercase tracking-widest text-[#888888] group-hover/btn:text-white transition-colors font-display font-bold">
+                      Lezioni
+                    </span>
 
                     {/* Hover effect indicator */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-accent/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                    <ArrowRight className="absolute bottom-4 right-4 w-5 h-5 text-accent opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#4caf50]/10 to-transparent opacity-0 group-hover/btn:opacity-100 transition-opacity" />
+                    <ArrowRight className="absolute bottom-4 right-4 w-5 h-5 text-[#4caf50] opacity-0 -translate-x-4 group-hover/btn:opacity-100 group-hover/btn:translate-x-0 transition-all duration-300" />
                   </Link>
                 ))}
               </div>
             </div>
-            <p className="mt-8 text-zinc-400 text-sm font-sans border-t border-accent/20 pt-4 relative z-10">
-              Seleziona un pacchetto per compilare automaticamente il modulo di contatto con la tua scelta.
+            <p className="mt-8 text-zinc-500 text-[12px] font-display font-medium uppercase tracking-wider border-t border-[#2a2a2a] pt-4 relative z-10 italic">
+              Seleziona un pacchetto per richiedere informazioni via mail.
             </p>
           </div>
 
           {/* Kit Ufficiale */}
-          <div className="p-8 md:p-12 bg-accent text-black flex flex-col justify-between card-reveal will-animate" data-delay="0.3">
-            <div>
-              <h3 className="text-3xl font-bold uppercase mb-8 flex items-center gap-4 border-b border-black/20 pb-4 font-display">
+          <div className="p-8 md:p-12 bg-[#161616] border border-[#2a2a2a] text-white flex flex-col justify-between relative group card-reveal will-animate" data-delay="0.3">
+            {/* Decorative Corner Borders */}
+            <div className="absolute -top-2 -right-2 w-10 h-10 border-t-2 border-r-2 border-[#e6a817] opacity-40 group-hover:opacity-70 transition-opacity" />
+            <div className="absolute -bottom-2 -left-2 w-10 h-10 border-b-2 border-l-2 border-[#4caf50] opacity-40 group-hover:opacity-70 transition-opacity" />
+
+            <div className="relative z-10">
+              <h3 className="text-3xl font-bold uppercase mb-8 flex items-center gap-4 text-white font-display italic">
                 Kit Ufficiale
+                <span className="h-px flex-grow bg-[#4caf50]/30"></span>
               </h3>
-              <ul className="space-y-6 will-animate" data-stagger="0.07">
+              
+              <ul className="grid grid-cols-1 gap-4 will-animate" data-stagger="0.07">
                 {[
                   "2 Magliette Personalizzate",
                   "1 Pantaloncino",
@@ -74,18 +85,29 @@ const TrainingSection = () => {
                   "1 Sacca",
                   "1 Borraccia"
                 ].map((item, idx) => (
-                  <li key={idx} className="flex items-center gap-6 text-xl font-bold uppercase tracking-wider font-display translate-x-right">
-                    {/* Checkmark block */}
-                    <div className="w-8 h-8 bg-black text-accent flex items-center justify-center text-sm">
+                  <li 
+                    key={idx} 
+                    className="flex items-center gap-5 p-4 bg-[#0d0d0d] border border-[#2a2a2a] hover:border-[#4caf50]/40 transition-all duration-300 group/item"
+                  >
+                    {/* Number block */}
+                    <div className="w-10 h-10 bg-[#1a1a1a] border border-[#2a2a2a] text-[#4caf50] flex items-center justify-center font-bold font-display italic group-hover/item:bg-[#4caf50] group-hover/item:text-white transition-colors duration-300">
                       0{idx + 1}
                     </div>
-                    {item}
+                    <span className="text-lg font-bold uppercase tracking-wide font-display text-zinc-300 group-hover/item:text-white transition-colors">
+                      {item}
+                    </span>
                   </li>
                 ))}
               </ul>
             </div>
-            <div className="mt-8 pt-8 border-t border-black/20 text-sm uppercase tracking-widest font-bold opacity-60 font-sans">
-              Training Gear // Academy 19
+
+            <div className="mt-8 pt-6 border-t border-[#2a2a2a] flex justify-between items-center relative z-10">
+              <div className="text-[10px] uppercase tracking-[3px] font-bold text-[#4caf50] opacity-80 font-display italic">
+                Training Gear // Academy 19
+              </div>
+              <div className="text-[10px] uppercase tracking-[2px] font-bold text-zinc-500 font-sans">
+                Élite Performance
+              </div>
             </div>
           </div>
         </div>

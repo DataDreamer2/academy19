@@ -114,18 +114,23 @@ const Kit = () => {
                             </p>
                         </div>
 
-                        <div className="bg-zinc-900/50 rounded-none p-8 border border-accent/20 backdrop-blur-sm">
-                            <h3 className="text-xl font-bold uppercase mb-6 flex items-center gap-3 font-display">
-                                <ShoppingBag className="text-accent" />
+                        <div className="bg-[#161616] border border-[#2a2a2a] p-8 md:p-10 relative group transition-all duration-300">
+                            {/* Decorative Corner Borders */}
+                            <div className="absolute -top-2 -right-2 w-8 h-8 border-t-2 border-r-2 border-[#e6a817] opacity-40 group-hover:opacity-70 transition-opacity" />
+                            <div className="absolute -bottom-2 -left-2 w-8 h-8 border-b-2 border-l-2 border-[#4caf50] opacity-40 group-hover:opacity-70 transition-opacity" />
+
+                            <h3 className="text-2xl font-bold uppercase mb-8 flex items-center gap-3 font-display italic">
+                                <ShoppingBag className="text-[#4caf50]" />
                                 Cosa include il Kit
+                                <span className="h-px flex-grow bg-[#4caf50]/20 ml-2"></span>
                             </h3>
-                            <ul className="space-y-4 font-sans">
+                            <ul className="grid grid-cols-1 gap-4 font-sans">
                                 {kitItems.map((item, index) => (
-                                    <li key={index} className="flex items-center gap-4 text-gray-300 group">
-                                        <div className="w-6 h-6 rounded-none bg-white/5 flex items-center justify-center flex-shrink-0 group-hover:bg-accent/20 group-hover:text-accent transition-colors">
-                                            <ShieldCheck size={14} />
+                                    <li key={index} className="flex items-center gap-4 text-zinc-400 group/list">
+                                        <div className="w-8 h-8 bg-[#0d0d0d] border border-[#2a2a2a] flex items-center justify-center flex-shrink-0 text-[#4caf50] group-hover/list:bg-[#4caf50] group-hover/list:text-white transition-all duration-300">
+                                            <ShieldCheck size={16} />
                                         </div>
-                                        <span className="text-lg group-hover:text-white transition-colors">{item}</span>
+                                        <span className="text-lg group-hover/list:text-white transition-colors uppercase font-display font-bold tracking-wide">{item}</span>
                                     </li>
                                 ))}
                             </ul>
@@ -141,46 +146,49 @@ const Kit = () => {
                             Scegli il piano completo per avere tutto l'equipaggiamento tecnico necessario per l'anno sportivo.
                         </p>
                     </div>
-
-                    <div className="bg-gradient-to-br from-zinc-900 via-black to-zinc-900 rounded-none p-8 md:p-12 border border-accent/20 relative overflow-hidden group">
+                    <div className="bg-[#161616] border border-[#2a2a2a] p-8 md:p-12 relative overflow-hidden group">
                         {/* Glow effect */}
-                        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-accent/20 blur-[120px] rounded-full pointer-events-none opacity-50 group-hover:opacity-100 transition-opacity duration-700"></div>
+                        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#4caf50]/10 blur-[120px] rounded-full pointer-events-none opacity-50 group-hover:opacity-80 transition-opacity duration-700"></div>
+                        
+                        {/* Decorative Corner Borders */}
+                        <div className="absolute -top-2 -right-2 w-12 h-12 border-t-2 border-r-2 border-[#e6a817] opacity-40 group-hover:opacity-70 transition-opacity" />
+                        <div className="absolute -bottom-2 -left-2 w-12 h-12 border-b-2 border-l-2 border-[#4caf50] opacity-40 group-hover:opacity-70 transition-opacity" />
 
                         <div className="relative z-10 flex flex-col md:flex-row items-center gap-12">
                             <div className="flex-1 space-y-8">
                                 <div>
-                                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-none bg-white/5 text-white text-sm font-semibold uppercase tracking-wider mb-4 border border-white/10 font-sans">
-                                        Miglior Offerta
+                                    <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#1a3a1a] text-[#4caf50] text-[10px] font-black uppercase tracking-[2px] mb-4 border border-[#4caf50]/20 font-display italic">
+                                        OFFERTA ESCLUSIVA
                                     </div>
-                                    <h3 className="text-3xl font-bold uppercase mb-2 font-display">Set Completo Academy19</h3>
-                                    <p className="text-gray-400 font-sans">Tutto l'abbigliamento ufficiale della stagione.</p>
+                                    <h3 className="text-4xl font-bold uppercase mb-2 font-display italic text-white">Set Completo Academy19</h3>
+                                    <p className="text-zinc-400 font-sans text-lg">Tutto l'abbigliamento ufficiale della stagione per puntare all'eccellenza.</p>
                                 </div>
 
-                                <ul className="space-y-4 font-sans">
+                                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 font-sans">
                                     {["Tessuti tecnici traspiranti", "Personalizzazione inclusa", "Design esclusivo", "Disponibile per tutte le età"].map((feature, i) => (
-                                        <li key={i} className="flex items-center gap-3 text-gray-300">
-                                            <div className="flex-shrink-0 w-5 h-5 rounded-none bg-accent/20 flex items-center justify-center">
-                                                <Check size={12} className="text-accent" />
+                                        <li key={i} className="flex items-center gap-3 text-zinc-300 group/feat">
+                                            <div className="flex-shrink-0 w-6 h-6 bg-[#0d0d0d] border border-[#2a2a2a] flex items-center justify-center text-[#4caf50] group-hover/feat:bg-[#4caf50] group-hover/feat:text-white transition-all">
+                                                <Check size={14} className="font-bold" />
                                             </div>
-                                            <span>{feature}</span>
+                                            <span className="font-medium">{feature}</span>
                                         </li>
                                     ))}
                                 </ul>
                             </div>
 
-                            <div className="w-full md:w-auto bg-black/50 p-6 md:p-8 rounded-none border border-accent/20 backdrop-blur-md flex flex-col items-center flex-shrink-0">
-                                <div className="text-center mb-8">
-                                    <p className="text-sm text-gray-400 uppercase tracking-widest mb-2 font-semibold font-sans">Prezzo su Richiesta</p>
-                                    <div className="text-5xl font-bold tracking-tighter text-white font-display">Full Kit</div>
+                            <div className="w-full md:w-auto bg-[#0d0d0d] p-8 md:p-10 border border-[#2a2a2a] flex flex-col items-center flex-shrink-0 relative">
+                                <div className="text-center mb-10">
+                                    <p className="text-[10px] text-[#4caf50] uppercase tracking-[3px] mb-2 font-black font-display italic">PREZZO SU RICHIESTA</p>
+                                    <div className="text-5xl font-['Barlow_Condensed'] font-[900] tracking-tighter text-white uppercase italic">Full Kit</div>
                                 </div>
                                 <Link to="/contatti?interesse=Richiesta Kit Ufficiale" className="w-full">
-                                    <Button className="w-full h-14 text-base font-bold uppercase tracking-wider rounded-none bg-accent hover:bg-white hover:text-black transition-all duration-300 group/btn font-display btn-bounce">
-                                        Richiedi info Kit
+                                    <Button className="w-full h-16 text-lg font-bold uppercase tracking-widest rounded-none bg-[#4caf50] hover:opacity-90 text-white transition-all duration-300 group/btn font-display italic btn-bounce">
+                                        RICHIEDI INFO KIT
                                         <ArrowRight className="ml-2 group-hover/btn:translate-x-1 transition-transform" />
                                     </Button>
                                 </Link>
-                                <p className="text-center text-xs text-gray-500 mt-4 leading-relaxed font-sans">
-                                    Verrai contattato dal nostro staff per<br />definire taglie e dettagli di spedizione.
+                                <p className="text-center text-[11px] text-zinc-500 mt-6 leading-relaxed font-medium uppercase tracking-wider">
+                                    Verrai contattato dal nostro staff per<br />definire taglie e personalizzazioni
                                 </p>
                             </div>
                         </div>
