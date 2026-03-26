@@ -59,13 +59,13 @@ const Kit = () => {
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                    <div className="space-y-6 md:space-y-12 flex flex-col items-center justify-start staff-reveal will-animate w-full" data-delay="0.1">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 staff-reveal will-animate w-full lg:col-span-1" data-delay="0.1">
                         {images.map((img, idx) => (
-                            <div key={idx} className="w-full max-w-[480px] bg-white border border-[#2a2a2a] relative group overflow-hidden shadow-2xl transition-transform duration-500 hover:scale-[1.02]">
+                            <div key={idx} className="w-full bg-white border border-[#2a2a2a] relative group overflow-hidden shadow-2xl transition-transform duration-500 hover:scale-[1.02]">
                                 <img
                                     src={img}
                                     alt={`Kit Ufficiale Academy19 - Dettaglio ${idx + 1}`}
-                                    className="w-full h-auto object-cover object-center"
+                                    className="w-full h-auto object-cover object-center aspect-auto"
                                     onError={(e) => {
                                         const target = e.target as HTMLImageElement;
                                         target.src = "https://images.unsplash.com/photo-1518605368461-1ee715da8b35?auto=format&fit=crop&q=80";
