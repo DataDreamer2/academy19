@@ -25,7 +25,7 @@ const BirthdaySection = () => {
         </span>
       </div>
 
-      <div className="max-w-[1280px] mx-auto px-6 md:px-12 py-16 md:py-24 space-y-24 md:space-y-32 relative z-10">
+      <div className="max-w-[1200px] mx-auto px-6 md:px-12 py-16 md:py-24 space-y-24 md:space-y-32 relative z-10">
         
         {/* BLOCCO 2 — Hero split layout */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
@@ -59,41 +59,37 @@ const BirthdaySection = () => {
             </div>
           </div>
 
-          {/* Colonna destra (visiva): Image + Stats Overlay */}
-          <div className="relative group">
-            <div className="relative rounded-[16px] overflow-hidden border border-[#2a2a2a] shadow-2xl">
-              <img 
-                src="/gallery/foto-compleanni.jpg" 
-                alt="Compleanno Academy19" 
-                className="w-full h-auto object-cover opacity-70 group-hover:scale-105 transition-transform duration-700"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0d0d0d] via-transparent to-[#0d0d0d]/30 opacity-90" />
+          {/* Colonna destra (visiva): Image + Stats Grid (Separated) */}
+          <div className="flex flex-col items-center lg:items-end justify-center space-y-8 h-full">
+            <div className="w-full max-w-[550px] space-y-8">
+              <div className="relative rounded-[16px] overflow-hidden border border-[#2a2a2a] shadow-2xl group w-full">
+                <img 
+                  src="/gallery/foto-compleanni.jpg" 
+                  alt="Compleanno Academy19" 
+                  className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0d0d0d]/80 via-transparent to-transparent opacity-60" />
+              </div>
               
-              {/* Overlay stats grid */}
-              <div className="absolute inset-0 flex flex-col justify-center p-4 md:p-8">
-                <div className="grid grid-cols-2 gap-3 md:gap-4">
-                  {[
-                    { value: "50+", label: "Feste organizzate" },
-                    { value: "2h", label: "Durata media" },
-                    { value: "6+", label: "Anni di età minima" },
-                    { value: "⚽", label: "Campo in esclusiva" },
-                  ].map((stat, idx) => (
-                    <div key={idx} className="bg-[#161616]/80 backdrop-blur-md border border-[#2a2a2a] rounded-[10px] p-4 md:p-5 flex flex-col items-center justify-center text-center transform transition-all duration-300 hover:border-[#4caf50]/50 hover:bg-[#1a1a1a]/90">
-                      <span className="font-['Barlow_Condensed'] font-[900] text-[28px] md:text-[36px] text-[#4caf50] leading-tight">
-                        {stat.value}
-                      </span>
-                      <span className="text-[#888888] text-[10px] md:text-[11px] uppercase font-bold tracking-wider mt-1 leading-tight">
-                        {stat.label}
-                      </span>
-                    </div>
-                  ))}
-                </div>
+              {/* Stats grid below image */}
+              <div className="grid grid-cols-2 gap-4 md:gap-6 relative z-10 w-full">
+                {[
+                  { value: "50+", label: "Feste organizzate" },
+                  { value: "2h", label: "Durata media" },
+                  { value: "6+", label: "Anni di età minima" },
+                  { value: "⚽", label: "Campo in esclusiva" },
+                ].map((stat, idx) => (
+                  <div key={idx} className="bg-[#161616] border border-[#2a2a2a] rounded-[12px] p-6 md:p-8 flex flex-col items-center justify-center text-center transition-all duration-300 hover:border-[#4caf50]/50 hover:bg-[#1a1a1a] group">
+                    <span className="font-['Barlow_Condensed'] font-[900] text-[40px] md:text-[52px] text-[#4caf50] leading-tight group-hover:scale-110 transition-transform">
+                      {stat.value}
+                    </span>
+                    <span className="text-[#888888] text-[12px] md:text-[14px] uppercase font-bold tracking-[1.5px] mt-2">
+                      {stat.label}
+                    </span>
+                  </div>
+                ))}
               </div>
             </div>
-            
-            {/* Decorative elements */}
-            <div className="absolute -top-3 -right-3 w-12 h-12 border-t-2 border-r-2 border-[#e6a817] opacity-30 group-hover:opacity-50 transition-opacity" />
-            <div className="absolute -bottom-3 -left-3 w-12 h-12 border-b-2 border-l-2 border-[#4caf50] opacity-30 group-hover:opacity-50 transition-opacity" />
           </div>
         </div>
 

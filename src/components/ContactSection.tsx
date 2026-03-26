@@ -333,8 +333,11 @@ const ContactSection = () => {
                       <SelectItem value="camp-estivo">Camp Estivo Monte S.M. Tiberina</SelectItem>
                       <SelectItem value="camp-estivo-forli">Camp Estivo Forlì</SelectItem>
                       <SelectItem value="Kit Ufficiale">Richiesta Kit Ufficiale</SelectItem>
-                      <SelectItem value="pacchetti-lezioni">Pacchetti Lezioni</SelectItem>
-                      <SelectItem value="compleanno">Compleanno con AcademY</SelectItem>
+                      <SelectItem value="pacchetto-5">Pacchetto 5 Lezioni</SelectItem>
+                      <SelectItem value="pacchetto-10">Pacchetto 10 Lezioni</SelectItem>
+                      <SelectItem value="pacchetto-15">Pacchetto 15 Lezioni</SelectItem>
+                      <SelectItem value="pacchetto-20">Pacchetto 20 Lezioni</SelectItem>
+                      <SelectItem value="compleanno-academy">Compleanno con AcademY</SelectItem>
                       <SelectItem value="altro">Altro...</SelectItem>
                     </SelectContent>
                   </Select>

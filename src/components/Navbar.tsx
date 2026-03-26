@@ -38,7 +38,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`fixed top-4 left-0 right-0 z-50 px-4 desktop:px-8 nav-slide-down will-animate`}
+        className={`fixed top-4 left-0 right-0 z-[100] px-4 desktop:px-8 nav-slide-down will-animate`}
       >
         <div
           className={`mx-auto max-w-7xl rounded-none transition-all duration-300 ${isScrolled
