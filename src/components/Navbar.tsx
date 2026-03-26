@@ -41,8 +41,8 @@ const Navbar = () => {
         className={`fixed top-4 left-0 right-0 z-[100] px-4 desktop:px-8 nav-slide-down will-animate`}
       >
         <div
-          className={`mx-auto max-w-7xl rounded-none transition-all duration-300 ${isScrolled
-            ? 'bg-black/90 backdrop-blur-md border border-accent/20 py-3 shadow-lg shadow-accent/5'
+          className={`mx-auto max-w-7xl rounded-[16px] transition-all duration-300 ${isScrolled
+            ? 'bg-black/90 backdrop-blur-md border border-accent/20 py-3 shadow-lg shadow-accent/5 mt-4'
             : 'bg-transparent py-5'
             }`}
         >
@@ -52,7 +52,7 @@ const Navbar = () => {
               to="/"
               className="flex items-center gap-3 group"
             >
-              <div className="relative flex items-center justify-center w-12 h-12 overflow-hidden border border-accent/20">
+              <div className="relative flex items-center justify-center w-12 h-12 overflow-hidden border border-accent/20 rounded-[8px]">
                 <img 
                   src="/images/logo-academy.jpg" 
                   alt="Academy19 Logo" 
@@ -80,7 +80,7 @@ const Navbar = () => {
               ))}
               <Link to="/contatti">
                 <Button
-                  className="rounded-none bg-accent hover:bg-accent/80 text-black font-bold tracking-widest uppercase text-xs px-8 py-6 transition-all btn-bounce font-display"
+                  className="rounded-[8px] bg-accent hover:bg-accent/80 text-black font-bold tracking-widest uppercase text-xs px-8 py-6 transition-all btn-bounce font-display"
                 >
                   Iscriviti al Campus
                 </Button>
@@ -90,7 +90,7 @@ const Navbar = () => {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className={`desktop:hidden p-2 rounded-none transition-colors text-accent hover:bg-accent/10 border border-transparent hover:border-accent/30`}
+              className={`desktop:hidden p-2 rounded-[8px] transition-colors text-accent hover:bg-accent/10 border border-transparent hover:border-accent/30`}
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -116,7 +116,7 @@ const Navbar = () => {
             ))}
             <Link to="/contatti" className="mt-8 w-full">
               <Button
-                className="rounded-none bg-accent hover:bg-accent/80 text-black font-bold tracking-widest uppercase text-base mobile:text-lg px-6 mobile:px-8 py-6 mobile:py-8 w-full"
+                className="rounded-[8px] bg-accent hover:bg-accent/80 text-black font-bold tracking-widest uppercase text-base mobile:text-lg px-6 mobile:px-8 py-6 mobile:py-8 w-full"
               >
                 Iscriviti al Campus
               </Button>

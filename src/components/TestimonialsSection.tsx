@@ -53,7 +53,7 @@ const TestimonialsSection = () => {
                 <div className="grid md:grid-cols-3 gap-8 md:gap-12 will-animate" data-stagger="0.15">
                     {testimonials.map((t, i) => (
                         <div key={t.id} className="border-l border-accent/30 pl-8 relative group hover:border-accent transition-colors duration-300 translate-x-left">
-                            <div className="absolute -left-[5px] top-0 w-[9px] h-[9px] bg-accent rounded-none group-hover:scale-150 transition-transform duration-300"></div>
+                            <div className="absolute -left-[5px] top-0 w-[9px] h-[9px] bg-accent rounded-[2px] group-hover:scale-150 transition-transform duration-300"></div>
                             <p className="text-2xl md:text-3xl font-medium leading-relaxed mb-6 text-zinc-300 italic font-sans transition-colors">
                                 {t.text}
                             </p>

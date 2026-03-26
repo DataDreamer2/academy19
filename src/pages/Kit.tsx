@@ -85,7 +85,7 @@ const Kit = () => {
                     {/* Details Section */}
                     <div className="space-y-10 fade-up will-animate" data-delay="0.2">
                         <div>
-                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-none bg-accent/10 text-accent text-sm font-semibold uppercase tracking-wider mb-6 border border-accent/20 font-sans">
+                            <div className="inline-flex items-center gap-2 px-3 py-1 bg-accent/10 rounded-[8px] text-accent text-sm font-semibold uppercase tracking-wider mb-6 border border-accent/20 font-sans">
                                 <Star size={14} className="fill-accent" />
                                 Premium Quality
                             </div>
@@ -108,7 +108,7 @@ const Kit = () => {
                             <ul className="grid grid-cols-1 gap-4 font-sans">
                                 {kitItems.map((item, index) => (
                                     <li key={index} className="flex items-center gap-4 text-zinc-400 group/list">
-                                        <div className="w-8 h-8 bg-[#0d0d0d] border border-[#2a2a2a] flex items-center justify-center flex-shrink-0 text-[#4caf50] group-hover/list:bg-[#4caf50] group-hover/list:text-white transition-all duration-300">
+                                        <div className="w-8 h-8 bg-[#0d0d0d] border border-[#2a2a2a] rounded-[6px] flex items-center justify-center flex-shrink-0 text-[#4caf50] group-hover/list:bg-[#4caf50] group-hover/list:text-white transition-all duration-300">
                                             <ShieldCheck size={16} />
                                         </div>
                                         <span className="text-lg group-hover/list:text-white transition-colors uppercase font-display font-bold tracking-wide">{item}</span>
@@ -148,7 +148,7 @@ const Kit = () => {
                                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 font-sans">
                                     {["Tessuti tecnici traspiranti", "Personalizzazione inclusa", "Design esclusivo", "Disponibile per tutte le età"].map((feature, i) => (
                                         <li key={i} className="flex items-center gap-3 text-zinc-300 group/feat">
-                                            <div className="flex-shrink-0 w-6 h-6 bg-[#0d0d0d] border border-[#2a2a2a] flex items-center justify-center text-[#4caf50] group-hover/feat:bg-[#4caf50] group-hover/feat:text-white transition-all">
+                                            <div className="flex-shrink-0 w-6 h-6 bg-[#0d0d0d] border border-[#2a2a2a] rounded-[4px] flex items-center justify-center text-[#4caf50] group-hover/feat:bg-[#4caf50] group-hover/feat:text-white transition-all">
                                                 <Check size={14} className="font-bold" />
                                             </div>
                                             <span className="font-medium">{feature}</span>

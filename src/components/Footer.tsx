@@ -32,7 +32,7 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="md:col-span-5">
             <div className="flex items-center gap-3 mb-8">
-              <div className="relative flex items-center justify-center w-12 h-12 overflow-hidden border border-accent/20">
+              <div className="relative flex items-center justify-center w-12 h-12 overflow-hidden border border-accent/20 rounded-[8px]">
                 <img 
                   src="/images/logo-academy.jpg" 
                   alt="Academy19 Logo" 

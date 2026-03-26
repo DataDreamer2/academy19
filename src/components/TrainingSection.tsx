@@ -87,10 +87,10 @@ const TrainingSection = () => {
                 ].map((item, idx) => (
                   <li 
                     key={idx} 
-                    className="flex items-center gap-5 p-4 bg-[#0d0d0d] border border-[#2a2a2a] hover:border-[#4caf50]/40 transition-all duration-300 group/item"
+                    className="flex items-center gap-5 p-4 bg-[#0d0d0d] border border-[#2a2a2a] rounded-[8px] hover:border-[#4caf50]/40 transition-all duration-300 group/item"
                   >
                     {/* Number block */}
-                    <div className="w-10 h-10 bg-[#1a1a1a] border border-[#2a2a2a] text-[#4caf50] flex items-center justify-center font-bold font-display italic group-hover/item:bg-[#4caf50] group-hover/item:text-white transition-colors duration-300">
+                    <div className="w-10 h-10 bg-[#1a1a1a] border border-[#2a2a2a] rounded-[6px] text-[#4caf50] flex items-center justify-center font-bold font-display italic group-hover/item:bg-[#4caf50] group-hover/item:text-white transition-colors duration-300">
                       0{idx + 1}
                     </div>
                     <span className="text-lg font-bold uppercase tracking-wide font-display text-zinc-300 group-hover/item:text-white transition-colors">
@@ -113,7 +113,7 @@ const TrainingSection = () => {
         </div>
 
         {/* Call to Action Banner */}
-        <div className="mt-20 border border-accent p-8 md:p-20 text-center relative overflow-hidden bg-black group fade-up will-animate" data-delay="0.5">
+        <div className="mt-20 border border-accent rounded-[16px] p-8 md:p-20 text-center relative overflow-hidden bg-black group fade-up will-animate" data-delay="0.5">
           <div className="absolute inset-0 bg-accent/5 group-hover:bg-accent/10 transition-colors duration-500"></div>
           <div className="relative z-10">
             <h3 className="text-[clamp(2rem,8vw,3.5rem)] font-bold text-accent uppercase mb-8 tracking-tighter leading-[1] font-display">
@@ -122,7 +122,7 @@ const TrainingSection = () => {
             <Link to="/contatti">
               <Button
                 size="lg"
-                className="bg-accent text-black hover:bg-white px-12 py-8 text-xl rounded-none uppercase tracking-widest font-bold transition-all duration-300 font-display btn-bounce"
+                className="bg-accent text-black hover:bg-white px-12 py-8 text-xl rounded-[8px] uppercase tracking-widest font-bold transition-all duration-300 font-display btn-bounce"
               >
                 Blocca il tuo posto
               </Button>

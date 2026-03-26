@@ -83,7 +83,7 @@ const GallerySection = () => {
               <div
                 key={item.id + index} // Key fix for demo duplicate
                 onClick={() => setSelectedImage(item)}
-                className="group relative aspect-square bg-black overflow-hidden cursor-pointer border border-accent/10 transition-all duration-300 staff-reveal"
+                className="group relative aspect-square bg-black overflow-hidden cursor-pointer rounded-[12px] border border-accent/10 transition-all duration-300 staff-reveal"
               >
                 <img
                   src={item.src}
@@ -98,7 +98,7 @@ const GallerySection = () => {
           </div>
 
           <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
-            <DialogContent className="max-w-6xl p-0 bg-black/95 border border-accent backdrop-blur-xl">
+            <DialogContent className="max-w-6xl p-0 bg-black/95 border border-accent rounded-[16px] backdrop-blur-xl">
               <div className="relative w-full h-full flex items-center justify-center p-4">
                 <button
                   onClick={() => setSelectedImage(null)}
@@ -112,7 +112,7 @@ const GallerySection = () => {
                     <img
                       src={selectedImage.src}
                       alt={selectedImage.alt}
-                      className="max-h-[85vh] w-auto object-contain rounded-none shadow-2xl"
+                      className="max-h-[85vh] w-auto object-contain rounded-[16px] shadow-2xl"
                     />
                     {/* Subtle green tint overlay in modal */}
                     <div className="absolute inset-0 bg-accent/5 mix-blend-screen pointer-events-none"></div>

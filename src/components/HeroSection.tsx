@@ -48,7 +48,7 @@ const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-6 md:px-12 pt-28 md:pt-20">
         <div className="max-w-4xl">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-none border border-accent/40 bg-black/50 backdrop-blur-sm mb-8 reveal-hidden fade-up will-animate" data-delay="0.3">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-[8px] border border-accent/40 bg-black/50 backdrop-blur-sm mb-8 reveal-hidden fade-up will-animate" data-delay="0.3">
             <span className="w-2 h-2 rounded-full bg-accent"></span>
             <span className="text-white/80 text-xs font-bold tracking-widest uppercase font-sans">
               Stagione 2025/2026
@@ -75,7 +75,7 @@ const HeroSection = () => {
             <Button
               size="lg"
               onClick={() => scrollToSection('#contatti')}
-              className="group bg-accent hover:bg-accent/80 text-black text-lg px-10 py-8 rounded-none transition-all duration-300 font-bold uppercase tracking-wider btn-bounce font-display"
+              className="group bg-accent hover:bg-accent/80 text-black text-lg px-10 py-8 rounded-[8px] transition-all duration-300 font-bold uppercase tracking-wider btn-bounce font-display"
             >
               <span className="flex items-center gap-3">
                 Prenota la Prova
@@ -87,7 +87,7 @@ const HeroSection = () => {
               size="lg"
               variant="outline"
               onClick={() => scrollToSection('#percorsi')}
-              className="bg-transparent border-accent/40 text-accent hover:bg-accent/10 hover:border-accent text-lg px-10 py-8 rounded-none backdrop-blur-sm transition-all duration-300 font-bold uppercase tracking-wider font-display btn-bounce"
+              className="bg-transparent border-accent/40 text-accent hover:bg-accent/10 hover:border-accent text-lg px-10 py-8 rounded-[8px] backdrop-blur-sm transition-all duration-300 font-bold uppercase tracking-wider font-display btn-bounce"
             >
               Scopri i Programmi
             </Button>
